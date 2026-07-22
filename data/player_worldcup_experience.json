@@ -1,0 +1,9045 @@
+{
+  "ALG|MASTIL Melvin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|MANDI Aissa": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|ABADA Achref": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|TOUGAI Mohamed Amine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|BELAID Zineddine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|ZERROUKI Ramiz": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|MAHREZ Riyad": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|AOUAR Houssem": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|GOUIRI Amine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|CHAIBI Fares": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|HADJ MOUSSA Anis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|BENBOUALI Nadhir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|HADJAM Jaouen": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|BOUDAOUI Hicham": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|AIT-NOURI Rayan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|BENBOT Oussama": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|BELGHALI Ra k": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|AMOURA Mohamed": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|BENTALEB Nabil": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|BOULBINA Adil": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|BENSEBAINI Ramy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|MAZA Ibrahim": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|ZIDANE Luca": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|TITRAOUI Yassine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|GHEDJEMIS Fares": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ALG|CHERGUI Samir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|MUSSO Juan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|SENESI Marcos": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|TAGLIAFICO Nicolas": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|MONTIEL Gonzalo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|PAREDES Leandro": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|MARTINEZ Lisandro": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|DE PAUL Rodrigo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|BARCO Valentin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|ALVAREZ Julian": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|MESSI Lionel": {
+    "count": 6,
+    "years": [
+      2006,
+      2010,
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|LO CELSO Giovani": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|RULLI Geronimo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|ROMERO Cristian": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|PALACIOS Exequiel": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|GONZALEZ Nico": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|ALMADA Thiago": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|SIMEONE Giuliano": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|PAZ Nico": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|OTAMENDI Nicolas": {
+    "count": 4,
+    "years": [
+      2010,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|MAC ALLISTER Alexis": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|LOPEZ Jose Manuel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|MARTINEZ Lautaro": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|MARTINEZ Emiliano": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|FERNANDEZ Enzo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ARG|MEDINA Facundo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ARG|MOLINA Nahuel": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|RYAN Mathew": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|DEGENEK Milos": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|CIRCATI Alessandro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|ITALIANO Jacob": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|BOS Jordan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|GERIA Jason": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|LECKIE Mathew": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|METCALFE Connor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|TOURE Mohamed": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|HRUSTIC Ajdin": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|MABIL Awer": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|IZZO Paul": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|ONEILL Aiden": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|DEVLIN Cameron": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|TREWIN Kai": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|BEHICH Aziz": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|IRANKUNDA Nestory": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|BEACH Patrick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|SOUTTAR Harry": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|VOLPATO Cristian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|BURGESS Cameron": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|IRVINE Jackson": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "AUS|VELUPILLAY Nishan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|OKON-ENGSTLER Paul": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|HERRINGTON Lucas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUS|YENGI Tete": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|SCHLAGER Alexander": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|AFFENGRUBER David": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|DANSO Kevin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|SCHLAGER Xaver": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|POSCH Stefan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|SEIWALD Nicolas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|ARNAUTOVIC Marko": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|ALABA David": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|SABITZER Marcel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|GRILLITSCH Florian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|GREGORITSCH Michael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|WIEGELE Florian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|PENTZ Patrick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|KALAJDZIC Sasa": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|LIENHART Philipp": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|MWENE Phillip": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|CHUKWUEMEKA Carney": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|SCHMID Romano": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|LJUBICIC Dejan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|LAIMER Konrad": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|WIMMER Patrick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|PRASS Alexander": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|FRIEDL Marco": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|WANNER Paul": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|SVOBODA Michael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "AUT|SCHOEPF Alessandro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|COURTOIS Thibaut": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|DEBAST Zeno": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|THEATE Arthur": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|MECHELE Brandon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|DE CUYPER Maxim": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|WITSEL Axel": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|DE BRUYNE Kevin": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|TIELEMANS Youri": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|LUKAKU Romelu": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|TROSSARD Leandro": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|DOKU Jeremy": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|LAMMENS Senne": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|PENDERS Mike": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|LUKEBAKIO Dodi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|MEUNIER Thomas": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|DE WINTER Koni": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|DE KETELAERE Charles": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|SEYS Joaquin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|MOREIRA Diego": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|VANAKEN Hans": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|CASTAGNE Timothy": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|SAELEMAEKERS Alexis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|RASKIN Nicolas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|ONANA Amadou": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BEL|NGOY Nathan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BEL|FERNANDEZ-PARDO Matias": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|VASILJ Nikola": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|MUJAKIC Nihad": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|HADZIKADUNIC Dennis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|MUHAREMOVIC Tarik": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|KOLASINAC Sead": {
+    "count": 2,
+    "years": [
+      2014,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BIH|TAHIROVIC Benjamin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|DEDIC Amar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|GIGOVIC Armin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|BAZDAR Samed": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|DEMIROVIC Ermedin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|DZEKO Edin": {
+    "count": 2,
+    "years": [
+      2014,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "BIH|JURKAS Mladen": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|BASIC Ivan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|SUNJIC Ivan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|MEMIC Amar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|HADZIAHMETOVIC Amir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|BURNIC Dzenis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|KATIC Nikola": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|ALAJBEGOVIC Kerim": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|BAJRAKTAREVIC Esmir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|RADELJIC Stjepan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|ZLOMISLIC Martin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|TABAKOVIC Haris": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|MALIC Arjan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|LUKIC Jovo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BIH|MAHMIC Ermin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|ALISSON": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|EDERSON SILVA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|GABRIEL MAGALHAES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|MARQUINHOS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|CASEMIRO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|ALEX SANDRO": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "BRA|VINICIUS JUNIOR": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "BRA|BRUNO GUIMARAES": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "BRA|MATHEUS CUNHA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|NEYMAR JR": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|RAPHINHA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|WEVERTON": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|DANILO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|BREMER": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|LEO PEREIRA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|DOUGLAS SANTOS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|FABINHO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|DANILO SANTOS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|ENDRICK": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|LUCAS PAQUETA": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "BRA|LUIZ HENRIQUE": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|GABRIEL MARTINELLI": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "BRA|EDERSON": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|ROGER IBANEZ": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|IGOR THIAGO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "BRA|RAYAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|VOZINHA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|STOPIRA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|DINEY BORGES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|PICO LOPES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|LOGAN COSTA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|KEVIN PINA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|JOVANE CABRAL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|JOAO PAULO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|GILSON BENCHIMOL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|JAMIRO MONTEIRO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|GARRY RODRIGUES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|MARCIO ROSA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|SIDNY LOPES CABRAL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|DEROY DUARTE": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|LAROS DUARTE": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|YANNICK SEMEDO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|WILLY SEMEDO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|TELMO ARCANJO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|DAILON LIVRAMENTO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|RYAN MENDES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|NUNO DA COSTA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|STEVEN MOREIRA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|CJ DOS SANTOS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|WAGNER PINA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|KELVIN PIRES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CPV|HELIO VARELA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|ST. CLAIR Dayne": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|JOHNSTON Alistair": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|JONES Al e": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|DE FOUGEROLLES Luc": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|WATERMAN Joel": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|CHOINIERE Mathieu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|EUSTAQUIO Stephen": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|KONE Ismael": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|LARIN Cyle": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|DAVID Jonathan": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|MILLAR Liam": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|OLUWASEYI Tani": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|CORNELIUS Derek": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|SHAFFELBURG Jacob": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|BOMBITO Moise": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|CREPEAU Maxime": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|BUCHANAN Tajon": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|GOODMAN Owen": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|DAVIES Alphonso": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|AHMED Ali": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|OSORIO Jonathan": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|LARYEA Richie": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "CAN|SIGUR Niko": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|DAVID Promise": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|SALIBA Nathan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CAN|NELSON Jayden": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|OSPINA David": {
+    "count": 3,
+    "years": [
+      2014,
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "COL|MUNOZ Daniel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|LUCUMI Jhon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|ARIAS Santiago": {
+    "count": 3,
+    "years": [
+      2014,
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "COL|CASTANO Kevin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|RIOS Richard": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|DIAZ Luis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|CARRASCAL Jorge": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|CORDOBA Jhon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|RODRIGUEZ James": {
+    "count": 3,
+    "years": [
+      2014,
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "COL|ARIAS Jhon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|VARGAS Camilo": {
+    "count": 3,
+    "years": [
+      2014,
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "COL|MINA Yerry": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "COL|PUERTA Gustavo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|PORTILLA Juan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|LERMA Jefferson": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "COL|MOJICA Johan": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "COL|DITTA Willer": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|HERNANDEZ Cucho": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|QUINTERO Juan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|CAMPAZ Jaminton": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|MACHADO Deiver": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|SANCHEZ Davinson": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "COL|MONTERO Alvaro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|SUAREZ Luis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COL|GOMEZ Andres": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|MPASI Lionel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|WAN-BISSAKA Aaron": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|KAPUADI Steve": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|TUANZEBE Axel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|BATUBINSIKA Dylan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|MUKAU Ngalayel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|MBUKU Nathanael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|MOUTOUSSAMY Samuel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|CIPENGA Brian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|BONGONDA Theo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|KAKUTA Gael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|KAYEMBE Joris": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|ELIA Meschack": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|SADIKI Noah": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|TSHIBOLA Aaron": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|FAYULU Timothy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|BAKAMBU Cedric": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|PICKEL Charles": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|MAYELE Fiston": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|WISSA Yoane": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|EPOLO Matthieu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|MBEMBA Chancel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|BANZA Simon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|KALULU Gedeon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|KAYEMBE Edo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "COD|MASUAKU Arthur": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|FOFANA Yahia": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|DIOMANDE Ousmane": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|KONAN Ghislain": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|SERI Jean Michael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|SINGO Wilfried": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|FOFANA Seko": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|KOSSOUNOU Odilon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|KESSIE Franck": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|BONNY Ange-Yoan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|ADINGRA Simon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|DIOMANDE Yan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|WAHI Elye": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|OPERI Christopher": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|DIAKITE Oumar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|DIALLO Amad": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|KONE Mohamed": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|DOUE Guela": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|SANGARE Ibrahim": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|PEPE Nicolas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|AGBADOU Emmanuel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|NDICKA Evan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|GUESSAND Evann": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|LAFONT Alban": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|TOURE Bazoumana": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|GUIAGON Parfait": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CIV|OULAI Christ Inao": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|LIVAKOVIC Dominik": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|STANISIC Josip": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|PONGRACIC Marin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|GVARDIOL Josko": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|CALETA-CAR Duje": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|SUTALO Josip": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|MORO Nikola": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|KOVACIC Mateo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|KRAMARIC Andrej": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|MODRIC Luka": {
+    "count": 5,
+    "years": [
+      2006,
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "manual-verified"
+  },
+  "CRO|BUDIMIR Ante": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|PANDUR Ivor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|VLASIC Nikola": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|PERISIC Ivan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|PASALIC Mario": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|BATURINA Martin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|SUCIC Petar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|JAKIC Kristijan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|FRUK Toni": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|MATANOVIC Igor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|SUCIC Luka": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|VUSKOVIC Luka": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|KOTARSKI Dominik": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|PASALIC Marco": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|ERLIC Martin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CRO|MUSA Petar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|ROOM Eloy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|SAMBO Shurandy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|GAARI Jurien": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|VAN EIJMA Roshon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|FLORANUS Sherel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|ROEMERATOE Godfried": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|BACUNA Juninho": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|COMENENCIA Livano": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|LOCADIA Juergen": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|BACUNA Leandro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|ANTONISSE Jeremy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|HANSEN Sontje": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|NOSLIN Tyrese": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|GORRE Kenji": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|MARTHA Arjany": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|MARGARITHA Jearl": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|KUWAS Brandley": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|OBISPO Armando": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|KASTANEER Gervane": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|BRENET Joshua": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|CHONG Tahith": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|FELIDA Kevin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|BAZOER Riechedly": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|FONVILLE Deveron": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|BODAK Tyrick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CUW|DOORNBUSCH Trevor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|KOVAR Matej": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|ZIMA David": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|HOLES Tomas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|HRANAC Robin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|COUFAL Vladimir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|CHALOUPEK Stepan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|KREJCI Ladislav": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|DARIDA Vladimir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|HLOZEK Adam": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|SCHICK Patrik": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|KUCHTA Jan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|CERV Lukas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|CHYTIL Mojmir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|JURASEK David": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|SULC Pavel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|STANEK Jindrich": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|PROVOD Lukas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|SADILEK Michal": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|CHORY Tomas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|ZELENY Jaroslav": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|DOUDERA David": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|SOUCEK Tomas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|HORNICEK Lukas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|SOJKA Alexandr": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|SOCHUREK Hugo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "CZE|VISINSKY Denis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|GALINDEZ Hernan": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|TORRES Felix": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|HINCAPIE Piero": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|ORDONEZ Joel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|ALCIVAR Jordy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|PACHO Willian": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "manual"
+  },
+  "ECU|ESTUPINAN Pervis": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|VALENCIA Anthony": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|YEBOAH John": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|PAEZ Kendry": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|RODRIGUEZ Kevin": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|RAMIREZ Moises": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|VALENCIA Enner": {
+    "count": 3,
+    "years": [
+      2014,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|MINDA Alan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|VITE Pedro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|CAICEDO Jordy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|PRECIADO Angelo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|CASTILLO Denil": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|PLATA Gonzalo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|ANGULO Nilson": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|FRANCO Alan": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|VALLE Gonzalo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|CAICEDO Moises": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|AREVALO Jeremy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ECU|POROZO Jackson": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ECU|MEDINA Yaimar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MOHAMED ELSHENAWY": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|YASSER IBRAHIM": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MOHAMED HANY": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|HOSSAM ABDELMAGUID": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|RAMY RABIA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MOHAMED ABDELMONEIM": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|TREZEGUET": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|EMAM ASHOUR": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|HAMZA ABDELKARIM": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MOHAMED SALAH": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "exact"
+  },
+  "EGY|MOSTAFA ZICO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|HAISSEM HASSAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|AHMED FATOUH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|HAMDY FATHY": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|KARIM HAFEZ": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MAHDY SOLIMAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MOHANAD LASHIN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|NABIL DONGA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MARAWAN ATTIA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|IBRAHIM ADEL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MAHMOUD SABER": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|OMAR MARMOUSH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MOSTAFA SHOUBIR": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|TAREK ALAA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|ZIZO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "EGY|MOHAMED ALAA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|PICKFORD Jordan": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ENG|KONSA Ezri": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|OREILLY Nico": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|RICE Declan": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ENG|STONES John": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ENG|GUEHI Marc": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|SAKA Bukayo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ENG|ANDERSON Elliot": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|KANE Harry": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "manual-verified"
+  },
+  "ENG|BELLINGHAM Jude": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ENG|RASHFORD Marcus": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ENG|CHALOBAH Trevoh": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|HENDERSON Dean": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|HENDERSON Jordan": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ENG|BURN Dan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|MAINOO Kobbie": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|ROGERS Morgan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|GORDON Anthony": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|WATKINS Ollie": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|MADUEKE Noni": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|EZE Eberechi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|TONEY Ivan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|TRAFFORD James": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|JAMES Reece": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|SPENCE Djed": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ENG|QUANSAH Jarell": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|SAMBA Brice": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|GUSTO Malo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|DIGNE Lucas": {
+    "count": 2,
+    "years": [
+      2014,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|UPAMECANO Dayot": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|KOUNDE Jules": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|KONE Manu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|DEMBELE Ousmane": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|TCHOUAMENI Aurelien": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|THURAM Marcus": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|MBAPPE Kylian": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|OLISE Michael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|BARCOLA Bradley": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|KANTE Ngolo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|RABIOT Adrien": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|KONATE Ibrahima": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|MAIGNAN Mike": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|SALIBA William": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|ZAIRE-EMERY Warren": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|HERNANDEZ Theo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|DOUE Desire": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|HERNANDEZ Lucas": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "FRA|MATETA Jean-Philippe": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|RISSER Robin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|CHERKI Rayan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|AKLIOUCHE Maghnes": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "FRA|LACROIX Maxence": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|NEUER Manuel": {
+    "count": 5,
+    "years": [
+      2010,
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "manual-verified"
+  },
+  "GER|RUEDIGER Antonio": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|ANTON Waldemar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|TAH Jonathan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|PAVLOVIC Aleksandar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|KIMMICH Joshua": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|HAVERTZ Kai": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|GORETZKA Leon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|LEWELING Jamie": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|MUSIALA Jamal": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|WOLTEMADE Nick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|BAUMANN Oliver": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|GROSS Pascal": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|BEIER Maximilian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|SCHLOTTERBECK Nico": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|STILLER Angelo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|WIRTZ Florian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|BROWN Nathaniel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|SANE Leroy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|AMIRI Nadiem": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|NUEBEL Alexander": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|RAUM David": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|NMECHA Felix": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|THIAW Malick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|OUEDRAOGO Assan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GER|UNDAV Deniz": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|ZIGI Lawrence Ati": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|SEIDU Alidu": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|YIRENKYI Caleb": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|ADJETEY Jonas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|PARTEY Thomas": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|MUMIN Abdul": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|FATAWU Abdul": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|SIBO Kwasi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|AYEW Jordan": {
+    "count": 3,
+    "years": [
+      2014,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|THOMAS-ASANTE Brandon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|SEMENYO Antoine": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|ANANG Joseph": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|BONSU BAAH Christopher": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|MENSAH Gideon": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|OWUSU Elisha": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|ASARE Benjamin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|RAHMAN Baba": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|OPOKU Jerome": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|WILLIAMS Inaki": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|BOAKYE Augustine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|OPPONG Kojo Peprah": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|SULEMANA Kamaldeen": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "GHA|LUCKASSEN Derrick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|NUAMAH Ernest": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|ADU Prince": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "GHA|SENAYA Marvin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|PLACIDE Johny": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|ARCUS Carlens": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|THERMONCY Keeto": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|ADE Ricardo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|DELCROIX Hannes": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|SAINTE Carl": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|ETIENNE Derrick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|EXPERIENCE Martin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|NAZON Duckens": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|BELLEGARDE Jean-Ricner": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|DEEDSON Louicius": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|PIERRE Alexandre": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|LACROIX Markhus": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|METUSALA Garven": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|PROVIDENCE Ruben": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|JOSEPH Lenny": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|JEAN JACQUES Danley": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|ISIDOR Wilson": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|FORTUNE Yassin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|PIERROT Frantzdy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|CASIMIR Josue": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|DUVERNE Jean-Kevin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|DUVERGER Josue": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|PAUGAIN Wilguens": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|SIMON Dominique": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "HAI|PIERRE Woodensky": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|BEIRANVAND Alireza": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|HARDANI Saleh": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|HAJISAFI Ehsan": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "manual"
+  },
+  "IRN|KHALILZADEH Shoja": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "manual"
+  },
+  "IRN|MOHAMMADI Milad": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|EZATOLAHI Saeid": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|JAHANBAKHSH Alireza": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|MOHEBBI Mohammad": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|TAREMI Mehdi": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|GHAYEDI Mehdi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|ALIPOUR Ali": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|NIAZMAND Payam": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|KANANI Hossein": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|GHODDOS Saman": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|CHESHMI Roozbeh": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "manual"
+  },
+  "IRN|TORABI Mehdi": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|YOUSEFI Arya": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|HOSSEINZADEH Amirhossein": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|NEMATI Ali": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|MOGHANLOO Shahriyar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|GHORBANI Mohammad": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|HOSSEINI Hossein": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|REZAEIAN Ramin": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "IRN|DARGAHI Dennis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|IRI Danial": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRN|RAZAGHINIA Amirmohammad": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|FAHAD TALIB": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|REBIN SULAKA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|HUSSEIN ALI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|ZAID TAHSEEN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|AKAM HASHIM": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|MUNAF YOUNUS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|YOUSSEF AMYN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|IBRAHIM BAYESH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|ALI ALHAMADI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|MOHANAD ALI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|AHMED QASEM": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|JALAL HASSAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|ALI YOUSIF": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|ZIDANE IQBAL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|AHMED MAKNAZI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|AMIR ALAMMARI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|ALI JASIM": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|AYMEN HUSSEIN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|KEVIN YAKOB": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|AIMAR SHER": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|MARKO FARJI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|AHMED BASIL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|MERCHAS DOSKI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|ZAID ISMAEL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|MUSTAFA SAADOON": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "IRQ|FRANS PUTROS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|SUZUKI Zion": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|SUGAWARA Yukinari": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|TANIGUCHI Shogo": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|ITAKURA Kou": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "manual"
+  },
+  "JPN|NAGATOMO Yuto": {
+    "count": 5,
+    "years": [
+      2010,
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|MACHINO Shuto": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|TANAKA Ao": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|KUBO Takefusa": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|GOTO Keisuke": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|DOAN Ritsu": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|MAEDA Daizen": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|OSAKO Keisuke": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|NAKAMURA Keito": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|ITO Junya": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|KAMADA Daichi": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|WATANABE Tsuyoshi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|SUZUKI Yuito": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|UEDA Ayase": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|OGAWA Koki": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|SEKO Ayumu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|ITO Hiroki": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|TOMIYASU Takehiro": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "JPN|HAYAKAWA Tomoki": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|SANO Kaishu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|SUZUKI Junnosuke": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JPN|SHIOGAI Kento": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|YAZEED ABULAILA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|MOHAMMAD ABUHASHEESH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|ABDALLAH NASIB": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|HUSAM ABUDAHAB": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|YAZAN ALARAB": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|AMER JAMOUS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|MOHAMMAD ABUZRAIQ": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|NOOR ALRAWABDEH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|ALI OLWAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|MOUSA ALTAMARI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|ODEH FAKHOURY": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|NOUR BANIATEYAH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|MAHMOUD ALMARDI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|RAJAEI AYED": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|IBRAHIM SADEH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|MOHAMMAD ABUALNADI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|SALEEM OBAID": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|MOHAMMAD ABUGHOUSH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|SAED ALROSAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|MOHANNAD ABUTAHA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|NIZAR ALRASHDAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|ABDALLAH ALFAKHORI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|EHSAN HADDAD": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|ALI AZAIZEH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|MOHAMMAD ALDAOUD": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "JOR|ANAS BADAWI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|KIM Seunggyu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|LEE Hanbeom": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|LEE Gihyuk": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|KIM Minjae": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|KIM Taehyeon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|HWANG Inbeom": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|SON Heungmin": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "manual-verified"
+  },
+  "KOR|PAIK Seungho": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|CHO Guesung": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "manual"
+  },
+  "KOR|LEE Jaesung": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|HWANG Heechan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|SONG Bumkeun": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "manual"
+  },
+  "KOR|LEE Taeseok": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|CHO Wije": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|KIM Moonhwan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|PARK Jinseob": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|BAE Junho": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|OH Hyeongyu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|LEE Kangin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|YANG Hyunjun": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|JO Hyeonwoo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|SEOL Youngwoo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|CASTROP Jens": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|KIM Jingyu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|EOM Jisung": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KOR|LEE Donggyeong": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|RANGEL Raul": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|SANCHEZ Jorge": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|MONTES Cesar": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|ALVAREZ Edson": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|VASQUEZ Johan": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|LIRA Erik": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|ROMO Luis": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|FIDALGO Alvaro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|JIMENEZ Raul": {
+    "count": 4,
+    "years": [
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|VEGA Alexis": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|GIMENEZ Santiago": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|ACEVEDO Carlos": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|OCHOA Guillermo": {
+    "count": 6,
+    "years": [
+      2006,
+      2010,
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|GONZALEZ Armando": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|REYES Israel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|QUINONES Julian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|PINEDA Orbelin": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|VARGAS Obed": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|MORA Gilberto": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|CHAVEZ Mateo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|HUERTA Cesar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|MARTINEZ Guillermo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MEX|GALLARDO Jesus": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|CHAVEZ Luis": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|ALVARADO Roberto": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MEX|GUTIERREZ Brian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|BOUNOU Yassine": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MAR|HAKIMI Achraf": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MAR|MAZRAOUI Noussair": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MAR|AMRABAT Sofyan": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MAR|SAADANE Marwane": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|BOUADDI Ayyoub": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|TALBI Chemsdine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|OUNAHI Azzedine": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MAR|RAHIMI Sou ane": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|DIAZ Brahim": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|SAIBARI Ismael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|EL KAJOUI Munir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|EL OUAHDI Zakaria": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|DIOP Issa": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|EL MOURABET Samir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|YASSINE Gessime": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|SBAI Amine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|RIAD Chadi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|BELAMMARI Youssef": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|EL KAABI Ayoub": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MAR|AMAIMOUNI Ayoube": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|TAGNAOUTI Ahmed Reda": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "MAR|EL KHANNOUSS Bilal": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "manual"
+  },
+  "MAR|EL AYNAOUI Neil": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|HALHAL Redouane": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "MAR|SALAH EDDINE Anass": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|VERBRUGGEN Bart": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|GEERTRUIDA Lutsharel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|DE ROON Marten": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|VAN DIJK Virgil": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|AKE Nathan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|VAN HECKE Jan Paul": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|KLUIVERT Justin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|GRAVENBERCH Ryan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|WEGHORST Wout": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|DEPAY Memphis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|GAKPO Cody": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|WIEFFER Mats": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|ROEFS Robin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|REIJNDERS Tijjani": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|VAN DE VEN Micky": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|TIL Guus": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|LANG Noa": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|MALEN Donyell": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|BROBBEY Brian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|KOOPMEINERS Teun": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|DE JONG Frenkie": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|DUMFRIES Denzel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|FLEKKEN Mark": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|SUMMERVILLE Crysencio": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|HATO Jorrel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NED|TIMBER Quinten": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|CROCOMBE Max": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|PAYNE Tim": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|DE VRIES Francis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|BINDON Tyler": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|BOXALL Michael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|BELL Joe": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|ROGERSON Logan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|STAMENIC Marko": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|WOOD Chris": {
+    "count": 2,
+    "years": [
+      2010,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "NZL|SINGH Sarpreet": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|JUST Elijah": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|PAULSEN Alex": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|CACACE Liberato": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|RUFER Alex": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|PIJNAKER Nando": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|SURMAN Finn": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|BARBAROUSES Kosta": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|WAINE Ben": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|OLD Ben": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|McCOWATT Callum": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|RANDALL Jesse": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|WOUD Michael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|THOMAS Ryan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|ELLIOT Callan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|BAYLISS Lachlan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NZL|SMITH Tommy": {
+    "count": 2,
+    "years": [
+      2010,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "NOR|NYLAND Orjan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|THORSBY Morten": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|AJER Kristoffer": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|OSTIGARD Leo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|MOLLER WOLFE David": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|BERG Patrick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|SORLOTH Alexander": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|BERGE Sander": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|HAALAND Erling": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|ODEGAARD Martin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|STRAND LARSEN Jorgen": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|TANGVIK Sander": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|SELVIK Egil": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|AURSNES Fredrik": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|BJORKAN Fredrik Andre": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|HOLMGREN PEDERSEN Marcus": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|HEGGEM Torbjorn": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|THORSTVEDT Kristian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|AASGAARD Thelo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|NUSA Antonio": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|SCHJELDERUP Andreas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|BOBB Oscar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|HAUGE Jens Petter": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|LANGAS Sondre": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|FALCHENER Henrik": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "NOR|RYERSON Julian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|MEJIA Luis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|BLACKMAN Cesar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|CORDOBA Jose": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|ESCOBAR Fidel": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "PAN|FARINA Edgardo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|MARTINEZ Cristian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|RODRIGUEZ Jose Luis": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "PAN|CARRASQUILLA Adalberto": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|RODRIGUEZ Tomas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|DIAZ Ismael": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "PAN|BARCENAS Edgar Yoel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|SAMUDIO Cesar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|RAMOS Jiovany": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|HARVEY Carlos": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|DAVIS Eric": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "manual"
+  },
+  "PAN|ANDRADE Andres": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|FAJARDO Jose": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|WATERMAN Cecilio": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|QUINTERO Alberto": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|GODOY Anibal": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "PAN|YANIS Cesar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|MOSQUERA Orlando": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|MURILLO Amir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|LONDONO Azarias": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|MILLER Roderick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAN|GUTIERREZ Jorge": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|FERNANDEZ Gatito": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|VELAZQUEZ Gustavo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|ALDERETE Omar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|CACERES Juan Jose": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|BALBUENA Fabian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|ALONSO Junior": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|SOSA Ramon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|GOMEZ Diego": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|SANABRIA Antonio": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|ALMIRON Miguel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|MAURICIO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|GILL Orlando": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|CANALE Jose": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|CUBAS Andres": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|GOMEZ Gustavo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|BOBADILLA Damian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|ROMERO GAMARRA Alejandro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|ARCE Alex": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|ENCISO Julio": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|OJEDA Braian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|AVALOS Gabriel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|OLVEIRA Gaston": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|GALARZA Matias": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|CABALLERO Gustavo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|PITTA Isidro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "PAR|MAIDANA Alexandro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|DIOGO COSTA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|NELSON SEMEDO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|RUBEN DIAS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|TOMAS ARAUJO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|DIOGO DALOT": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|MATHEUS NUNES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|CRISTIANO RONALDO": {
+    "count": 6,
+    "years": [
+      2006,
+      2010,
+      2014,
+      2018,
+      2022,
+      2026
+    ],
+    "method": "manual-verified"
+  },
+  "POR|BRUNO FERNANDES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|GONCALO RAMOS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|BERNARDO SILVA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|JOAO FELIX": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|JOSE SA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|RENATO VEIGA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|GONCALO INACIO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|JOAO NEVES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|FRANCISCO TRINCAO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|RAFAEL LEAO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|PEDRO NETO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|GONCALO GUEDES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|JOAO CANCELO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|RUBEN NEVES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|RUI SILVA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|VITINHA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|SAMU COSTA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|NUNO MENDES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "POR|FRANCISCO CONCEICAO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|MAHMOUD ABUNADA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|PEDRO MIGUEL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|LUCAS MENDES": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|ISSA LAYE": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|JASSEM GABER": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|ABDULAZIZ HATEM": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|AHMED ALAAELDIN": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|EDMILSON JUNIOR": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|MOHAMMED MUNTARI": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|HASSAN ALHAYDOS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|AKRAM AFIF": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|KARIM BOUDIAF": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|AYOUB ALOUI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|HOMAM AHMED": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|YUSUF ABDURISAG": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|BOUALEM KHOUKHI": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|AHMED ALGANEHI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|SULTAN ALBRAKE": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|ALMOEZ ALI": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|AHMED FATHY": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|SALAH ZAKARIA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|MESHAAL BARSHAM": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|ASSIM MADIBO": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "exact"
+  },
+  "QAT|TAHSIN MOHAMMED": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|ALHASHMI ALHUSSEIN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "QAT|MOHAMED MANAI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|NAWAF ALAQIDI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|ALI MAJRASHI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|ALI LAJAMI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|ABDULELAH ALAMRI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|HASSAN ALTAMBAKTI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|NASSER ALDAWSARI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|MUSAB ALJUWAYR": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|AIMAN YAHYA": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|FERAS ALBRIKAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|SALEM ALDAWSARI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|SALEH ALSHEHRI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|SAUD ABDULHAMID": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|NAWAF BU WASHL": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|HASSAN KADISH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|ABDULLAH ALKHAIBARI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|ZIYAD ALJOHANI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|KHALID ALGHANNAM": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|ALA ALHAJJI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|ABDULLAH ALHAMDDAN": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|SULTAN MANDASH": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|MOHAMMED ALOWAIS": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|AHMED ALKASSAR": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|MOHAMED KANNO": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|MOTEB ALHARBI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|JEHAD THIKRI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "KSA|MOHAMMED ABU ALSHAMAT": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|GUNN Angus": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|HICKEY Aaron": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|ROBERTSON Andy": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|McTOMINAY Scott": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|HANLEY Grant": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|TIERNEY Kieran": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|McGINN John": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|FLETCHER Tyler": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|DYKES Lyndon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|ADAMS Che": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|CHRISTIE Ryan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|KELLY Liam": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|HENDRY Jack": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|STEWART Ross": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|SOUTTAR John": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|HYAM Dominic": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|GANNON-DOAK Ben": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|HIRST George": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|FERGUSON Lewis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|SHANKLAND Lawrence": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|GORDON Craig": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|PATTERSON Nathan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|McLEAN Kenny": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|RALSTON Anthony": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|CURTIS Findlay": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SCO|McKENNA Scott": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|DIOUF Yehvann": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|SARR Mamadou": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|KOULIBALY Kalidou": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|SECK Abdoulaye": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|GUEYE Idrissa Gana": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|CISS Pathe": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|DIAO Assane": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|CAMARA Lamine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|DIENG Bamba": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|MANE Sadio": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|JACKSON Nicolas": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|NDIAYE Cherif": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|NDIAYE Iliman": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|JAKOBS Ismail": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|DIATTA Krepin": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|MENDY Edouard": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|SARR Pape Matar": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|SARR Ismaila": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SEN|NIAKHATE Moussa": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|MBAYE Ibrahim": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|DIARRA Habib": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|NDIAYE Bara Sapoko": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|DIAW Mory": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|MENDY Antoine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|DIOUF El Hadji Malick": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SEN|GUEYE Pape": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "RSA|WILLIAMS Ronwen": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MATULUDI Thabang": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|NDAMANE Khulumani": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MOKOENA Teboho": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MBATHA Thalente": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MODIBA Aubrey": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|APPOLLIS Oswin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MOREMI Tshepang": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|FOSTER Lyle": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MOFOKENG Relebohile": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|ZWANE Themba": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MASEKO Thapelo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|SITHOLE Sphephelo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MBOKAZI Mbekezeli": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|RAYNERS Iqraam": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|CHAINE Sipho": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MAKGOPA Evidence": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|KABINI Samukele": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|SIBISI Nkosinathi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MUDAU Khuliso": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|OKON Ime": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|GOSS Ricardo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|ADAMS Jayden": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|MAKHANYA Olwethu": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|SEBELEBELE Kamogelo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "RSA|CROSS Bradley": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|RAYA David": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|PUBILL Marc": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|GRIMALDO Alex": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|GARCIA Eric": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|LLORENTE Marcos": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|MERINO Mikel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|TORRES Ferran": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|RUIZ Fabian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|GAVI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|OLMO Dani": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|PINO Yeremy": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|PORRO Pedro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|GARCIA Joan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|LAPORTE Aymeric": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|BAENA Alex": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|RODRI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|WILLIAMS Nico": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|ZUBIMENDI Martin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|YAMAL Lamine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|PEDRI": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|OYARZABAL Mikel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|CUBARSI Pau": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|SIMON Unai": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "ESP|CUCURELLA Marc": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|MUNOZ Victor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "ESP|IGLESIAS Borja": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|WIDELL ZETTERSTROM Jacob": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|LAGERBIELKE Gustaf": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|LINDELOF Victor": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SWE|HIEN Isak": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|GUDMUNDSSON Gabriel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|JOHANSSON Herman": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|BERGVALL Lucas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|SVENSSON Daniel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|ISAK Alexander": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|NYGREN Benjamin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|ELANGA Anthony": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|JOHANSSON Viktor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|SEMA Ken": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|EKDAL Hjalmar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|STARFELT Carl": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|KARLSTROM Jesper": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|GYOKERES Viktor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|AYARI Yasin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|SVANBERG Mattias": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|SMITH Eric": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|BERNHARDSSON Alexander": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|ZENELI Besfort": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|NORDFELDT Kristoffer": {
+    "count": 2,
+    "years": [
+      2018,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "SWE|STROUD Elliot": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|NILSSON Gustaf": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SWE|ALI Taha": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|KOBEL Gregor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|MUHEIM Miro": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|WIDMER Silvan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|ELVEDI Nico": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|AKANJI Manuel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|ZAKARIA Denis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|EMBOLO Breel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|FREULER Remo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|MANZAMBI Johan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|XHAKA Granit": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|NDOYE Dan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|MVOGO Yvon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|RODRIGUEZ Ricardo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|JASHARI Ardon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|SOW Djibril": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|FASSNACHT Christian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|VARGAS Ruben": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|COEMERT Eray": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|OKAFOR Noah": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|AEBISCHER Michel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|KELLER Marvin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|RIEDER Fabian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|AMDOUNI Zeki": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|AMENDA Aurele": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|JAQUEZ Luca": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "SUI|ITTEN Cedric": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|CHAMAKH Mouhib": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|ABDI Ali": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "TUN|TALBI Montassar": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "TUN|REKIK Omar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|AROUS Adam": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|BRONN Dylan": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "TUN|ACHOURI Elias": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|SAAD Elias": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|MASTOURI Hazem": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|MEJBRI Hannibal": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "TUN|GHARBI Ismael": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|BEN OUANES Mortadha": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|KHEDIRA Rani": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|AYARI Khalil": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|HADJ MAHMOUD Mohamed": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|DAHMEN Aymen": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "TUN|SKHIRI Ellyes": {
+    "count": 3,
+    "years": [
+      2018,
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "TUN|ELLOUMI Rayan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|CHAOUAT Firas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|VALERY Yan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|BEN HMIDA Mohamed Amine": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|BEN HESSEN Sabri": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|NEFFATI Moutaz": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|CHIKHAOUI Raed": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|SLIMANE Anis": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUN|TOUNEKTI Sebastian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|GUNOK Mert": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|CELIK Zeki": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|DEMIRAL Merih": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|SOYUNCU Caglar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|OZCAN Salih": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|KOKCU Orkun": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|AKTURKOGLU Kerem": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|GULER Arda": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|GUL Deniz": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|CALHANOGLU Hakan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|YILDIZ Kenan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|BAYINDIR Altay": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|ELMALI Eren": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|BARDAKCI Abdulkerim": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|KABAK Ozan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|YUKSEK Ismail": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|KAHVECI Irfan Can": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|MULDUR Mert": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|AKGUN Yunus": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|KADIOGLU Ferdi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|YILMAZ Baris Alper": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|AYHAN Kaan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|CAKIR Ugurcan": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|AYDIN Oguz": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|AKAYDIN Samet": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "TUR|UZUN Can": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|ROCHET Sergio": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|GIMENEZ Jose Maria": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|CACERES Sebastian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|ARAUJO Ronald": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|UGARTE Manuel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|BENTANCUR Rodrigo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|DE LA CRUZ Nicolas": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|VALVERDE Federico": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|NUNEZ Darwin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|DE ARRASCAETA Giorgian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|PELLISTRI Facundo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|MELE Santiago": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|VARELA Guillermo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|CANOBBIO Agustin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|MARTINEZ Emiliano": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|OLIVERA Mathias": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|VINA Matias": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|RODRIGUEZ Brian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|AGUIRRE Rodrigo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|ARAUJO Maxi": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|VINAS Federico": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|PIQUEREZ Joaquin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|MUSLERA Fernando": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|BUENO Santiago": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|SANABRIA Juan Manuel": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "URU|ZALAZAR Rodrigo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|TURNER Matt": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|DEST Sergino": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|RICHARDS Chris": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|ADAMS Tyler": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|ROBINSON Antonee": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|TRUSTY Auston": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|REYNA Giovanni": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|McKENNIE Weston": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|PEPI Ricardo": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|PULISIC Christian": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|AARONSON Brenden": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|ROBINSON Miles": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|REAM Tim": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|BERHALTER Sebastian": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|ROLDAN Cristian": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|FREEMAN Alex": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|TILLMAN Malik": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|ARFSTEN Max": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|WRIGHT Haji": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|BALOGUN Folarin": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|WEAH Timothy": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|McKENZIE Mark": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|SCALLY Joe": {
+    "count": 2,
+    "years": [
+      2022,
+      2026
+    ],
+    "method": "fuzzy"
+  },
+  "USA|FREESE Matt": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|BRADY Chris": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "USA|ZENDEJAS Alex": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|YUSUPOV Utkir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|KHUSANOV Abdukodir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|ALIJONOV Khojiakbar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|SAYFIEV Farrukh": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|ASHURMATOV Rustam": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|MOZGOVOY Akmal": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|SHUKUROV Otabek": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|ISKANDEROV Jamshid": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|XAMROBEKOV Odiljon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|JIYANOV Ruslanbek": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|URUNOV Oston": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|NEMATOV Abduvohid": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|NASRULLAEV Sherzod": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|SHOMURODOV Eldor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|ESHMURODOV Umar": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|ERGASHEV Botirali": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|KHAMDAMOV Dostonbek": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|ABDULLAEV Abdulla": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|GANIEV Azizjon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|AMONOV Azizbek": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|SERGEEV Igor": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|FAYZULLAEV Abbosbek": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|ESANOV Sherzod": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|KARIMOV Behruzjon": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|ULMASALIYEV Avazbek": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  },
+  "UZB|UROZOV Jakhongir": {
+    "count": 1,
+    "years": [
+      2026
+    ],
+    "method": "2026-only"
+  }
+}

@@ -1,0 +1,1562 @@
+{
+  "version": "v2.20",
+  "snapshot_taiwan": "2026-07-20T08:00:00+08:00",
+  "scope": "All 104 matches completed; Spain champions",
+  "summary": {
+    "teams": 48,
+    "matches_total": 104,
+    "matches_completed": 104,
+    "matches_live": 0,
+    "completed_goals": 308,
+    "third_place": {
+      "team": "ENG",
+      "result": "ENG 6-4 FRA"
+    },
+    "fourth_place": "FRA",
+    "final": {
+      "match_id": "M104",
+      "champion": "ESP",
+      "runner_up": "ARG",
+      "score": "ESP 1-0 ARG",
+      "after_extra_time": true,
+      "winning_goal": "Ferran Torres 106′"
+    },
+    "champion": "ESP",
+    "runner_up": "ARG"
+  },
+  "top_scorers_snapshot": [
+    {
+      "player": "Kylian Mbappé",
+      "team": "FRA",
+      "goals": 10
+    },
+    {
+      "player": "Lionel Messi",
+      "team": "ARG",
+      "goals": 8
+    },
+    {
+      "player": "Jude Bellingham",
+      "team": "ENG",
+      "goals": 7
+    }
+  ],
+  "world_cup_career_goals_snapshot": [
+    {
+      "player": "Kylian Mbappé",
+      "goals": 22
+    },
+    {
+      "player": "Lionel Messi",
+      "goals": 21
+    }
+  ],
+  "teams": [
+    {
+      "code": "MEX",
+      "team_zh": "墨西哥",
+      "team_en": "Mexico",
+      "group": "A",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 3,
+        "draws": 0,
+        "losses": 0,
+        "goals_for": 6,
+        "goals_against": 0,
+        "points": 9,
+        "goal_difference": 6
+      },
+      "tournament_record_completed_matches": {
+        "played": 5,
+        "wins": 4,
+        "draws": 0,
+        "losses": 1,
+        "goals_for": 10,
+        "goals_against": 3,
+        "goal_difference": 7
+      },
+      "stage_key": "R16",
+      "best_stage": "16強",
+      "latest_match_id": "M092",
+      "latest_match_stage": "16強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "RSA",
+      "team_zh": "南非",
+      "team_en": "South Africa",
+      "group": "A",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 2,
+        "goals_against": 3,
+        "points": 4,
+        "goal_difference": -1
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 4,
+        "goal_difference": -2
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M073",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "KOR",
+      "team_zh": "南韓",
+      "team_en": "South Korea",
+      "group": "A",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 3,
+        "points": 3,
+        "goal_difference": -1
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 3,
+        "goal_difference": -1
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M054",
+      "latest_match_stage": "小組賽 A組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "CZE",
+      "team_zh": "捷克",
+      "team_en": "Czechia",
+      "group": "A",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 6,
+        "points": 1,
+        "goal_difference": -4
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 6,
+        "goal_difference": -4
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M053",
+      "latest_match_stage": "小組賽 A組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "CAN",
+      "team_zh": "加拿大",
+      "team_en": "Canada",
+      "group": "B",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 8,
+        "goals_against": 3,
+        "points": 4,
+        "goal_difference": 5
+      },
+      "tournament_record_completed_matches": {
+        "played": 5,
+        "wins": 2,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 9,
+        "goals_against": 6,
+        "goal_difference": 3
+      },
+      "stage_key": "R16",
+      "best_stage": "16強",
+      "latest_match_id": "M089",
+      "latest_match_stage": "16強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "BIH",
+      "team_zh": "波士尼亞與赫塞哥維納",
+      "team_en": "Bosnia and Herzegovina",
+      "group": "B",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 5,
+        "goals_against": 6,
+        "points": 4,
+        "goal_difference": -1
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 5,
+        "goals_against": 8,
+        "goal_difference": -3
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M082",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "QAT",
+      "team_zh": "卡達",
+      "team_en": "Qatar",
+      "group": "B",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 10,
+        "points": 1,
+        "goal_difference": -8
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 10,
+        "goal_difference": -8
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M050",
+      "latest_match_stage": "小組賽 B組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "SUI",
+      "team_zh": "瑞士",
+      "team_en": "Switzerland",
+      "group": "B",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 7,
+        "goals_against": 3,
+        "points": 7,
+        "goal_difference": 4
+      },
+      "tournament_record_completed_matches": {
+        "played": 6,
+        "wins": 3,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 10,
+        "goals_against": 6,
+        "goal_difference": 4
+      },
+      "stage_key": "QF",
+      "best_stage": "八強",
+      "latest_match_id": "M100",
+      "latest_match_stage": "八強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "BRA",
+      "team_zh": "巴西",
+      "team_en": "Brazil",
+      "group": "C",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 7,
+        "goals_against": 1,
+        "points": 7,
+        "goal_difference": 6
+      },
+      "tournament_record_completed_matches": {
+        "played": 5,
+        "wins": 3,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 10,
+        "goals_against": 4,
+        "goal_difference": 6
+      },
+      "stage_key": "R16",
+      "best_stage": "16強",
+      "latest_match_id": "M091",
+      "latest_match_stage": "16強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "MAR",
+      "team_zh": "摩洛哥",
+      "team_en": "Morocco",
+      "group": "C",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 6,
+        "goals_against": 3,
+        "points": 7,
+        "goal_difference": 3
+      },
+      "tournament_record_completed_matches": {
+        "played": 6,
+        "wins": 3,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 10,
+        "goals_against": 6,
+        "goal_difference": 4
+      },
+      "stage_key": "QF",
+      "best_stage": "八強",
+      "latest_match_id": "M097",
+      "latest_match_stage": "八強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "HAI",
+      "team_zh": "海地",
+      "team_en": "Haiti",
+      "group": "C",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 2,
+        "goals_against": 8,
+        "points": 0,
+        "goal_difference": -6
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 2,
+        "goals_against": 8,
+        "goal_difference": -6
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M052",
+      "latest_match_stage": "小組賽 C組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "SCO",
+      "team_zh": "蘇格蘭",
+      "team_en": "Scotland",
+      "group": "C",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 1,
+        "goals_against": 4,
+        "points": 3,
+        "goal_difference": -3
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 1,
+        "goals_against": 4,
+        "goal_difference": -3
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M051",
+      "latest_match_stage": "小組賽 C組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "USA",
+      "team_zh": "美國",
+      "team_en": "United States",
+      "group": "D",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "goals_for": 8,
+        "goals_against": 4,
+        "points": 6,
+        "goal_difference": 4
+      },
+      "tournament_record_completed_matches": {
+        "played": 5,
+        "wins": 3,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 11,
+        "goals_against": 8,
+        "goal_difference": 3
+      },
+      "stage_key": "R16",
+      "best_stage": "16強",
+      "latest_match_id": "M094",
+      "latest_match_stage": "16強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "AUS",
+      "team_zh": "澳洲",
+      "team_en": "Australia",
+      "group": "D",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 2,
+        "goals_against": 2,
+        "points": 4,
+        "goal_difference": 0
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 3,
+        "goals_against": 3,
+        "goal_difference": 0
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M086",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "PAR",
+      "team_zh": "巴拉圭",
+      "team_en": "Paraguay",
+      "group": "D",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 2,
+        "goals_against": 4,
+        "points": 4,
+        "goal_difference": -2
+      },
+      "tournament_record_completed_matches": {
+        "played": 5,
+        "wins": 1,
+        "draws": 2,
+        "losses": 2,
+        "goals_for": 3,
+        "goals_against": 6,
+        "goal_difference": -3
+      },
+      "stage_key": "R16",
+      "best_stage": "16強",
+      "latest_match_id": "M090",
+      "latest_match_stage": "16強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "TUR",
+      "team_zh": "土耳其",
+      "team_en": "Türkiye",
+      "group": "D",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 3,
+        "goals_against": 5,
+        "points": 3,
+        "goal_difference": -2
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 3,
+        "goals_against": 5,
+        "goal_difference": -2
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M059",
+      "latest_match_stage": "小組賽 D組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "GER",
+      "team_zh": "德國",
+      "team_en": "Germany",
+      "group": "E",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "goals_for": 10,
+        "goals_against": 4,
+        "points": 6,
+        "goal_difference": 6
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 2,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 11,
+        "goals_against": 5,
+        "goal_difference": 6
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M075",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "CUW",
+      "team_zh": "古拉索",
+      "team_en": "Curaçao",
+      "group": "E",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 1,
+        "goals_against": 9,
+        "points": 1,
+        "goal_difference": -8
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 1,
+        "goals_against": 9,
+        "goal_difference": -8
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M056",
+      "latest_match_stage": "小組賽 E組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "CIV",
+      "team_zh": "象牙海岸",
+      "team_en": "Côte d’Ivoire",
+      "group": "E",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "goals_for": 4,
+        "goals_against": 2,
+        "points": 6,
+        "goal_difference": 2
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 5,
+        "goals_against": 4,
+        "goal_difference": 1
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M077",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "ECU",
+      "team_zh": "厄瓜多",
+      "team_en": "Ecuador",
+      "group": "E",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 2,
+        "goals_against": 2,
+        "points": 4,
+        "goal_difference": 0
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 4,
+        "goal_difference": -2
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M079",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "NED",
+      "team_zh": "荷蘭",
+      "team_en": "Netherlands",
+      "group": "F",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 10,
+        "goals_against": 4,
+        "points": 7,
+        "goal_difference": 6
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 2,
+        "draws": 2,
+        "losses": 0,
+        "goals_for": 11,
+        "goals_against": 5,
+        "goal_difference": 6
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M076",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "SWE",
+      "team_zh": "瑞典",
+      "team_en": "Sweden",
+      "group": "F",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 7,
+        "goals_against": 7,
+        "points": 4,
+        "goal_difference": 0
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 7,
+        "goals_against": 10,
+        "goal_difference": -3
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M078",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "JPN",
+      "team_zh": "日本",
+      "team_en": "Japan",
+      "group": "F",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 2,
+        "losses": 0,
+        "goals_for": 7,
+        "goals_against": 3,
+        "points": 5,
+        "goal_difference": 4
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 8,
+        "goals_against": 5,
+        "goal_difference": 3
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M074",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "TUN",
+      "team_zh": "突尼西亞",
+      "team_en": "Tunisia",
+      "group": "F",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 2,
+        "goals_against": 12,
+        "points": 0,
+        "goal_difference": -10
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 2,
+        "goals_against": 12,
+        "goal_difference": -10
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M057",
+      "latest_match_stage": "小組賽 F組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "BEL",
+      "team_zh": "比利時",
+      "team_en": "Belgium",
+      "group": "G",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 2,
+        "losses": 0,
+        "goals_for": 6,
+        "goals_against": 2,
+        "points": 5,
+        "goal_difference": 4
+      },
+      "tournament_record_completed_matches": {
+        "played": 6,
+        "wins": 3,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 14,
+        "goals_against": 7,
+        "goal_difference": 7
+      },
+      "stage_key": "QF",
+      "best_stage": "八強",
+      "latest_match_id": "M098",
+      "latest_match_stage": "八強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "EGY",
+      "team_zh": "埃及",
+      "team_en": "Egypt",
+      "group": "G",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 2,
+        "losses": 0,
+        "goals_for": 5,
+        "goals_against": 3,
+        "points": 5,
+        "goal_difference": 2
+      },
+      "tournament_record_completed_matches": {
+        "played": 5,
+        "wins": 1,
+        "draws": 3,
+        "losses": 1,
+        "goals_for": 8,
+        "goals_against": 7,
+        "goal_difference": 1
+      },
+      "stage_key": "R16",
+      "best_stage": "16強",
+      "latest_match_id": "M095",
+      "latest_match_stage": "16強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "IRN",
+      "team_zh": "伊朗",
+      "team_en": "Iran",
+      "group": "G",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 3,
+        "losses": 0,
+        "goals_for": 3,
+        "goals_against": 3,
+        "points": 3,
+        "goal_difference": 0
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 3,
+        "losses": 0,
+        "goals_for": 3,
+        "goals_against": 3,
+        "goal_difference": 0
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M066",
+      "latest_match_stage": "小組賽 G組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "NZL",
+      "team_zh": "紐西蘭",
+      "team_en": "New Zealand",
+      "group": "G",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 4,
+        "goals_against": 10,
+        "points": 1,
+        "goal_difference": -6
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 4,
+        "goals_against": 10,
+        "goal_difference": -6
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M065",
+      "latest_match_stage": "小組賽 G組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "ESP",
+      "team_zh": "西班牙",
+      "team_en": "Spain",
+      "group": "H",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 5,
+        "goals_against": 0,
+        "points": 7,
+        "goal_difference": 5
+      },
+      "tournament_record_completed_matches": {
+        "played": 8,
+        "wins": 7,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 14,
+        "goals_against": 1,
+        "goal_difference": 13
+      },
+      "stage_key": "FINAL",
+      "best_stage": "冠軍",
+      "latest_match_id": "M104",
+      "latest_match_stage": "冠軍戰",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "CPV",
+      "team_zh": "維德角",
+      "team_en": "Cape Verde",
+      "group": "H",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 3,
+        "losses": 0,
+        "goals_for": 2,
+        "goals_against": 2,
+        "points": 3,
+        "goal_difference": 0
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 0,
+        "draws": 3,
+        "losses": 1,
+        "goals_for": 4,
+        "goals_against": 5,
+        "goal_difference": -1
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M087",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "KSA",
+      "team_zh": "沙烏地阿拉伯",
+      "team_en": "Saudi Arabia",
+      "group": "H",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 1,
+        "goals_against": 5,
+        "points": 2,
+        "goal_difference": -4
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 1,
+        "goals_against": 5,
+        "goal_difference": -4
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M064",
+      "latest_match_stage": "小組賽 H組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "URU",
+      "team_zh": "烏拉圭",
+      "team_en": "Uruguay",
+      "group": "H",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 3,
+        "goals_against": 4,
+        "points": 2,
+        "goal_difference": -1
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 3,
+        "goals_against": 4,
+        "goal_difference": -1
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M063",
+      "latest_match_stage": "小組賽 H組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "FRA",
+      "team_zh": "法國",
+      "team_en": "France",
+      "group": "I",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 3,
+        "draws": 0,
+        "losses": 0,
+        "goals_for": 10,
+        "goals_against": 2,
+        "points": 9,
+        "goal_difference": 8
+      },
+      "tournament_record_completed_matches": {
+        "played": 8,
+        "wins": 6,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 20,
+        "goals_against": 10,
+        "goal_difference": 10
+      },
+      "stage_key": "THIRD",
+      "best_stage": "第4名",
+      "latest_match_id": "M103",
+      "latest_match_stage": "季軍戰",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "SEN",
+      "team_zh": "塞內加爾",
+      "team_en": "Senegal",
+      "group": "I",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 8,
+        "goals_against": 6,
+        "points": 3,
+        "goal_difference": 2
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 10,
+        "goals_against": 9,
+        "goal_difference": 1
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M081",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "IRQ",
+      "team_zh": "伊拉克",
+      "team_en": "Iraq",
+      "group": "I",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 1,
+        "goals_against": 12,
+        "points": 0,
+        "goal_difference": -11
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 1,
+        "goals_against": 12,
+        "goal_difference": -11
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M062",
+      "latest_match_stage": "小組賽 I組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "NOR",
+      "team_zh": "挪威",
+      "team_en": "Norway",
+      "group": "I",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "goals_for": 8,
+        "goals_against": 7,
+        "points": 6,
+        "goal_difference": 1
+      },
+      "tournament_record_completed_matches": {
+        "played": 6,
+        "wins": 4,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 13,
+        "goals_against": 11,
+        "goal_difference": 2
+      },
+      "stage_key": "QF",
+      "best_stage": "八強",
+      "latest_match_id": "M099",
+      "latest_match_stage": "八強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "ARG",
+      "team_zh": "阿根廷",
+      "team_en": "Argentina",
+      "group": "J",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 3,
+        "draws": 0,
+        "losses": 0,
+        "goals_for": 8,
+        "goals_against": 1,
+        "points": 9,
+        "goal_difference": 7
+      },
+      "tournament_record_completed_matches": {
+        "played": 8,
+        "wins": 7,
+        "draws": 0,
+        "losses": 1,
+        "goals_for": 19,
+        "goals_against": 8,
+        "goal_difference": 11
+      },
+      "stage_key": "FINAL",
+      "best_stage": "亞軍",
+      "latest_match_id": "M104",
+      "latest_match_stage": "冠軍戰",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "AUT",
+      "team_zh": "奧地利",
+      "team_en": "Austria",
+      "group": "J",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 6,
+        "goals_against": 6,
+        "points": 4,
+        "goal_difference": 0
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 6,
+        "goals_against": 9,
+        "goal_difference": -3
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M083",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "ALG",
+      "team_zh": "阿爾及利亞",
+      "team_en": "Algeria",
+      "group": "J",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 5,
+        "goals_against": 7,
+        "points": 4,
+        "goal_difference": -2
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 5,
+        "goals_against": 9,
+        "goal_difference": -4
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M085",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "JOR",
+      "team_zh": "約旦",
+      "team_en": "Jordan",
+      "group": "J",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 3,
+        "goals_against": 8,
+        "points": 0,
+        "goal_difference": -5
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 3,
+        "goals_against": 8,
+        "goal_difference": -5
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M071",
+      "latest_match_stage": "小組賽 J組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "POR",
+      "team_zh": "葡萄牙",
+      "team_en": "Portugal",
+      "group": "K",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 2,
+        "losses": 0,
+        "goals_for": 6,
+        "goals_against": 1,
+        "points": 5,
+        "goal_difference": 5
+      },
+      "tournament_record_completed_matches": {
+        "played": 5,
+        "wins": 2,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 8,
+        "goals_against": 3,
+        "goal_difference": 5
+      },
+      "stage_key": "R16",
+      "best_stage": "16強",
+      "latest_match_id": "M093",
+      "latest_match_stage": "16強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "COD",
+      "team_zh": "剛果民主共和國",
+      "team_en": "DR Congo",
+      "group": "K",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 4,
+        "goals_against": 3,
+        "points": 4,
+        "goal_difference": 1
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 5,
+        "goals_against": 5,
+        "goal_difference": 0
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M080",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "UZB",
+      "team_zh": "烏茲別克",
+      "team_en": "Uzbekistan",
+      "group": "K",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 2,
+        "goals_against": 11,
+        "points": 0,
+        "goal_difference": -9
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 2,
+        "goals_against": 11,
+        "goal_difference": -9
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M070",
+      "latest_match_stage": "小組賽 K組",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "COL",
+      "team_zh": "哥倫比亞",
+      "team_en": "Colombia",
+      "group": "K",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 4,
+        "goals_against": 1,
+        "points": 7,
+        "goal_difference": 3
+      },
+      "tournament_record_completed_matches": {
+        "played": 5,
+        "wins": 3,
+        "draws": 2,
+        "losses": 0,
+        "goals_for": 5,
+        "goals_against": 1,
+        "goal_difference": 4
+      },
+      "stage_key": "R16",
+      "best_stage": "16強",
+      "latest_match_id": "M096",
+      "latest_match_stage": "16強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "ENG",
+      "team_zh": "英格蘭",
+      "team_en": "England",
+      "group": "L",
+      "group_rank": 1,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 6,
+        "goals_against": 2,
+        "points": 7,
+        "goal_difference": 4
+      },
+      "tournament_record_completed_matches": {
+        "played": 8,
+        "wins": 6,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 20,
+        "goals_against": 12,
+        "goal_difference": 8
+      },
+      "stage_key": "THIRD",
+      "best_stage": "季軍",
+      "latest_match_id": "M103",
+      "latest_match_stage": "季軍戰",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "CRO",
+      "team_zh": "克羅埃西亞",
+      "team_en": "Croatia",
+      "group": "L",
+      "group_rank": 2,
+      "group_record": {
+        "played": 3,
+        "wins": 2,
+        "draws": 0,
+        "losses": 1,
+        "goals_for": 5,
+        "goals_against": 5,
+        "points": 6,
+        "goal_difference": 0
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 2,
+        "draws": 0,
+        "losses": 2,
+        "goals_for": 6,
+        "goals_against": 7,
+        "goal_difference": -1
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M084",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "GHA",
+      "team_zh": "迦納",
+      "team_en": "Ghana",
+      "group": "L",
+      "group_rank": 3,
+      "group_record": {
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 2,
+        "goals_against": 2,
+        "points": 4,
+        "goal_difference": 0
+      },
+      "tournament_record_completed_matches": {
+        "played": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 2,
+        "goals_against": 3,
+        "goal_difference": -1
+      },
+      "stage_key": "R32",
+      "best_stage": "32強",
+      "latest_match_id": "M088",
+      "latest_match_stage": "32強",
+      "latest_match_status": "complete"
+    },
+    {
+      "code": "PAN",
+      "team_zh": "巴拿馬",
+      "team_en": "Panama",
+      "group": "L",
+      "group_rank": 4,
+      "group_record": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 0,
+        "goals_against": 4,
+        "points": 0,
+        "goal_difference": -4
+      },
+      "tournament_record_completed_matches": {
+        "played": 3,
+        "wins": 0,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 0,
+        "goals_against": 4,
+        "goal_difference": -4
+      },
+      "stage_key": "GROUP",
+      "best_stage": "小組賽",
+      "latest_match_id": "M067",
+      "latest_match_stage": "小組賽 L組",
+      "latest_match_status": "complete"
+    }
+  ],
+  "sources": [
+    {
+      "name": "FIFA Match Centre",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543"
+    },
+    {
+      "name": "FIFA Standings",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings"
+    },
+    {
+      "name": "Reuters third-place report",
+      "url": "https://www.reuters.com/sports/soccer/england-survive-france-fightback-secure-third-place-miami-goalfest-2026-07-18/"
+    },
+    {
+      "name": "AP final live report",
+      "url": "https://apnews.com/article/argentina-spain-world-cup-final-score-messi-fccc26aa12d9226e63d06b601b770617"
+    }
+  ]
+}

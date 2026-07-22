@@ -1,0 +1,372 @@
+{
+  "GER": [
+    {
+      "name": "Joshua Kimmich",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "ENG": [
+    {
+      "name": "Harry Kane",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "POR": [
+    {
+      "name": "Cristiano Ronaldo",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "ESP": [
+    {
+      "name": "Rodri",
+      "note": "本屆隊長紀錄",
+      "nameZh": "羅德里",
+      "fullName": "Rodrigo Hernández Cascante"
+    }
+  ],
+  "FRA": [
+    {
+      "name": "Kylian Mbappé",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "NED": [
+    {
+      "name": "Virgil van Dijk",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "SCO": [
+    {
+      "name": "Andrew Robertson",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "TUR": [
+    {
+      "name": "Hakan Çalhanoğlu",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Zeki Çelik",
+      "note": "曾任隊長"
+    },
+    {
+      "name": "Çağlar Söyüncü",
+      "note": "曾任隊長"
+    }
+  ],
+  "BEL": [
+    {
+      "name": "Youri Tielemans",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "note": "曾任隊長"
+    }
+  ],
+  "AUT": [
+    {
+      "name": "David Alaba",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "SUI": [
+    {
+      "name": "Granit Xhaka",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "AUS": [
+    {
+      "name": "Mathew Ryan",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Harry Souttar",
+      "note": "曾任隊長"
+    }
+  ],
+  "JPN": [
+    {
+      "name": "Ko Itakura",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Ritsu Doan",
+      "note": "曾任隊長"
+    }
+  ],
+  "ARG": [
+    {
+      "name": "Lionel Messi",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Nicolás Otamendi",
+      "note": "曾任隊長"
+    }
+  ],
+  "BRA": [
+    {
+      "name": "Marquinhos",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "NOR": [
+    {
+      "name": "Martin Ødegaard",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "GHA": [
+    {
+      "name": "Jordan Ayew",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "CZE": [
+    {
+      "name": "Ladislav Krejci",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "BIH": [
+    {
+      "name": "Edin Dzeko",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Sead Kolasinac",
+      "note": "曾任隊長"
+    }
+  ],
+  "URU": [
+    {
+      "name": "Federico Valverde",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "SEN": [
+    {
+      "name": "Kalidou Koulibaly",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Idrissa Gueye",
+      "note": "曾任隊長"
+    }
+  ],
+  "USA": [
+    {
+      "name": "Tim Ream",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Weston McKennie",
+      "note": "曾任隊長"
+    }
+  ],
+  "CAN": [
+    {
+      "name": "Alphonso Davies",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Stephen Eustaquio",
+      "note": "曾任隊長"
+    },
+    {
+      "name": "Jonathan David",
+      "note": "曾任隊長"
+    }
+  ],
+  "CRO": [
+    {
+      "name": "Luka Modrić",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "SWE": [
+    {
+      "name": "Victor Lindelöf",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "IRQ": [
+    {
+      "name": "Jalal Hassan",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Aymen Hussein",
+      "note": "曾任隊長"
+    },
+    {
+      "name": "Ibrahim Bayesh",
+      "note": "曾任隊長"
+    }
+  ],
+  "UZB": [
+    {
+      "name": "Eldor Shomurodov",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "MAR": [
+    {
+      "name": "Achraf Hakimi",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "PAN": [
+    {
+      "name": "Aníbal Godoy",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Yoel Bárcenas",
+      "note": "曾任隊長"
+    }
+  ],
+  "PAR": [
+    {
+      "name": "Gustavo Gómez",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "IRN": [
+    {
+      "name": "Ehsan Hajsafi",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Mehdi Taremi",
+      "note": "曾任隊長"
+    }
+  ],
+  "KOR": [
+    {
+      "name": "Heung-min Son",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Min-jae Kim",
+      "note": "曾任隊長"
+    }
+  ],
+  "CIV": [
+    {
+      "name": "Franck Kessié",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "ALG": [
+    {
+      "name": "Aïssa Mandi",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "note": "曾任隊長"
+    }
+  ],
+  "TUN": [
+    {
+      "name": "Ellyes Skhiri",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "EGY": [
+    {
+      "name": "Mohamed Salah",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "RSA": [
+    {
+      "name": "Ronwen Williams",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "KSA": [
+    {
+      "name": "Salem Al-Dawsari",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "COL": [
+    {
+      "name": "James Rodríguez",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "COD": [
+    {
+      "name": "Chancel Mbemba",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "CPV": [
+    {
+      "name": "Ryan Mendes",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "ECU": [
+    {
+      "name": "Moisés Caicedo",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Enner Valencia",
+      "note": "曾任隊長"
+    }
+  ],
+  "MEX": [
+    {
+      "name": "Edson Álvarez",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "César Montes",
+      "note": "曾任隊長"
+    }
+  ],
+  "NZL": [
+    {
+      "name": "Chris Wood",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "HAI": [
+    {
+      "name": "Johny Placide",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "QAT": [
+    {
+      "name": "Hassan Al-Haydos",
+      "note": "本屆隊長紀錄"
+    },
+    {
+      "name": "Boualem Khoukhi",
+      "note": "曾任隊長"
+    }
+  ],
+  "JOR": [
+    {
+      "name": "Ehsan Haddad",
+      "note": "本屆隊長紀錄"
+    }
+  ],
+  "CUW": [
+    {
+      "name": "Leandro Bacuna",
+      "note": "本屆隊長紀錄"
+    }
+  ]
+}

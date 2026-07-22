@@ -1,0 +1,290 @@
+{
+  "ALG": {
+    "name": "PETKOVIC Vladimir",
+    "firstName": "Vladimir",
+    "lastName": "PETKOVIĆ",
+    "nationality": "Switzerland"
+  },
+  "ARG": {
+    "name": "SCALONI Lionel",
+    "firstName": "Lionel Sebastián",
+    "lastName": "SCALONI",
+    "nationality": "Argentina"
+  },
+  "AUS": {
+    "name": "POPOVIC Tony",
+    "firstName": "Tony",
+    "lastName": "POPOVIC",
+    "nationality": "Australia"
+  },
+  "AUT": {
+    "name": "RANGNICK Ralf",
+    "firstName": "Ralf Dietrich",
+    "lastName": "RANGNICK",
+    "nationality": "Germany"
+  },
+  "BEL": {
+    "name": "GARCIA Rudi",
+    "firstName": "Rudi José",
+    "lastName": "GARCIA",
+    "nationality": "France"
+  },
+  "BIH": {
+    "name": "BARBAREZ Sergej",
+    "firstName": "Sergej",
+    "lastName": "BARBAREZ",
+    "nationality": "Bosnia And Herzegovina"
+  },
+  "BRA": {
+    "name": "ANCELOTTI Carlo",
+    "firstName": "Carlo",
+    "lastName": "ANCELOTTI",
+    "nationality": "Italy"
+  },
+  "CPV": {
+    "name": "BUBISTA",
+    "firstName": "Pedro",
+    "lastName": "LEITÃO BRITO",
+    "nationality": "Cabo Verde"
+  },
+  "CAN": {
+    "name": "MARSCH Jesse",
+    "firstName": "Jesse Alan",
+    "lastName": "MARSCH",
+    "nationality": "USA"
+  },
+  "COL": {
+    "name": "LORENZO Nestor",
+    "firstName": "Nestor Gabriel",
+    "lastName": "LORENZO",
+    "nationality": "Argentina"
+  },
+  "COD": {
+    "name": "DESABRE Sebastien",
+    "firstName": "Sebastien Serge Louis",
+    "lastName": "DESABRE",
+    "nationality": "France"
+  },
+  "CIV": {
+    "name": "FAE Emerse",
+    "firstName": "Emerse",
+    "lastName": "FAE",
+    "nationality": "Côte D'Ivoire"
+  },
+  "CRO": {
+    "name": "DALIC Zlatko",
+    "firstName": "Zlatko",
+    "lastName": "DALIĆ",
+    "nationality": "Croatia"
+  },
+  "CUW": {
+    "name": "ADVOCAAT Dick",
+    "firstName": "Dirk Nicolaas",
+    "lastName": "ADVOCAAT",
+    "nationality": "Netherlands"
+  },
+  "CZE": {
+    "name": "KOUBEK Miroslav",
+    "firstName": "Miroslav",
+    "lastName": "KOUBEK",
+    "nationality": "Czech Republic"
+  },
+  "ECU": {
+    "name": "BECCACECE Sebastian",
+    "firstName": "Sebastián Andrés",
+    "lastName": "BECCACECE",
+    "nationality": "Argentina"
+  },
+  "EGY": {
+    "name": "HOSSAM HASSAN",
+    "firstName": "Hossam Hassan Hassanein",
+    "lastName": "HASSAN",
+    "nationality": "Egypt"
+  },
+  "ENG": {
+    "name": "TUCHEL Thomas",
+    "firstName": "Thomas",
+    "lastName": "TUCHEL",
+    "nationality": "Germany"
+  },
+  "FRA": {
+    "name": "DESCHAMPS Didier",
+    "firstName": "Didier Claude",
+    "lastName": "DESCHAMPS",
+    "nationality": "France"
+  },
+  "GER": {
+    "name": "NAGELSMANN Julian",
+    "firstName": "Julian",
+    "lastName": "NAGELSMANN",
+    "nationality": "Germany"
+  },
+  "GHA": {
+    "name": "CARLOS QUEIROZ",
+    "firstName": "Carlos Manuel",
+    "lastName": "BRITO LEAL DE QUEIROZ",
+    "nationality": "Portugal"
+  },
+  "HAI": {
+    "name": "MIGNE Sebastien",
+    "firstName": "Sébastien Bernard Henri C",
+    "lastName": "MIGNÉ",
+    "nationality": "France"
+  },
+  "IRN": {
+    "name": "GHALEHNOY Amir",
+    "firstName": "Ardeshir",
+    "lastName": "GHALEHNOY",
+    "nationality": "IR Iran"
+  },
+  "IRQ": {
+    "name": "ARNOLD Graham",
+    "firstName": "Graham James",
+    "lastName": "ARNOLD",
+    "nationality": "Australia"
+  },
+  "JPN": {
+    "name": "MORIYASU Hajime",
+    "firstName": "Hajime",
+    "lastName": "MORIYASU",
+    "nationality": "Japan"
+  },
+  "JOR": {
+    "name": "SELLAMI Jamal",
+    "firstName": "Jamal",
+    "lastName": "SELLAMI",
+    "nationality": "Morocco"
+  },
+  "KOR": {
+    "name": "HONG Myungbo",
+    "firstName": "Myung Bo",
+    "lastName": "HONG",
+    "nationality": "Korea Republic"
+  },
+  "MEX": {
+    "name": "AGUIRRE Javier",
+    "firstName": "Javier",
+    "lastName": "AGUIRRE ONAINDIA",
+    "nationality": "Mexico"
+  },
+  "MAR": {
+    "name": "OUAHBI Mohamed",
+    "firstName": "Mohamed",
+    "lastName": "OUAHBI",
+    "nationality": "Morocco"
+  },
+  "NED": {
+    "name": "KOEMAN Ronald",
+    "firstName": "Ronald",
+    "lastName": "KOEMAN",
+    "nationality": "Netherlands"
+  },
+  "NZL": {
+    "name": "BAZELEY Darren",
+    "firstName": "Darren Shaun",
+    "lastName": "BAZELEY",
+    "nationality": "New Zealand"
+  },
+  "NOR": {
+    "name": "SOLBAKKEN Stale",
+    "firstName": "Ståle",
+    "lastName": "SOLBAKKEN",
+    "nationality": "Norway"
+  },
+  "PAN": {
+    "name": "CHRISTIANSEN Thomas",
+    "firstName": "Thomas",
+    "lastName": "CHRISTIANSEN TARIN",
+    "nationality": "Spain"
+  },
+  "PAR": {
+    "name": "ALFARO Gustavo",
+    "firstName": "Gustavo Julio",
+    "lastName": "ALFARO",
+    "nationality": "Argentina"
+  },
+  "POR": {
+    "name": "MARTINEZ Roberto",
+    "firstName": "Roberto",
+    "lastName": "MARTÍNEZ MONTOLIU",
+    "nationality": "Spain"
+  },
+  "QAT": {
+    "name": "LOPETEGUI Julen",
+    "firstName": "Julian",
+    "lastName": "LOPETEGUI ARGOTE",
+    "nationality": "Spain"
+  },
+  "KSA": {
+    "name": "DONIS Georgios",
+    "firstName": "Georgios",
+    "lastName": "DONIS",
+    "nationality": "Greece"
+  },
+  "SCO": {
+    "name": "CLARKE Steve",
+    "firstName": "Stephen",
+    "lastName": "CLARKE",
+    "nationality": "Scotland"
+  },
+  "SEN": {
+    "name": "THIAW Pape",
+    "firstName": "Pape Bouna",
+    "lastName": "THIAW",
+    "nationality": "Senegal"
+  },
+  "RSA": {
+    "name": "BROOS Hugo",
+    "firstName": "Hugo Henri",
+    "lastName": "BROOS",
+    "nationality": "Belgium"
+  },
+  "ESP": {
+    "name": "DE LA FUENTE Luis",
+    "firstName": "Luis",
+    "lastName": "DE LA FUENTE CASTILLO",
+    "nationality": "Spain"
+  },
+  "SWE": {
+    "name": "POTTER Graham",
+    "firstName": "Graham Stephen",
+    "lastName": "POTTER",
+    "nationality": "England"
+  },
+  "SUI": {
+    "name": "YAKIN Murat",
+    "firstName": "Murat",
+    "lastName": "YAKIN",
+    "nationality": "Switzerland"
+  },
+  "TUN": {
+    "name": "RENARD Herve",
+    "firstName": "Hervé Jean-Marie Roger",
+    "lastName": "RENARD",
+    "nationality": "France"
+  },
+  "TUR": {
+    "name": "MONTELLA Vincenzo",
+    "firstName": "Vincenzo",
+    "lastName": "MONTELLA",
+    "nationality": "Italy"
+  },
+  "URU": {
+    "name": "BIELSA Marcelo",
+    "firstName": "Marcelo Alberto",
+    "lastName": "BIELSA",
+    "nationality": "Argentina"
+  },
+  "USA": {
+    "name": "POCHETTINO Mauricio",
+    "firstName": "Mauricio Roberto",
+    "lastName": "POCHETTINO TROSSERO",
+    "nationality": "Argentina"
+  },
+  "UZB": {
+    "name": "CANNAVARO Fabio",
+    "firstName": "Fabio",
+    "lastName": "CANNAVARO",
+    "nationality": "Italy"
+  }
+}
