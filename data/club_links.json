@@ -1,0 +1,1802 @@
+{
+  "1. FC Union Berlin (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "1. FSV Mainz 05 (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "AC Milan (ITA)": {
+    "url": "https://www.acmilan.com/",
+    "source": "manual-official-url"
+  },
+  "AC Omonia (CYP)": {
+    "url": "",
+    "source": ""
+  },
+  "AC Sparta Praha (CZE)": {
+    "url": "",
+    "source": ""
+  },
+  "ACF Fiorentina (ITA)": {
+    "url": "https://www.acffiorentina.com/",
+    "source": "manual-official-url"
+  },
+  "AE Ki sia FC (GRE)": {
+    "url": "",
+    "source": ""
+  },
+  "AEK Athens (GRE)": {
+    "url": "",
+    "source": ""
+  },
+  "AEK Larnaca FC (CYP)": {
+    "url": "",
+    "source": ""
+  },
+  "AEL FC (GRE)": {
+    "url": "",
+    "source": ""
+  },
+  "AEL Limassol (CYP)": {
+    "url": "",
+    "source": ""
+  },
+  "AFC Ajax (NED)": {
+    "url": "https://www.ajax.nl/",
+    "source": "manual-official-url"
+  },
+  "AFC Bournemouth (ENG)": {
+    "url": "https://www.afcb.co.uk/",
+    "source": "manual-official-url"
+  },
+  "AIK Stockholm (SWE)": {
+    "url": "",
+    "source": ""
+  },
+  "AJ Auxerre (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "APOEL FC (CYP)": {
+    "url": "",
+    "source": ""
+  },
+  "AS Monaco (FRA)": {
+    "url": "https://www.asmonaco.com/",
+    "source": "manual-official-url"
+  },
+  "AS Nancy (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "AS Roma (ITA)": {
+    "url": "https://www.asroma.com/",
+    "source": "manual-official-url"
+  },
+  "AS Saint-Etienne (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "ASFAR (MAR)": {
+    "url": "",
+    "source": ""
+  },
+  "AZ Alkmaar (NED)": {
+    "url": "https://www.az.nl/",
+    "source": "manual-official-url"
+  },
+  "Aarhus GF (DEN)": {
+    "url": "",
+    "source": ""
+  },
+  "Abha Club (KSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Ahli FC (KSA)": {
+    "url": "https://www.alahlifc.sa/",
+    "source": "manual-official-url"
+  },
+  "Al Ahly FC (EGY)": {
+    "url": "https://www.alahlyegypt.com/",
+    "source": "manual-official-url"
+  },
+  "Al Ain FC (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Arabi SC (QAT)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Bataeh Club (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Dhafra SCC (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Duhail SC (QAT)": {
+    "url": "https://www.duhailsc.qa/",
+    "source": "manual-official-url"
+  },
+  "Al Ettifaq FC (KSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Faisaly SC (JOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Fateh SC (KSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Fayha FC (KSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Gharafa SC (QAT)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Hilal SC (KSA)": {
+    "url": "https://alhilal.com/",
+    "source": "manual-official-url"
+  },
+  "Al Hussein SC (JOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Ittihad (KSA)": {
+    "url": "https://ittihadclub.sa/",
+    "source": "manual-official-url"
+  },
+  "Al Ittihad Kalba SCC (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Jazira (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Karma SC (IRQ)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Najmah SC (KSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Nasr SC (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Nassr FC (KSA)": {
+    "url": "https://alnassr.sa/",
+    "source": "manual-official-url"
+  },
+  "Al Qadsiah FC (KSA)": {
+    "url": "https://www.alqadsiah.com/",
+    "source": "manual-official-url"
+  },
+  "Al Rayyan SC (QAT)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Sadd SC (QAT)": {
+    "url": "https://al-saddclub.com/",
+    "source": "manual-official-url"
+  },
+  "Al Sailiya SC (QAT)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Shabab FC (KSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Shamal SC (QAT)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Shorta SC (IRQ)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Talaba SC (IRQ)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Ula Saudi FC (KSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Wahda SC (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Wahdat SC (JOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Wakrah SC (QAT)": {
+    "url": "",
+    "source": ""
+  },
+  "Al Zawra'a SC (IRQ)": {
+    "url": "",
+    "source": ""
+  },
+  "Al-Quwa Al-Jawiya (IRQ)": {
+    "url": "",
+    "source": ""
+  },
+  "Alanyaspor (TUR)": {
+    "url": "",
+    "source": ""
+  },
+  "Albirex Niigata (JPN)": {
+    "url": "",
+    "source": ""
+  },
+  "Almere City FC (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "Angers SCO (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "Apollon Limassol (CYP)": {
+    "url": "",
+    "source": ""
+  },
+  "Aris Limassol FC (CYP)": {
+    "url": "",
+    "source": ""
+  },
+  "Arsenal FC (ENG)": {
+    "url": "https://www.arsenal.com/",
+    "source": "manual-official-url"
+  },
+  "Aston Villa FC (ENG)": {
+    "url": "https://www.avfc.co.uk/",
+    "source": "manual-official-url"
+  },
+  "Atalanta Bergamo (ITA)": {
+    "url": "https://www.atalanta.it/",
+    "source": "manual-official-url"
+  },
+  "Athletic Club (ESP)": {
+    "url": "https://www.athletic-club.eus/",
+    "source": "manual-official-url"
+  },
+  "Athletico Paranaense (BRA)": {
+    "url": "",
+    "source": ""
+  },
+  "Atlanta United FC (USA)": {
+    "url": "https://www.atlutd.com/",
+    "source": "manual-official-url"
+  },
+  "Atlas FC (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Atlético De Madrid (ESP)": {
+    "url": "https://www.atleticodemadrid.com/",
+    "source": "manual-official-url"
+  },
+  "Atlético Mineiro (BRA)": {
+    "url": "",
+    "source": ""
+  },
+  "Atlético Nacional (COL)": {
+    "url": "",
+    "source": ""
+  },
+  "Atromitos FC (GRE)": {
+    "url": "",
+    "source": ""
+  },
+  "Auckland FC (NZL)": {
+    "url": "",
+    "source": ""
+  },
+  "Austin FC (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "BSC Young Boys (SUI)": {
+    "url": "https://www.bscyb.ch/",
+    "source": "manual-official-url"
+  },
+  "Baniyas Club (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Barnsley (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Bayer 04 Leverkusen (GER)": {
+    "url": "https://www.bayer04.de/",
+    "source": "manual-official-url"
+  },
+  "Başakşehir FK (TUR)": {
+    "url": "https://ibfk.com.tr/",
+    "source": "manual-official-url"
+  },
+  "Beşiktaş JK (TUR)": {
+    "url": "https://bjk.com.tr/",
+    "source": "manual-official-url"
+  },
+  "Birmingham City FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Bologna FC (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "Borussia Dortmund (GER)": {
+    "url": "https://www.bvb.de/",
+    "source": "manual-official-url"
+  },
+  "Borussia Mönchengladbach (GER)": {
+    "url": "https://www.borussia.de/",
+    "source": "manual-official-url"
+  },
+  "Botafogo (BRA)": {
+    "url": "",
+    "source": ""
+  },
+  "Braintree Town FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Brentford FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Brighton & Hove Albion FC (ENG)": {
+    "url": "https://www.brightonandhovealbion.com/",
+    "source": "manual-official-url"
+  },
+  "Brøndby IF (DEN)": {
+    "url": "",
+    "source": ""
+  },
+  "Burnley FC (ENG)": {
+    "url": "https://www.burnleyfootballclub.com/",
+    "source": "manual-official-url"
+  },
+  "CA Boca Juniors (ARG)": {
+    "url": "https://www.bocajuniors.com.ar/",
+    "source": "manual-official-url"
+  },
+  "CA Huracán (ARG)": {
+    "url": "",
+    "source": ""
+  },
+  "CA Independiente (ARG)": {
+    "url": "https://clubaindependiente.com.ar/",
+    "source": "manual-official-url"
+  },
+  "CA Lanús (ARG)": {
+    "url": "",
+    "source": ""
+  },
+  "CA Osasuna (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "CA River Plate (ARG)": {
+    "url": "https://www.cariverplate.com.ar/",
+    "source": "manual-official-url"
+  },
+  "CA Rosario Central (ARG)": {
+    "url": "",
+    "source": ""
+  },
+  "CA San Lorenzo (ARG)": {
+    "url": "",
+    "source": ""
+  },
+  "CA Talleres (ARG)": {
+    "url": "https://www.clubtalleres.com.ar/",
+    "source": "manual-official-url"
+  },
+  "CA Vélez Sars eld (ARG)": {
+    "url": "",
+    "source": ""
+  },
+  "CD Castellón (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "CD Cobresal (CHI)": {
+    "url": "",
+    "source": ""
+  },
+  "CD Guadalajara (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "CD Marathón (HON)": {
+    "url": "",
+    "source": ""
+  },
+  "CD Plaza Amador (PAN)": {
+    "url": "",
+    "source": ""
+  },
+  "CD Tondela (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "CD Universidad Católica (ECU)": {
+    "url": "",
+    "source": ""
+  },
+  "CD Universidad De Concepción (CHI)": {
+    "url": "",
+    "source": ""
+  },
+  "CF Cruz Azul (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "CF Estrela Da Amadora (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "CF Monterrey (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "CF Pachuca (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "CR Flamengo (BRA)": {
+    "url": "https://www.flamengo.com.br/",
+    "source": "manual-official-url"
+  },
+  "CR Vasco Da Gama (BRA)": {
+    "url": "https://vasco.com.br/",
+    "source": "manual-official-url"
+  },
+  "CS Independiente Rivadavia (ARG)": {
+    "url": "",
+    "source": ""
+  },
+  "CS Sfaxien (TUN)": {
+    "url": "",
+    "source": ""
+  },
+  "Cagliari (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "Casa Pia AC (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "Celtic FC (SCO)": {
+    "url": "https://www.celticfc.com/",
+    "source": "manual-official-url"
+  },
+  "Cercle Brugge (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "Cerro Porteño (PAR)": {
+    "url": "",
+    "source": ""
+  },
+  "Charlotte FC (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "Charlton Athletic FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Chelsea FC (ENG)": {
+    "url": "https://www.chelseafc.com/",
+    "source": "manual-official-url"
+  },
+  "Chicago Fire FC (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "Club Africain (TUN)": {
+    "url": "",
+    "source": ""
+  },
+  "Club América (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Club Brugge (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "Club León (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Club Nacional (URU)": {
+    "url": "",
+    "source": ""
+  },
+  "Club Olimpia (PAR)": {
+    "url": "",
+    "source": ""
+  },
+  "Club Santos Laguna (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Club Tijuana (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Colorado Rapids (USA)": {
+    "url": "https://www.coloradorapids.com/",
+    "source": "manual-official-url"
+  },
+  "Colorado Springs Switchbacks FC (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "Columbus Crew (USA)": {
+    "url": "https://www.columbuscrew.com/",
+    "source": "manual-official-url"
+  },
+  "Como (ITA)": {
+    "url": "https://comofootball.com/",
+    "source": "manual-official-url"
+  },
+  "Coventry City FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Crystal Palace FC (ENG)": {
+    "url": "https://www.cpfc.co.uk/",
+    "source": "manual-official-url"
+  },
+  "Cultural Leonesa (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "Daejeon Hana Citizen FC (KOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Deportivo La Guaira (VEN)": {
+    "url": "",
+    "source": ""
+  },
+  "Deportivo Saprissa (CRC)": {
+    "url": "",
+    "source": ""
+  },
+  "Deportivo Toluca FC (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Derby County FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Dibba FC (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Eintracht Frankfurt (GER)": {
+    "url": "https://profis.eintracht.de/",
+    "source": "manual-official-url"
+  },
+  "El Gouna FC (EGY)": {
+    "url": "",
+    "source": ""
+  },
+  "El Paso Locomotive FC (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "Elche CF (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "Espérance De Tunisie (TUN)": {
+    "url": "",
+    "source": ""
+  },
+  "Esteghlal Tehran FC (IRN)": {
+    "url": "",
+    "source": ""
+  },
+  "Estudiantes LP (ARG)": {
+    "url": "",
+    "source": ""
+  },
+  "Everton FC (ENG)": {
+    "url": "https://www.evertonfc.com/",
+    "source": "manual-official-url"
+  },
+  "FC Akron Tolyatti (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Astana (KAZ)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Augsburg (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Barcelona (ESP)": {
+    "url": "https://www.fcbarcelona.com/",
+    "source": "manual-official-url"
+  },
+  "FC Bayern München (GER)": {
+    "url": "https://fcbayern.com/",
+    "source": "manual-official-url"
+  },
+  "FC Cincinnatti (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Cosmos Koblenz (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Dallas (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Den Bosch (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Dynamo Makhachkala (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Dynamo Moscow (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC FCSB (ROU)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Hradec Králové (CZE)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Internazionale Milano (ITA)": {
+    "url": "https://www.inter.it/",
+    "source": "manual-official-url"
+  },
+  "FC Juárez (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Krasnodar (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC København (DEN)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Lokomotiv Moscow (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Lorient (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Lugano (SUI)": {
+    "url": "https://www.fclugano.com/",
+    "source": "manual-official-url"
+  },
+  "FC Machida Zelvia (JPN)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Midtjylland (DEN)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Nantes (FRA)": {
+    "url": "https://www.fcnantes.com/",
+    "source": "manual-official-url"
+  },
+  "FC Noah (ARM)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Nordsjælland (DEN)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Pari Nizhny Novgorod (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Porto (POR)": {
+    "url": "https://www.fcporto.pt/",
+    "source": "manual-official-url"
+  },
+  "FC Red Bull Salzburg (AUT)": {
+    "url": "https://www.redbullsalzburg.at/",
+    "source": "manual-official-url"
+  },
+  "FC Rostov (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Schalke 04 (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Seoul (KOR)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Slovan Liberec (CZE)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Sochaux-Montbéliard (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Spartak Moscow (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC St. Gallen (SUI)": {
+    "url": "",
+    "source": ""
+  },
+  "FC St. Pauli (GER)": {
+    "url": "https://www.fcstpauli.com/",
+    "source": "manual-official-url"
+  },
+  "FC Stade Nyonnais (SUI)": {
+    "url": "https://www.stadenyonnais.ch/",
+    "source": "manual-official-url"
+  },
+  "FC Tatran Prešov (SVK)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Tokyo (JPN)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Twente (NED)": {
+    "url": "https://fctwente.nl/",
+    "source": "manual-official-url"
+  },
+  "FC Utrecht (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Viktoria Plzeň (CZE)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Vizela (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Volendam (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Zenit St. Petersburg (RUS)": {
+    "url": "",
+    "source": ""
+  },
+  "FC Zürich (SUI)": {
+    "url": "https://www.fcz.ch/",
+    "source": "manual-official-url"
+  },
+  "FCV Dender EH (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "FK Austria Wien (AUT)": {
+    "url": "https://fk-austria.at/",
+    "source": "manual-official-url"
+  },
+  "FK Bodø/Glimt (NOR)": {
+    "url": "",
+    "source": ""
+  },
+  "FK Borac Banja Luka (BIH)": {
+    "url": "",
+    "source": ""
+  },
+  "FK Buxoro (UZB)": {
+    "url": "",
+    "source": ""
+  },
+  "FK Crvena Zvezda (SRB)": {
+    "url": "",
+    "source": ""
+  },
+  "FK Dinamo Samarkand (UZB)": {
+    "url": "",
+    "source": ""
+  },
+  "FK Neftchi Farg'ona (UZB)": {
+    "url": "",
+    "source": ""
+  },
+  "Fenerbahçe SK (TUR)": {
+    "url": "https://www.fenerbahce.org/",
+    "source": "manual-official-url"
+  },
+  "Ferencvárosi TC (HUN)": {
+    "url": "",
+    "source": ""
+  },
+  "Feyenoord Rotterdam (NED)": {
+    "url": "https://www.feyenoord.com/",
+    "source": "manual-official-url"
+  },
+  "Fluminense FC (BRA)": {
+    "url": "https://www.fluminense.com.br/",
+    "source": "manual-official-url"
+  },
+  "Foolad Khuzestan FC (IRN)": {
+    "url": "",
+    "source": ""
+  },
+  "Fortuna Düsseldorf (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "Frosinone (ITA)": {
+    "url": "https://www.frosinonecalcio.com/",
+    "source": "manual-official-url"
+  },
+  "Fulham FC (ENG)": {
+    "url": "https://www.fulhamfc.com/",
+    "source": "manual-official-url"
+  },
+  "GD Chaves (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "GNK Dinamo Zagreb (CRO)": {
+    "url": "https://gnkdinamo.hr/",
+    "source": "manual-official-url"
+  },
+  "Galatasaray SK (TUR)": {
+    "url": "https://www.galatasaray.org/",
+    "source": "manual-official-url"
+  },
+  "Gangwon FC (KOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Gaziantep FK (TUR)": {
+    "url": "",
+    "source": ""
+  },
+  "Genoa CFC (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "Gil Vicente FC (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "Girona FC (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "Granada CF (ESP)": {
+    "url": "https://www.granadacf.es/",
+    "source": "manual-official-url"
+  },
+  "Grazer AK (AUT)": {
+    "url": "",
+    "source": ""
+  },
+  "Grêmio FBPA (BRA)": {
+    "url": "",
+    "source": ""
+  },
+  "Györi ETO FC (HUN)": {
+    "url": "",
+    "source": ""
+  },
+  "HNK Hajduk Split (CRO)": {
+    "url": "https://hajduk.hr/",
+    "source": "manual-official-url"
+  },
+  "HNK Rijeka (CRO)": {
+    "url": "",
+    "source": ""
+  },
+  "Hamburger SV (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "Hannover 96 (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "Hapoel Kiryat Shmona FC (ISR)": {
+    "url": "",
+    "source": ""
+  },
+  "Heart Of Midlothian FC (SCO)": {
+    "url": "https://www.heartsfc.co.uk/",
+    "source": "manual-official-url"
+  },
+  "Hearts Of Oak SC (GHA)": {
+    "url": "",
+    "source": ""
+  },
+  "Hellas Verona FC (ITA)": {
+    "url": "https://www.hellasverona.it/",
+    "source": "manual-official-url"
+  },
+  "Hibernian FC (SCO)": {
+    "url": "https://www.hibernianfc.co.uk/",
+    "source": "manual-official-url"
+  },
+  "Holstein Kiel (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "Hull City FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "IFK Norrköping FK (SWE)": {
+    "url": "",
+    "source": ""
+  },
+  "Independiente Del Valle (ECU)": {
+    "url": "",
+    "source": ""
+  },
+  "Inter Miami CF (USA)": {
+    "url": "https://www.intermiamicf.com/",
+    "source": "manual-official-url"
+  },
+  "Ipswich Town FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Iğdır FK (TUR)": {
+    "url": "",
+    "source": ""
+  },
+  "JS Kabylie (ALG)": {
+    "url": "",
+    "source": ""
+  },
+  "Jagiellonia Białystok (POL)": {
+    "url": "",
+    "source": ""
+  },
+  "Jeonbuk Hyundai Motors FC (KOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Juventus FC (ITA)": {
+    "url": "https://www.juventus.com/",
+    "source": "manual-official-url"
+  },
+  "KAA Gent (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "KRC Genk (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "KS Cracovia (POL)": {
+    "url": "",
+    "source": ""
+  },
+  "KV Mechelen (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "Kaizer Chiefs FC (RSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Karlsruher SC (GER)": {
+    "url": "",
+    "source": ""
+  },
+  "Kashima Antlers (JPN)": {
+    "url": "",
+    "source": ""
+  },
+  "Kasımpaşa SK (TUR)": {
+    "url": "",
+    "source": ""
+  },
+  "Kayserispor (TUR)": {
+    "url": "",
+    "source": ""
+  },
+  "Kilmarnock FC (SCO)": {
+    "url": "",
+    "source": ""
+  },
+  "Konyaspor (TUR)": {
+    "url": "",
+    "source": ""
+  },
+  "LAFC (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "LASK Linz (AUT)": {
+    "url": "",
+    "source": ""
+  },
+  "LDU Quito (ECU)": {
+    "url": "",
+    "source": ""
+  },
+  "Le Havre AC (FRA)": {
+    "url": "https://www.hac-foot.com/",
+    "source": "manual-official-url"
+  },
+  "Lechia Gdańsk (POL)": {
+    "url": "",
+    "source": ""
+  },
+  "Leeds United FC (ENG)": {
+    "url": "https://www.leedsunited.com/",
+    "source": "manual-official-url"
+  },
+  "Leicester City FC (ENG)": {
+    "url": "https://www.lcfc.com/",
+    "source": "manual-official-url"
+  },
+  "Levante UD (ESP)": {
+    "url": "https://www.levanteud.com/",
+    "source": "manual-official-url"
+  },
+  "Lille OSC (FRA)": {
+    "url": "https://www.losc.fr/",
+    "source": "manual-official-url"
+  },
+  "Liverpool FC (ENG)": {
+    "url": "https://www.liverpoolfc.com/",
+    "source": "manual-official-url"
+  },
+  "Luton Town FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Maccabi Haifa FC (ISR)": {
+    "url": "",
+    "source": ""
+  },
+  "Maccabi Tel-Aviv FC (ISR)": {
+    "url": "",
+    "source": ""
+  },
+  "Malavan Anzali FC (IRN)": {
+    "url": "",
+    "source": ""
+  },
+  "Malmö FF (SWE)": {
+    "url": "",
+    "source": ""
+  },
+  "Mamelodi Sundowns FC (RSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Manchester City FC (ENG)": {
+    "url": "https://www.mancity.com/",
+    "source": "manual-official-url"
+  },
+  "Manchester United FC (ENG)": {
+    "url": "https://www.manutd.com/",
+    "source": "manual-official-url"
+  },
+  "Mazatlán FC (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Melbourne City FC (AUS)": {
+    "url": "",
+    "source": ""
+  },
+  "Melbourne Victory FC (AUS)": {
+    "url": "",
+    "source": ""
+  },
+  "Miami FC (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "Middlesbrough FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Millwall FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Minnesota United FC (USA)": {
+    "url": "https://www.mnufc.com/",
+    "source": "manual-official-url"
+  },
+  "Mjällby AIF (SWE)": {
+    "url": "",
+    "source": ""
+  },
+  "Molde FK (NOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Montpellier HSC (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "Motherwell FC (SCO)": {
+    "url": "",
+    "source": ""
+  },
+  "NEC Nijmegen (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "NK Maribor (SVN)": {
+    "url": "",
+    "source": ""
+  },
+  "Nasaf Qarshi FC (UZB)": {
+    "url": "",
+    "source": ""
+  },
+  "Nashville SC (USA)": {
+    "url": "https://www.nashvillesc.com/",
+    "source": "manual-official-url"
+  },
+  "Neom SC (KSA)": {
+    "url": "",
+    "source": ""
+  },
+  "New England Revolution (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "New York City FC (USA)": {
+    "url": "https://www.nycfc.com/",
+    "source": "manual-official-url"
+  },
+  "Newcastle United FC (ENG)": {
+    "url": "https://www.newcastleunited.com/",
+    "source": "manual-official-url"
+  },
+  "Newcastle United Jets FC (AUS)": {
+    "url": "",
+    "source": ""
+  },
+  "Norwich City FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Nottingham Forest FC (ENG)": {
+    "url": "https://www.nottinghamforest.co.uk/",
+    "source": "manual-official-url"
+  },
+  "OGC Nice (FRA)": {
+    "url": "https://www.ogcnice.com/",
+    "source": "manual-official-url"
+  },
+  "OKMK FK (UZB)": {
+    "url": "",
+    "source": ""
+  },
+  "Olympiacos FC (GRE)": {
+    "url": "",
+    "source": ""
+  },
+  "Olympique Lyonnais (FRA)": {
+    "url": "https://www.ol.fr/",
+    "source": "manual-official-url"
+  },
+  "Olympique Marseille (FRA)": {
+    "url": "https://www.om.fr/",
+    "source": "manual-official-url"
+  },
+  "Orlando City SC (USA)": {
+    "url": "https://www.orlandocitysc.com/",
+    "source": "manual-official-url"
+  },
+  "Orlando Pirates FC (RSA)": {
+    "url": "",
+    "source": ""
+  },
+  "PAOK Saloniki (GRE)": {
+    "url": "",
+    "source": ""
+  },
+  "PEC Zwolle (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "PFC Ludogorets Razgrad (BUL)": {
+    "url": "",
+    "source": ""
+  },
+  "PFC Montana (BUL)": {
+    "url": "",
+    "source": ""
+  },
+  "PFC Navbahor Namangan (UZB)": {
+    "url": "",
+    "source": ""
+  },
+  "PSV Eindhoven (NED)": {
+    "url": "https://www.psv.nl/",
+    "source": "manual-official-url"
+  },
+  "Pafos FC (CYP)": {
+    "url": "",
+    "source": ""
+  },
+  "Pakhtakor Tashkent FK (UZB)": {
+    "url": "",
+    "source": ""
+  },
+  "Panathinaikos FC (GRE)": {
+    "url": "",
+    "source": ""
+  },
+  "Paris FC (FRA)": {
+    "url": "https://parisfc.fr/",
+    "source": "manual-official-url"
+  },
+  "Paris Saint-Germain (FRA)": {
+    "url": "https://www.psg.fr/",
+    "source": "manual-official-url"
+  },
+  "Parma (ITA)": {
+    "url": "https://www.parmacalcio1913.com/",
+    "source": "manual-official-url"
+  },
+  "Persepolis FC (IRN)": {
+    "url": "",
+    "source": ""
+  },
+  "Persib Bandung (IDN)": {
+    "url": "",
+    "source": ""
+  },
+  "Philadelphia Union (USA)": {
+    "url": "https://www.philadelphiaunion.com/",
+    "source": "manual-official-url"
+  },
+  "Pisa SC (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "Pogoń Szczecin (POL)": {
+    "url": "",
+    "source": ""
+  },
+  "Polokwane City FC (RSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Port FC (THA)": {
+    "url": "",
+    "source": ""
+  },
+  "Port Vale FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Portland Timbers (USA)": {
+    "url": "https://www.timbers.com/",
+    "source": "manual-official-url"
+  },
+  "Portsmouth FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Puerto Cabello CF (VEN)": {
+    "url": "",
+    "source": ""
+  },
+  "Pumas UNAM (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Puskás Akadémia FC (HUN)": {
+    "url": "",
+    "source": ""
+  },
+  "Pyramids FC (EGY)": {
+    "url": "",
+    "source": ""
+  },
+  "Qatar SC (QAT)": {
+    "url": "",
+    "source": ""
+  },
+  "RB Leipzig (GER)": {
+    "url": "https://rbleipzig.com/",
+    "source": "manual-official-url"
+  },
+  "RC Celta Vigo (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "RC Lens (FRA)": {
+    "url": "https://www.rclens.fr/",
+    "source": "manual-official-url"
+  },
+  "RC Strasbourg (FRA)": {
+    "url": "https://www.rcstrasbourgalsace.fr/",
+    "source": "manual-official-url"
+  },
+  "RCD Espanyol (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "RCD Mallorca (ESP)": {
+    "url": "https://www.rcdmallorca.es/",
+    "source": "manual-official-url"
+  },
+  "RKC Waalwijk (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "RS Berkane (MAR)": {
+    "url": "",
+    "source": ""
+  },
+  "RSC Anderlecht (BEL)": {
+    "url": "https://www.rsca.be/",
+    "source": "manual-official-url"
+  },
+  "Racing Santander (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "Raja Casablanca (MAR)": {
+    "url": "",
+    "source": ""
+  },
+  "Randers FC (DEN)": {
+    "url": "",
+    "source": ""
+  },
+  "Rangers FC (SCO)": {
+    "url": "https://www.rangers.co.uk/",
+    "source": "manual-official-url"
+  },
+  "Rayo Vallecano (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "Real Betis (ESP)": {
+    "url": "https://www.realbetisbalompie.es/",
+    "source": "manual-official-url"
+  },
+  "Real Madrid C. F. (ESP)": {
+    "url": "https://www.realmadrid.com/",
+    "source": "manual-official-url"
+  },
+  "Real Oviedo (ESP)": {
+    "url": "",
+    "source": ""
+  },
+  "Real Salt Lake (USA)": {
+    "url": "https://www.rsl.com/",
+    "source": "manual-official-url"
+  },
+  "Real Sociedad (ESP)": {
+    "url": "https://www.realsociedad.eus/",
+    "source": "manual-official-url"
+  },
+  "Red Bull Bragantino (BRA)": {
+    "url": "",
+    "source": ""
+  },
+  "Rotherham United FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Royal Antwerp FC (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "Royale Union Saint-Gilloise (BEL)": {
+    "url": "https://rusg.brussels/",
+    "source": "manual-official-url"
+  },
+  "SC Bastia (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "SC Braga (POR)": {
+    "url": "https://scbraga.pt/",
+    "source": "manual-official-url"
+  },
+  "SC Corinthians (BRA)": {
+    "url": "",
+    "source": ""
+  },
+  "SC Farense (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "SC Freiburg (GER)": {
+    "url": "https://www.scfreiburg.com/",
+    "source": "manual-official-url"
+  },
+  "SC Heracles Almelo (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "SC Internacional (BRA)": {
+    "url": "",
+    "source": ""
+  },
+  "SC Telstar (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "SCU Torreense (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "SE Palmeiras (BRA)": {
+    "url": "https://www.palmeiras.com.br/",
+    "source": "manual-official-url"
+  },
+  "SJK (FIN)": {
+    "url": "",
+    "source": ""
+  },
+  "SK Beveren (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "SK Slavia Praha (CZE)": {
+    "url": "https://www.slavia.cz/",
+    "source": "manual-official-url"
+  },
+  "SK Sturm Graz (AUT)": {
+    "url": "https://sksturm.at/",
+    "source": "manual-official-url"
+  },
+  "SL Ben ca (POR)": {
+    "url": "https://www.slbenfica.pt/",
+    "source": "manual-official-url"
+  },
+  "SSC Napoli (ITA)": {
+    "url": "https://sscnapoli.it/",
+    "source": "manual-official-url"
+  },
+  "SV Werder Bremen (GER)": {
+    "url": "https://www.werder.de/",
+    "source": "manual-official-url"
+  },
+  "SV Zulte Waregem (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "Samsunspor (TUR)": {
+    "url": "",
+    "source": ""
+  },
+  "San Diego FC (USA)": {
+    "url": "",
+    "source": ""
+  },
+  "Sanfrecce Hiroshima (JPN)": {
+    "url": "",
+    "source": ""
+  },
+  "Santos FC (BRA)": {
+    "url": "https://www.santosfc.com.br/",
+    "source": "manual-official-url"
+  },
+  "Sarpsborg 08 FF (NOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Seattle Sounders FC (USA)": {
+    "url": "https://www.soundersfc.com/",
+    "source": "manual-official-url"
+  },
+  "Selangor FC (MAS)": {
+    "url": "",
+    "source": ""
+  },
+  "Sepahan SC (IRN)": {
+    "url": "",
+    "source": ""
+  },
+  "Servette FC (SUI)": {
+    "url": "https://www.servettefc.ch/",
+    "source": "manual-official-url"
+  },
+  "Sevilla FC (ESP)": {
+    "url": "https://www.sevillafc.es/",
+    "source": "manual-official-url"
+  },
+  "Shabab Al Ahli Club (UAE)": {
+    "url": "",
+    "source": ""
+  },
+  "Shamrock Rovers FC (IRL)": {
+    "url": "",
+    "source": ""
+  },
+  "She eld United FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Silkeborg IF (DEN)": {
+    "url": "",
+    "source": ""
+  },
+  "Sint-Truiden VV (BEL)": {
+    "url": "",
+    "source": ""
+  },
+  "Siwelele FC (RSA)": {
+    "url": "",
+    "source": ""
+  },
+  "Southampton FC (ENG)": {
+    "url": "https://www.southamptonfc.com/",
+    "source": "manual-official-url"
+  },
+  "Sparta Rotterdam (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "Sporting CP (POR)": {
+    "url": "https://www.sporting.pt/",
+    "source": "manual-official-url"
+  },
+  "Sporting Charleroi (BEL)": {
+    "url": "https://www.sporting-charleroi.be/",
+    "source": "manual-official-url"
+  },
+  "St Patrick's Athletic FC (IRL)": {
+    "url": "",
+    "source": ""
+  },
+  "Stade Reims (FRA)": {
+    "url": "",
+    "source": ""
+  },
+  "Stade Rennais FC (FRA)": {
+    "url": "https://www.staderennais.com/",
+    "source": "manual-official-url"
+  },
+  "Standard Liège (BEL)": {
+    "url": "https://standard.be/",
+    "source": "manual-official-url"
+  },
+  "Stoke City FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Sunderland AFC (ENG)": {
+    "url": "https://www.safc.com/",
+    "source": "manual-official-url"
+  },
+  "Surkhon FK (UZB)": {
+    "url": "",
+    "source": ""
+  },
+  "Swansea City AFC (WAL)": {
+    "url": "",
+    "source": ""
+  },
+  "Sydney FC (AUS)": {
+    "url": "",
+    "source": ""
+  },
+  "São Paulo FC (BRA)": {
+    "url": "https://www.saopaulofc.net/",
+    "source": "manual-official-url"
+  },
+  "TSG Hoffenheim (GER)": {
+    "url": "https://www.tsg-hoffenheim.de/",
+    "source": "manual-official-url"
+  },
+  "Terengganu FC (MAS)": {
+    "url": "",
+    "source": ""
+  },
+  "Tigres UANL (MEX)": {
+    "url": "",
+    "source": ""
+  },
+  "Torino FC (ITA)": {
+    "url": "https://www.torinofc.it/",
+    "source": "manual-official-url"
+  },
+  "Toronto FC (CAN)": {
+    "url": "https://www.torontofc.ca/",
+    "source": "manual-official-url"
+  },
+  "Tottenham Hotspur FC (ENG)": {
+    "url": "https://www.tottenhamhotspur.com/",
+    "source": "manual-official-url"
+  },
+  "Toulouse FC (FRA)": {
+    "url": "https://www.toulousefc.com/",
+    "source": "manual-official-url"
+  },
+  "Trabzonspor (TUR)": {
+    "url": "https://www.trabzonspor.org.tr/",
+    "source": "manual-official-url"
+  },
+  "Tractor Sazi Tabriz FC (IRN)": {
+    "url": "",
+    "source": ""
+  },
+  "Turan Tovuz (AZE)": {
+    "url": "",
+    "source": ""
+  },
+  "UC Sampdoria (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "US Cremonese (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "US Monastir (TUN)": {
+    "url": "",
+    "source": ""
+  },
+  "US Sassuolo (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "USM Alger (ALG)": {
+    "url": "",
+    "source": ""
+  },
+  "Udinese (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "Ulsan HD (KOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Universitatea Cluj (ROU)": {
+    "url": "",
+    "source": ""
+  },
+  "VVV Venlo (NED)": {
+    "url": "",
+    "source": ""
+  },
+  "Valencia CF (ESP)": {
+    "url": "https://www.valenciacf.com/",
+    "source": "manual-official-url"
+  },
+  "Vancouver Whitecaps FC (CAN)": {
+    "url": "https://www.whitecapsfc.com/",
+    "source": "manual-official-url"
+  },
+  "Venezia FC (ITA)": {
+    "url": "",
+    "source": ""
+  },
+  "VfB Stuttgart (GER)": {
+    "url": "https://www.vfb.de/",
+    "source": "manual-official-url"
+  },
+  "VfL Wolfsburg (GER)": {
+    "url": "https://www.vfl-wolfsburg.de/",
+    "source": "manual-official-url"
+  },
+  "Viking Stavanger (NOR)": {
+    "url": "",
+    "source": ""
+  },
+  "Villarreal CF (ESP)": {
+    "url": "https://villarrealcf.es/",
+    "source": "manual-official-url"
+  },
+  "Violette AC (HAI)": {
+    "url": "",
+    "source": ""
+  },
+  "Vitória SC (POR)": {
+    "url": "",
+    "source": ""
+  },
+  "WS Wanderers FC (AUS)": {
+    "url": "",
+    "source": ""
+  },
+  "Watford FC (ENG)": {
+    "url": "",
+    "source": ""
+  },
+  "Wellington Phoenix FC (NZL)": {
+    "url": "",
+    "source": ""
+  },
+  "West Ham United FC (ENG)": {
+    "url": "https://www.whufc.com/",
+    "source": "manual-official-url"
+  },
+  "Widzew Łódź (POL)": {
+    "url": "",
+    "source": ""
+  },
+  "Wolfsberger AC (AUT)": {
+    "url": "",
+    "source": ""
+  },
+  "Wolverhampton Wanderers FC (ENG)": {
+    "url": "https://www.wolves.co.uk/",
+    "source": "manual-official-url"
+  },
+  "Wrexham AFC (WAL)": {
+    "url": "",
+    "source": ""
+  },
+  "ZED FC (EGY)": {
+    "url": "",
+    "source": ""
+  },
+  "Zamalek SC (EGY)": {
+    "url": "",
+    "source": ""
+  },
+  "Zhejiang FC (CHN)": {
+    "url": "",
+    "source": ""
+  },
+  "Çaykur Rizespor (TUR)": {
+    "url": "",
+    "source": ""
+  },
+  "Étoile Du Sahel (TUN)": {
+    "url": "",
+    "source": ""
+  },
+  "ŠK Slovan Bratislava (SVK)": {
+    "url": "",
+    "source": ""
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "version": "v2.51",
+  "verifiedAt": "2026-07-22",
+  "fifaMemberAssociations": 211,
+  "confederations": [
+    {
+      "code": "AFC",
+      "nameZh": "亞洲足球聯盟",
+      "fifaMembers": 46
+    },
+    {
+      "code": "CAF",
+      "nameZh": "非洲足球協會",
+      "fifaMembers": 54
+    },
+    {
+      "code": "Concacaf",
+      "nameZh": "中北美洲及加勒比海足球協會",
+      "fifaMembers": 35
+    },
+    {
+      "code": "CONMEBOL",
+      "nameZh": "南美洲足球協會",
+      "fifaMembers": 10
+    },
+    {
+      "code": "OFC",
+      "nameZh": "大洋洲足球協會",
+      "fifaMembers": 11
+    },
+    {
+      "code": "UEFA",
+      "nameZh": "歐洲足球協會聯盟",
+      "fifaMembers": 55
+    }
+  ],
+  "taiwan": {
+    "displayNameZh": "台灣",
+    "fifaName": "Chinese Taipei",
+    "fifaCode": "TPE",
+    "associationZh": "中華民國足球協會",
+    "associationEn": "Chinese Taipei Football Association",
+    "confederation": "AFC",
+    "fifaAssociationUrl": "https://inside.fifa.com/associations/TPE",
+    "officialWebsite": "https://www.ctfa.com.tw/"
+  },
+  "sources": [
+    "https://inside.fifa.com/associations",
+    "https://inside.fifa.com/associations/TPE"
+  ]
+}

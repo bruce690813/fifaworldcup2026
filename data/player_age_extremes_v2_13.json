@@ -1,0 +1,29 @@
+{
+  "version": "v2.13",
+  "basis": "FIFA World Cup 2026 final squad lists; ages at tournament opening on 2026-06-11",
+  "youngest": {
+    "nameZh": "吉爾伯托・莫拉",
+    "nameEn": "Gilberto Mora",
+    "teamCode": "MEX",
+    "teamZh": "墨西哥",
+    "position": "MF",
+    "shirtNumber": 19,
+    "club": "Club Tijuana (MEX)",
+    "dateOfBirth": "2008-10-14",
+    "ageAtOpening": "17 years 240 days",
+    "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/youngest-players"
+  },
+  "oldest": {
+    "nameZh": "克雷格・戈登",
+    "nameEn": "Craig Gordon",
+    "teamCode": "SCO",
+    "teamZh": "蘇格蘭",
+    "position": "GK",
+    "shirtNumber": 21,
+    "club": "Heart Of Midlothian FC (SCO)",
+    "dateOfBirth": "1982-12-31",
+    "ageAtOpening": "43 years 162 days",
+    "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/oldest-players"
+  },
+  "officialSquadRelease": "https://inside.fifa.com/organisation/media-releases/world-cup-2026-48-squads-confirmed"
+}
