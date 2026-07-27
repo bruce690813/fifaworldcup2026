@@ -1,0 +1,12 @@
+{
+  "version": "v2.63",
+  "verifiedAt": "2026-07-24",
+  "totalMatches": 104,
+  "completedMatches": 104,
+  "partialMatches": 0,
+  "pendingMatches": 0,
+  "totalGoals": 308,
+  "completionRate": "100%",
+  "scope": "Scorers and goal minutes for regulation time, stoppage time and extra time; penalty shoot-out kicks excluded.",
+  "verificationBasis": "FIFA official match reports and Match Centre reconciliation. Where minute discrepancies appeared, FIFA official reporting was used as the final authority."
+}

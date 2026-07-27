@@ -1,0 +1,49 @@
+{
+  "version": "v2.68",
+  "updatedAt": "2026-07-25",
+  "leagueCount": 5,
+  "clubCount": 96,
+  "mode": "live-ESPN-roster-with-local-cache",
+  "leagues": [
+    {
+      "leagueId": "premier-league",
+      "leagueNameZh": "英格蘭超級足球聯賽（英超）",
+      "season": "2026/27",
+      "espnLeagueCode": "eng.1",
+      "updatedAt": "2026-07-25",
+      "clubCount": 20
+    },
+    {
+      "leagueId": "laliga",
+      "leagueNameZh": "西班牙甲級足球聯賽（西甲）",
+      "season": "2026/27",
+      "espnLeagueCode": "esp.1",
+      "updatedAt": "2026-07-25",
+      "clubCount": 20
+    },
+    {
+      "leagueId": "bundesliga",
+      "leagueNameZh": "德國甲級足球聯賽（德甲）",
+      "season": "2026/27",
+      "espnLeagueCode": "ger.1",
+      "updatedAt": "2026-07-25",
+      "clubCount": 18
+    },
+    {
+      "leagueId": "ligue-1",
+      "leagueNameZh": "法國甲級足球聯賽（法甲）",
+      "season": "2026/27",
+      "espnLeagueCode": "fra.1",
+      "updatedAt": "2026-07-25",
+      "clubCount": 18
+    },
+    {
+      "leagueId": "serie-a",
+      "leagueNameZh": "義大利甲級足球聯賽（義甲）",
+      "season": "2026/27",
+      "espnLeagueCode": "ita.1",
+      "updatedAt": "2026-07-25",
+      "clubCount": 20
+    }
+  ]
+}
