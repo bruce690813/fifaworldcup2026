@@ -1,0 +1,15 @@
+Wikidata stadium data
+
+The league stadium names, Wikidata entity identifiers and geographic
+coordinates used by the league home-stadium map are derived from Wikidata.
+
+Source: https://www.wikidata.org/
+License: Creative Commons CC0 1.0 Universal
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+
+The OpenStreetMap basemap is loaded at runtime and displays the attribution
+required by the OpenStreetMap contributors license:
+https://www.openstreetmap.org/copyright
+
+Project integration and Traditional Chinese labels:
+Copyright (c) the fifaworldcup2026 project contributors.
