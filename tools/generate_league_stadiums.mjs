@@ -39,11 +39,12 @@ const leagues = [
   ...guide.leagues,
   extractObject("mlsLeague"),
   extractObject("j1League"),
-  extractObject("taiwanEnterpriseLeague")
+  extractObject("taiwanEnterpriseLeague"),
+  extractObject("zyesYouthLeague")
 ];
 
 const outputPath = "data/league_stadiums.generated.json";
-const userAgent = "fifaworldcup2026-stadium-audit/2.129 (GitHub Pages data preparation)";
+const userAgent = "fifaworldcup2026-stadium-audit/2.133 (GitHub Pages data preparation)";
 const allTeams = leagues.flatMap(league => (league.teams || []).map(team => ({league, team})));
 const previousOutput = fs.existsSync(outputPath) ? JSON.parse(fs.readFileSync(outputPath, "utf8")) : null;
 const previousRecord = (leagueId, nameEn) =>
@@ -144,7 +145,7 @@ function coordinate(entity) {
 }
 
 const output = {
-  version:"v2.129",
+  version:"v2.133",
   generatedAt:new Date().toISOString(),
   source:{
     name:"Wikidata",

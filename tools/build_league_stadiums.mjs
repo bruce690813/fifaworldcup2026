@@ -23,7 +23,12 @@ const overrides = {
   "AC Taipei": {stadium:"臺北田徑場", lat:25.0495837, lng:121.5517349},
   "Taichung FUTURO": {stadium:"西屯足球場", lat:24.169167, lng:120.633889},
   "Taichung Rock": {stadium:"西屯足球場", lat:24.169167, lng:120.633889},
-  "Ming Chuan University": {stadium:"銘傳大學桃園校區足球場", lat:24.9856141, lng:121.3425769}
+  "Ming Chuan University": {stadium:"銘傳大學桃園校區足球場", lat:24.9856141, lng:121.3425769},
+  "ZYES U8": {stadium:"新北市蘆洲區忠義國民小學", lat:25.0898828, lng:121.463586},
+  "ZYES U9": {stadium:"新北市蘆洲區忠義國民小學", lat:25.0898828, lng:121.463586},
+  "ZYES U10": {stadium:"新北市蘆洲區忠義國民小學", lat:25.0898828, lng:121.463586},
+  "ZYES U11": {stadium:"新北市蘆洲區忠義國民小學", lat:25.0898828, lng:121.463586},
+  "ZYES U12": {stadium:"新北市蘆洲區忠義國民小學", lat:25.0898828, lng:121.463586}
 };
 
 for (const league of Object.values(input.leagues)) {
@@ -41,6 +46,10 @@ for (const league of Object.values(input.leagues)) {
   });
 }
 
+input.version = "v2.133";
+if (input.leagues["zyes-youth-football"]) {
+  input.leagues["zyes-youth-football"].mapView = {lat:23.75, lng:120.95, zoom:7};
+}
 input.generatedAt = new Date().toISOString();
 input.source = {
   name:"Wikidata / OpenStreetMap / official venue pages",

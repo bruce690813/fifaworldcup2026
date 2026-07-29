@@ -1,6 +1,6 @@
 window.LEAGUE_STADIUMS = {
-  "version": "v2.129",
-  "generatedAt": "2026-07-28T14:42:23.274Z",
+  "version": "v2.133",
+  "generatedAt": "2026-07-29T14:00:35.673Z",
   "source": {
     "name": "Wikidata / OpenStreetMap / official venue pages",
     "license": "Wikidata CC0; OpenStreetMap ODbL",
@@ -1295,6 +1295,58 @@ window.LEAGUE_STADIUMS = {
           "lat": 24.9856141,
           "lng": 121.3425769,
           "coordinateSource": "manual-audit"
+        }
+      ]
+    },
+    "zyes-youth-football": {
+      "nameZh": "新北市忠義國小足球隊（ZYES）",
+      "nameEn": "ZHONG-YI FOOTBALL TEAM",
+      "country": "台灣",
+      "mapView": {
+        "lat": 23.75,
+        "lng": 120.95,
+        "zoom": 7
+      },
+      "teams": [
+        {
+          "nameEn": "ZYES U8",
+          "nameZh": "U8 梯隊",
+          "stadium": "新北市蘆洲區忠義國民小學",
+          "lat": 25.0898828,
+          "lng": 121.463586,
+          "coordinateSource": "OpenStreetMap Nominatim / school official address"
+        },
+        {
+          "nameEn": "ZYES U9",
+          "nameZh": "U9 梯隊",
+          "stadium": "新北市蘆洲區忠義國民小學",
+          "lat": 25.0898828,
+          "lng": 121.463586,
+          "coordinateSource": "OpenStreetMap Nominatim / school official address"
+        },
+        {
+          "nameEn": "ZYES U10",
+          "nameZh": "U10 梯隊",
+          "stadium": "新北市蘆洲區忠義國民小學",
+          "lat": 25.0898828,
+          "lng": 121.463586,
+          "coordinateSource": "OpenStreetMap Nominatim / school official address"
+        },
+        {
+          "nameEn": "ZYES U11",
+          "nameZh": "U11 梯隊",
+          "stadium": "新北市蘆洲區忠義國民小學",
+          "lat": 25.0898828,
+          "lng": 121.463586,
+          "coordinateSource": "OpenStreetMap Nominatim / school official address"
+        },
+        {
+          "nameEn": "ZYES U12",
+          "nameZh": "U12 梯隊",
+          "stadium": "新北市蘆洲區忠義國民小學",
+          "lat": 25.0898828,
+          "lng": 121.463586,
+          "coordinateSource": "OpenStreetMap Nominatim / school official address"
         }
       ]
     }
