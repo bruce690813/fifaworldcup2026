@@ -1,0 +1,23 @@
+{
+  "sports": [
+    {
+      "leagues": [
+        {
+          "teams": [
+            {
+              "team": {
+                "id": "2026",
+                "displayName": "Inter Miami CF",
+                "name": "Inter Miami CF",
+                "shortDisplayName": "Inter Miami",
+                "location": "Inter Miami",
+                "nickname": "CF",
+                "slug": "inter-miami-cf"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

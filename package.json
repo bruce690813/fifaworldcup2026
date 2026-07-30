@@ -1,0 +1,16 @@
+{
+  "name": "fifaworldcup2026",
+  "version": "2.135.0",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test --project=mobile-chromium",
+    "test:mobile": "playwright test --project=mobile-chromium",
+    "test:mobile:headed": "playwright test --project=mobile-chromium --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "leaflet": "1.9.4"
+  }
+}

@@ -14648,6 +14648,278 @@
     .best-goal-card-head h3 { font-size:18px; }
   }
 </style>
+<style id="v2135MobileFoundationStyles">
+  /* v2.135：手機控制列、單一彈窗捲軸與可讀／可觸控尺寸。 */
+  .toolbar-field {
+    display:contents;
+  }
+
+  html.ui-modal-open,
+  body.ui-modal-open {
+    overflow:hidden !important;
+  }
+
+  [data-ui-modal] {
+    overflow:hidden !important;
+  }
+
+  [data-ui-modal] > .modal-dialog {
+    display:grid !important;
+    grid-template-rows:auto minmax(0,1fr) !important;
+    width:min(1040px,calc(100vw - 28px));
+    height:min(92dvh,900px);
+    max-height:92dvh !important;
+    padding:0 !important;
+    overflow:hidden !important;
+  }
+
+  [data-ui-modal] > .modal-dialog > [data-modal-title] {
+    position:relative !important;
+    top:auto !important;
+    z-index:12;
+    flex:0 0 auto;
+    min-width:0;
+    margin:0 !important;
+    padding:14px 16px !important;
+  }
+
+  [data-ui-modal] [data-modal-close] {
+    min-width:52px;
+    min-height:44px;
+  }
+
+  [data-modal-scroll] {
+    min-width:0;
+    min-height:0;
+    padding:14px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    scrollbar-gutter:stable;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  #bestGoalsModal [data-modal-scroll],
+  #competitionGuideModal [data-modal-scroll],
+  #competitionTeamModal [data-modal-scroll],
+  #fifaMembersModal [data-modal-scroll],
+  #fifaLatestRankingModal [data-modal-scroll] {
+    padding:0;
+  }
+
+  #competitionGuideModal .competition-guide-tabs {
+    position:sticky;
+    top:0;
+    z-index:8;
+  }
+
+  #competitionGuideModal .competition-guide-panel,
+  #fifaMembersModal .fifa-member-directory-grid,
+  #fifaLatestRankingModal .fifa-ranking-grid {
+    max-height:none !important;
+    overflow:visible !important;
+  }
+
+  .finals-ranking-native-dialog {
+    height:min(86dvh,820px);
+    max-height:86dvh !important;
+    padding:0 !important;
+    overflow:hidden !important;
+  }
+
+  .finals-ranking-native-dialog[open] {
+    display:grid;
+    grid-template-rows:auto minmax(0,1fr);
+  }
+
+  .finals-ranking-native-head {
+    min-width:0;
+    margin:0 !important;
+    padding:16px 18px;
+    border-bottom:1px solid #42536a;
+  }
+
+  .finals-ranking-native-head [data-modal-close] {
+    min-width:52px;
+    min-height:44px;
+  }
+
+  .finals-ranking-scroll-region {
+    padding:14px 18px 18px;
+  }
+
+  @media (max-width:760px) {
+    .toolbar {
+      display:grid !important;
+      grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+      gap:10px 12px !important;
+      padding:10px 12px !important;
+    }
+
+    .toolbar-field {
+      display:grid;
+      grid-template-columns:auto minmax(0,1fr);
+      align-items:center;
+      gap:8px;
+      min-width:0;
+    }
+
+    .toolbar-field-search,
+    .mobile-quick-nav {
+      grid-column:1 / -1;
+    }
+
+    .toolbar-field label {
+      white-space:nowrap;
+    }
+
+    .toolbar-field select,
+    .toolbar-field input {
+      width:100%;
+      min-width:0;
+      min-height:44px;
+    }
+
+    .toolbar-field-search .search-autocomplete-wrap {
+      width:100%;
+      min-width:0;
+    }
+
+    #searchBox {
+      padding-right:52px !important;
+    }
+
+    #smartSearchHelpBtn.search-help-btn {
+      right:0 !important;
+      width:44px !important;
+      min-width:44px !important;
+      height:44px !important;
+      min-height:44px !important;
+      padding:9px !important;
+      border-radius:10px !important;
+    }
+
+    .mobile-feature-title-wrap small,
+    .mobile-feature-group-heading small,
+    .mobile-feature-item-copy small,
+    .mobile-feature-note,
+    .mobile-map-controls-copy small,
+    .experience-player-meta,
+    .fifa-member-association-name,
+    .fifa-member-card-meta span {
+      font-size:12px !important;
+      line-height:1.45 !important;
+    }
+
+    .mobile-feature-group-heading small,
+    .mobile-feature-item-copy small,
+    .mobile-feature-note {
+      color:#53657a !important;
+    }
+
+    .mobile-feature-close,
+    .drawer-close,
+    .fifa-member-directory-toolbar input,
+    .fifa-member-directory-toolbar select,
+    .fifa-member-clear-btn {
+      min-width:44px;
+      min-height:44px;
+      height:44px;
+    }
+
+    .mobile-map-controls {
+      min-height:60px !important;
+    }
+
+    .mobile-map-control {
+      min-height:44px !important;
+      padding:8px 10px !important;
+      font-size:12px !important;
+    }
+
+    body.mobile-map-fullscreen #map {
+      height:calc(100dvh - 60px - env(safe-area-inset-top)) !important;
+    }
+
+    .player-pronunciation-button {
+      position:relative;
+    }
+
+    .player-pronunciation-button::after {
+      content:"";
+      position:absolute;
+      inset:-11px;
+    }
+
+    [data-ui-modal] {
+      align-items:flex-start !important;
+      padding:max(8px,env(safe-area-inset-top)) 8px max(8px,env(safe-area-inset-bottom)) !important;
+    }
+
+    [data-ui-modal] > .modal-dialog {
+      width:100% !important;
+      height:calc(100dvh - max(8px,env(safe-area-inset-top)) - max(8px,env(safe-area-inset-bottom))) !important;
+      max-width:none !important;
+      max-height:none !important;
+      margin:0 !important;
+      border-radius:14px !important;
+    }
+
+    [data-ui-modal] > .modal-dialog > [data-modal-title] {
+      padding:12px 14px !important;
+    }
+
+    .finals-ranking-native-dialog {
+      width:calc(100vw - 16px) !important;
+      height:calc(100dvh - max(16px,env(safe-area-inset-top)) - max(16px,env(safe-area-inset-bottom))) !important;
+      max-width:none !important;
+      max-height:none !important;
+      margin:auto !important;
+      border-radius:14px !important;
+    }
+
+    .finals-ranking-native-head {
+      padding:12px 14px;
+    }
+
+    .finals-ranking-scroll-region {
+      padding:12px;
+    }
+
+    [data-modal-scroll] {
+      padding:12px;
+    }
+
+    #bestGoalsModal [data-modal-scroll],
+    #competitionGuideModal [data-modal-scroll],
+    #competitionTeamModal [data-modal-scroll],
+    #fifaMembersModal [data-modal-scroll],
+    #fifaLatestRankingModal [data-modal-scroll] {
+      padding:0;
+    }
+  }
+
+  @media (max-width:360px) {
+    .toolbar {
+      grid-template-columns:minmax(0,1fr);
+    }
+
+    .toolbar-field,
+    .toolbar-field-search,
+    .mobile-quick-nav {
+      grid-column:1;
+    }
+
+    .mobile-map-controls-copy {
+      display:none;
+    }
+
+    .mobile-map-control-actions {
+      width:100%;
+      justify-content:space-between;
+    }
+  }
+</style>
 </head>
 
 <body>
@@ -14663,48 +14935,54 @@
   </header>
 
   <section class="toolbar">
-    <label for="groupFilter">組別</label>
-    <select id="groupFilter">
-      <option value="all">全部組別</option>
-      <option value="A">A 組</option><option value="B">B 組</option><option value="C">C 組</option><option value="D">D 組</option>
-      <option value="E">E 組</option><option value="F">F 組</option><option value="G">G 組</option><option value="H">H 組</option>
-      <option value="I">I 組</option><option value="J">J 組</option><option value="K">K 組</option><option value="L">L 組</option>
-    </select>
+    <div class="toolbar-field toolbar-field-group">
+      <label for="groupFilter">組別</label>
+      <select id="groupFilter">
+        <option value="all">全部組別</option>
+        <option value="A">A 組</option><option value="B">B 組</option><option value="C">C 組</option><option value="D">D 組</option>
+        <option value="E">E 組</option><option value="F">F 組</option><option value="G">G 組</option><option value="H">H 組</option>
+        <option value="I">I 組</option><option value="J">J 組</option><option value="K">K 組</option><option value="L">L 組</option>
+      </select>
+    </div>
 
-    <label for="continentFilter">洲別</label>
-    <select id="continentFilter">
-      <option value="all">全部洲別</option>
-      <option value="亞洲">亞洲</option><option value="歐洲">歐洲</option><option value="非洲">非洲</option>
-      <option value="北美洲">北美洲</option><option value="南美洲">南美洲</option><option value="大洋洲">大洋洲</option>
-    </select>
+    <div class="toolbar-field toolbar-field-continent">
+      <label for="continentFilter">洲別</label>
+      <select id="continentFilter">
+        <option value="all">全部洲別</option>
+        <option value="亞洲">亞洲</option><option value="歐洲">歐洲</option><option value="非洲">非洲</option>
+        <option value="北美洲">北美洲</option><option value="南美洲">南美洲</option><option value="大洋洲">大洋洲</option>
+      </select>
+    </div>
 
-    <label for="searchBox">搜尋</label>
-    <div class="search-autocomplete-wrap">
-      <input id="searchBox" type="search" autocomplete="off"
-             placeholder="智慧搜尋，例如：西班牙 12、日本 GK、Messi 10、阿根廷 Messi"
-             aria-controls="searchSuggestions" aria-expanded="false"
-             />
-      <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="國家與球員搜尋建議"></div>
-      <button id="smartSearchHelpBtn" class="search-help-btn" type="button"
-              aria-label="開啟搜尋說明" aria-expanded="false" aria-controls="smartSearchHelp">
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22">
-          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"></circle>
-          <path d="M15.5 15.5 21 21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path>
-        </svg>
-      </button>
-      <div id="smartSearchHelp" class="smart-search-help-popover" hidden>
-        <div class="search-help-head">
-          <strong>搜尋小提示</strong>
-          <button id="closeSmartSearchHelpBtn" type="button" aria-label="關閉搜尋說明">×</button>
+    <div class="toolbar-field toolbar-field-search">
+      <label for="searchBox">搜尋</label>
+      <div class="search-autocomplete-wrap">
+        <input id="searchBox" type="search" autocomplete="off"
+               placeholder="智慧搜尋，例如：西班牙 12、日本 GK、Messi 10、阿根廷 Messi"
+               aria-controls="searchSuggestions" aria-expanded="false"
+               />
+        <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="國家與球員搜尋建議"></div>
+        <button id="smartSearchHelpBtn" class="search-help-btn" type="button"
+                aria-label="開啟搜尋說明" aria-expanded="false" aria-controls="smartSearchHelp">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22">
+            <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"></circle>
+            <path d="M15.5 15.5 21 21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path>
+          </svg>
+        </button>
+        <div id="smartSearchHelp" class="smart-search-help-popover" hidden>
+          <div class="search-help-head">
+            <strong>搜尋小提示</strong>
+            <button id="closeSmartSearchHelpBtn" type="button" aria-label="關閉搜尋說明">×</button>
+          </div>
+          <div class="smart-search-help-grid">
+            <span>✓ 國家</span><span>✓ 中文國名</span><span>✓ 英文國名</span><span>✓ FIFA 三碼（ESP、ARG）</span>
+            <span>✓ 中文球員名</span><span>✓ 英文球員名</span><span>✓ 暱稱（球王梅西、B費、魔笛）</span>
+            <span>✓ 背號（12、10、7）</span><span>✓ 位置（GK、RB、CB、DM、ST）</span>
+            <span>✓ 國家＋背號（西班牙 12）</span><span>✓ 國家＋位置（日本 GK）</span>
+            <span>✓ 球員＋背號（Messi 10）</span><span>✓ 國家＋球員（阿根廷 Messi）</span>
+          </div>
+          <p>輸入過程會即時顯示建議；可用鍵盤 ↑／↓ 選取，Enter 確認。</p>
         </div>
-        <div class="smart-search-help-grid">
-          <span>✓ 國家</span><span>✓ 中文國名</span><span>✓ 英文國名</span><span>✓ FIFA 三碼（ESP、ARG）</span>
-          <span>✓ 中文球員名</span><span>✓ 英文球員名</span><span>✓ 暱稱（球王梅西、B費、魔笛）</span>
-          <span>✓ 背號（12、10、7）</span><span>✓ 位置（GK、RB、CB、DM、ST）</span>
-          <span>✓ 國家＋背號（西班牙 12）</span><span>✓ 國家＋位置（日本 GK）</span>
-          <span>✓ 球員＋背號（Messi 10）</span><span>✓ 國家＋球員（阿根廷 Messi）</span>
-        </div>
-        <p>輸入過程會即時顯示建議；可用鍵盤 ↑／↓ 選取，Enter 確認。</p>
       </div>
     </div>
 
@@ -14978,17 +15256,18 @@
 
 
 
-  <div id="playerExperienceModal" class="modal-shell" aria-hidden="true">
+  <div id="playerExperienceModal" class="modal-shell" data-ui-modal aria-hidden="true">
     <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="playerExperienceTitle">
-      <div class="modal-head">
+      <div class="modal-head" data-modal-title>
         <div>
           <h2 id="playerExperienceTitle">球員參賽屆數</h2>
           <div style="margin-top:4px;color:#aeb8c7;font-size:12px;">
             入選屆數以世界盃決賽圈正式名單計算；2026 年本屆名單皆計入。
           </div>
         </div>
-        <button id="closePlayerExperienceBtn" class="secondary" type="button">關閉</button>
+        <button id="closePlayerExperienceBtn" class="secondary" data-modal-close type="button">關閉</button>
       </div>
+      <div class="modal-scroll-region" data-modal-scroll>
       <div id="playerExperienceSummary" class="experience-summary"></div>
       <div class="experience-controls">
         <input id="playerExperienceSearch" type="search" placeholder="搜尋球員或國家">
@@ -15007,30 +15286,34 @@
         歷史名單來源：Fjelstul World Cup Database（1930–2022，CC-BY-SA 4.0）。
         姓名依國家隊與標準化拼寫比對；Cristiano Ronaldo 等多屆球員已人工校正。仍標示為「2026-only」者屬待覆核資料，不應視為已確認首次參賽。
       </p>
+      </div>
     </div>
   </div>
 
-  <div id="clubStatsModal" class="modal-shell" aria-hidden="true">
+  <div id="clubStatsModal" class="modal-shell" data-ui-modal aria-hidden="true">
     <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="clubStatsTitle">
-      <div class="modal-head">
+      <div class="modal-head" data-modal-title>
         <h2 id="clubStatsTitle">俱樂部球員分布</h2>
-        <button id="closeClubStatsBtn" class="secondary" type="button">關閉</button>
+        <button id="closeClubStatsBtn" class="secondary" data-modal-close type="button">關閉</button>
       </div>
+      <div class="modal-scroll-region" data-modal-scroll>
       <div class="club-filter-row">
         <input id="clubStatsSearch" type="search" placeholder="搜尋聯賽或俱樂部，例如：西甲、巴塞隆納、皇家馬德里">
       </div>
       <p class="club-player-navigation-hint">展開俱樂部後，點選球員即可前往所屬國家頁面的對應球員資料列。</p>
       <div id="clubStatsGrid" class="club-stats-grid"></div>
+      </div>
     </div>
   </div>
 
 
-  <div id="bestGoalsModal" class="modal-shell" aria-hidden="true">
+  <div id="bestGoalsModal" class="modal-shell" data-ui-modal aria-hidden="true">
     <div class="modal-dialog best-goals-dialog" role="dialog" aria-modal="true" aria-labelledby="bestGoalsTitle">
-      <div class="modal-head">
+      <div class="modal-head" data-modal-title>
         <h2 id="bestGoalsTitle">2026 世界盃最佳進球</h2>
-        <button id="closeBestGoalsBtn" class="secondary" type="button">關閉</button>
+        <button id="closeBestGoalsBtn" class="secondary" data-modal-close type="button">關閉</button>
       </div>
+      <div class="modal-scroll-region" data-modal-scroll>
       <div class="best-goals-intro">
         <strong>FIFA 最終公布的是 12 球候選名單，不是十大進球。</strong>
         維德角的卡布拉爾在淘汰賽對阿根廷的進球獲球迷票選為本屆最佳進球。下方依序列出冠軍、第二名、第三名與其餘候選；「入選看點」為方便理解進球特色的簡短整理。
@@ -15041,20 +15324,22 @@
         </div>
       </div>
       <div id="bestGoalsGrid" class="best-goals-grid"></div>
+      </div>
     </div>
   </div>
 
 
 
-  <div id="competitionGuideModal" class="modal-shell competition-guide-modal" aria-hidden="true">
+  <div id="competitionGuideModal" class="modal-shell competition-guide-modal" data-ui-modal aria-hidden="true">
     <div class="modal-dialog competition-guide-dialog" role="dialog" aria-modal="true" aria-labelledby="competitionGuideTitle">
-      <div class="modal-head competition-guide-head">
+      <div class="modal-head competition-guide-head" data-modal-title>
         <div>
           <h2 id="competitionGuideTitle">賽事指南</h2>
           
         </div>
-        <button id="closeCompetitionGuideBtn" class="secondary" type="button">關閉</button>
+        <button id="closeCompetitionGuideBtn" class="secondary" data-modal-close type="button">關閉</button>
       </div>
+      <div class="modal-scroll-region" data-modal-scroll>
       <div class="competition-guide-tabs" role="tablist" aria-label="足球賽事分類">
         <button type="button" class="active" role="tab" aria-selected="true" data-competition-tab="leagues">國內聯賽</button>
         <button type="button" role="tab" aria-selected="false" data-competition-tab="cups">國內盃賽</button>
@@ -15065,6 +15350,7 @@
       <section id="competitionCupPanel" class="competition-guide-panel" role="tabpanel" data-competition-panel="cups" hidden></section>
       <section id="competitionInternationalPanel" class="competition-guide-panel" role="tabpanel" data-competition-panel="international" hidden></section>
       <section id="competitionKnowledgePanel" class="competition-guide-panel" role="tabpanel" data-competition-panel="knowledge" hidden></section>
+      </div>
     </div>
   </div>
 
@@ -15082,27 +15368,30 @@
     </div>
   </div>
 
-  <div id="competitionTeamModal" class="modal-shell competition-team-modal" aria-hidden="true">
+  <div id="competitionTeamModal" class="modal-shell competition-team-modal" data-ui-modal aria-hidden="true">
     <div class="modal-dialog competition-team-dialog" role="dialog" aria-modal="true" aria-labelledby="competitionTeamTitle">
-      <div class="modal-head competition-team-head">
+      <div class="modal-head competition-team-head" data-modal-title>
         <div>
           <h2 id="competitionTeamTitle">球隊陣容</h2>
           <p id="competitionTeamSubtitle">點選上方官方 Logo 可前往俱樂部官方網站。</p>
         </div>
-        <button id="closeCompetitionTeamBtn" class="secondary" type="button">關閉</button>
+        <button id="closeCompetitionTeamBtn" class="secondary" data-modal-close type="button">關閉</button>
       </div>
+      <div class="modal-scroll-region" data-modal-scroll>
       <div id="competitionTeamBody" class="competition-team-body"></div>
+      </div>
     </div>
   </div>
 
-  <div id="fifaMembersModal" class="modal-shell fifa-members-modal" aria-hidden="true">
+  <div id="fifaMembersModal" class="modal-shell fifa-members-modal" data-ui-modal aria-hidden="true">
     <div class="modal-dialog fifa-members-dialog" role="dialog" aria-modal="true" aria-labelledby="fifaMembersTitle">
-      <div class="modal-head fifa-members-head">
+      <div class="modal-head fifa-members-head" data-modal-title>
         <div>
           <h2 id="fifaMembersTitle">FIFA 會員協會總覽</h2>
         </div>
-        <button id="closeFifaMembersBtn" class="secondary" type="button">關閉</button>
+        <button id="closeFifaMembersBtn" class="secondary" data-modal-close type="button">關閉</button>
       </div>
+      <div class="modal-scroll-region" data-modal-scroll>
 <section class="fifa-member-directory-section" aria-labelledby="fifaMemberDirectoryTitle">
         <div class="fifa-member-directory-head">
           <div><h3 id="fifaMemberDirectoryTitle">211 個會員協會</h3><a class="fifa-member-official-link" href="https://inside.fifa.com/associations" target="_blank" rel="noopener noreferrer">FIFA 官方名錄</a></div>
@@ -15133,32 +15422,36 @@
         <div id="fifaMemberDirectoryEmpty" class="fifa-member-directory-empty">找不到符合條件的會員協會。</div>
       </section>
       <p class="fifa-members-source-note">會員總數、國名與 FIFA 三碼依 FIFA 官方 Member Associations 頁面查核；國旗與足協徽章直接使用 FIFA 官方圖像端點，避免瀏覽器即時搜尋或裝置 emoji 支援造成顯示失敗；所有資料卡仍連回 FIFA 官方協會頁面。</p>
+      </div>
     </div>
   </div>
 
-  <div id="fifaPresidentsModal" class="modal-shell fifa-presidents-modal" aria-hidden="true">
+  <div id="fifaPresidentsModal" class="modal-shell fifa-presidents-modal" data-ui-modal aria-hidden="true">
     <div class="modal-dialog fifa-presidents-dialog" role="dialog" aria-modal="true" aria-labelledby="fifaPresidentsTitle">
-      <div class="modal-head">
+      <div class="modal-head" data-modal-title>
         <div>
           <h2 id="fifaPresidentsTitle">歷屆 FIFA 主席</h2>
         </div>
-        <button id="closeFifaPresidentsBtn" class="secondary" type="button">關閉</button>
+        <button id="closeFifaPresidentsBtn" class="secondary" data-modal-close type="button">關閉</button>
       </div>
+      <div class="modal-scroll-region" data-modal-scroll>
       <p class="fifa-presidents-intro">依 FIFA 官方歷任主席名錄整理，列出自 1904 年創會以來的正式主席、任期與國籍。</p>
       <div id="fifaPresidentsList" class="fifa-presidents-list"></div>
       <p class="fifa-presidents-source"><a href="https://inside.fifa.com/organisation/president/past-presidents" target="_blank" rel="noopener noreferrer">FIFA 官方歷任主席資料</a></p>
+      </div>
     </div>
   </div>
 
-  <div id="fifaLatestRankingModal" class="modal-shell fifa-ranking-modal" aria-hidden="true">
+  <div id="fifaLatestRankingModal" class="modal-shell fifa-ranking-modal" data-ui-modal aria-hidden="true">
     <div class="modal-dialog fifa-ranking-dialog" role="dialog" aria-modal="true" aria-labelledby="fifaLatestRankingTitle">
-      <div class="modal-head fifa-ranking-head">
+      <div class="modal-head fifa-ranking-head" data-modal-title>
         <div>
           <h2 id="fifaLatestRankingTitle">FIFA 世界排名</h2>
           <p>FIFA 於 2026/07/20 公布（台灣時間 7/21）｜<a href="https://inside.fifa.com/fifa-world-ranking/men" target="_blank" rel="noopener noreferrer">FIFA 官方完整排名</a></p>
         </div>
-        <button id="closeFifaLatestRankingBtn" class="secondary" type="button">關閉</button>
+        <button id="closeFifaLatestRankingBtn" class="secondary" data-modal-close type="button">關閉</button>
       </div>
+      <div class="modal-scroll-region" data-modal-scroll>
       <div class="fifa-ranking-searchbar">
         <label for="fifaRankingSearch">搜尋</label>
         <div class="fifa-ranking-search-wrap">
@@ -15168,6 +15461,7 @@
         <span id="fifaRankingSearchCount" class="fifa-ranking-search-count">顯示 211 隊</span>
       </div>
       <div id="fifaLatestRankingGrid" class="fifa-ranking-grid"></div>
+      </div>
     </div>
   </div>
 
@@ -15314,7 +15608,7 @@
     </div>
   </div>
 
-  <div class="version-badge" aria-label="目前版本 v2.134" title="目前版本 v2.134">v2.134</div>
+  <div class="version-badge" aria-label="目前版本 v2.135" title="目前版本 v2.135">v2.135</div>
 
 <script id="fifaMemberDirectoryData">
 const FIFA_MEMBER_DIRECTORY = [{"code":"AFG","nameEn":"Afghanistan","nameZh":"阿富汗","iso2":"AF","flagEmoji":"🇦🇫","flagAsset":"","associationName":"Afghanistan Football Federation (AFF)","joined":1948,"established":1922,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/AFG","isTaiwan":false},{"code":"ALB","nameEn":"Albania","nameZh":"阿爾巴尼亞","iso2":"AL","flagEmoji":"🇦🇱","flagAsset":"","associationName":"Federata Shqiptare e Futbollit (FSHF)","joined":1930,"established":1930,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/ALB","isTaiwan":false},{"code":"ALG","nameEn":"Algeria","nameZh":"阿爾及利亞","iso2":"DZ","flagEmoji":"🇩🇿","flagAsset":"","associationName":"Fédération Algérienne de Football (FAF)","joined":1963,"established":1962,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/ALG","isTaiwan":false},{"code":"ASA","nameEn":"American Samoa","nameZh":"美屬薩摩亞","iso2":"AS","flagEmoji":"🇦🇸","flagAsset":"","associationName":"Football Federation American Samoa (FFAS)","joined":1998,"established":1984,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/ASA","isTaiwan":false},{"code":"AND","nameEn":"Andorra","nameZh":"安道爾","iso2":"AD","flagEmoji":"🇦🇩","flagAsset":"","associationName":"Federació Andorrana de Futbol (FAF)","joined":1996,"established":1994,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/AND","isTaiwan":false},{"code":"ANG","nameEn":"Angola","nameZh":"安哥拉","iso2":"AO","flagEmoji":"🇦🇴","flagAsset":"","associationName":"Federação Angolana de Futebol (FAF)","joined":1980,"established":1979,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/ANG","isTaiwan":false},{"code":"AIA","nameEn":"Anguilla","nameZh":"安圭拉","iso2":"AI","flagEmoji":"🇦🇮","flagAsset":"","associationName":"Anguilla Football Association (AFA)","joined":1996,"established":1996,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/AIA","isTaiwan":false},{"code":"ATG","nameEn":"Antigua and Barbuda","nameZh":"安地卡及巴布達","iso2":"AG","flagEmoji":"🇦🇬","flagAsset":"","associationName":"Antigua and Barbuda Football Association (AFA)","joined":1970,"established":1928,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/ATG","isTaiwan":false},{"code":"ARG","nameEn":"Argentina","nameZh":"阿根廷","iso2":"AR","flagEmoji":"🇦🇷","flagAsset":"","associationName":"Asociación del Fútbol Argentino (AFA)","joined":1912,"established":1893,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/ARG","isTaiwan":false},{"code":"ARM","nameEn":"Armenia","nameZh":"亞美尼亞","iso2":"AM","flagEmoji":"🇦🇲","flagAsset":"","associationName":"Hajastani futboli federazia (HFF)","joined":1992,"established":1992,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/ARM","isTaiwan":false},{"code":"ARU","nameEn":"Aruba","nameZh":"阿魯巴","iso2":"AW","flagEmoji":"🇦🇼","flagAsset":"","associationName":"Arubaanse Voetbal Bond (AVB)","joined":1988,"established":1932,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/ARU","isTaiwan":false},{"code":"AUS","nameEn":"Australia","nameZh":"澳洲","iso2":"AU","flagEmoji":"🇦🇺","flagAsset":"","associationName":"Football Australia","joined":1963,"established":1961,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/AUS","isTaiwan":false},{"code":"AUT","nameEn":"Austria","nameZh":"奧地利","iso2":"AT","flagEmoji":"🇦🇹","flagAsset":"","associationName":"Österreichischer Fußball-Bund (ÖFB)","joined":1905,"established":1904,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/AUT","isTaiwan":false},{"code":"AZE","nameEn":"Azerbaijan","nameZh":"亞塞拜然","iso2":"AZ","flagEmoji":"🇦🇿","flagAsset":"","associationName":"Azərbaycan Futbol Federasiyaları Assosiasiyası (AFFA)","joined":1994,"established":1993,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/AZE","isTaiwan":false},{"code":"BAH","nameEn":"Bahamas","nameZh":"巴哈馬","iso2":"BS","flagEmoji":"🇧🇸","flagAsset":"","associationName":"Bahamas Football Association (BFA)","joined":1968,"established":1967,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/BAH","isTaiwan":false},{"code":"BHR","nameEn":"Bahrain","nameZh":"巴林","iso2":"BH","flagEmoji":"🇧🇭","flagAsset":"","associationName":"Bahrain Football Association (BFA)","joined":1966,"established":1957,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/BHR","isTaiwan":false},{"code":"BAN","nameEn":"Bangladesh","nameZh":"孟加拉","iso2":"BD","flagEmoji":"🇧🇩","flagAsset":"","associationName":"Bangladesh Football Federation (BFF)","joined":1974,"established":1972,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/BAN","isTaiwan":false},{"code":"BRB","nameEn":"Barbados","nameZh":"巴貝多","iso2":"BB","flagEmoji":"🇧🇧","flagAsset":"","associationName":"Barbados Football Association (BFA)","joined":1968,"established":1910,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/BRB","isTaiwan":false},{"code":"BLR","nameEn":"Belarus","nameZh":"白俄羅斯","iso2":"BY","flagEmoji":"🇧🇾","flagAsset":"","associationName":"Belaruskaja Federazyja Futbola (FFB)","joined":1992,"established":1989,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/BLR","isTaiwan":false},{"code":"BEL","nameEn":"Belgium","nameZh":"比利時","iso2":"BE","flagEmoji":"🇧🇪","flagAsset":"","associationName":"Koninklijke Belgische Voetbalbond (KBFV)","joined":1904,"established":1895,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/BEL","isTaiwan":false},{"code":"BLZ","nameEn":"Belize","nameZh":"貝里斯","iso2":"BZ","flagEmoji":"🇧🇿","flagAsset":"","associationName":"Football Federation of Belize (BNFA)","joined":1986,"established":1980,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/BLZ","isTaiwan":false},{"code":"BEN","nameEn":"Benin","nameZh":"貝南","iso2":"BJ","flagEmoji":"🇧🇯","flagAsset":"","associationName":"Fédération Béninoise de Football (FBF)","joined":1969,"established":1968,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/BEN","isTaiwan":false},{"code":"BER","nameEn":"Bermuda","nameZh":"百慕達","iso2":"BM","flagEmoji":"🇧🇲","flagAsset":"","associationName":"Bermuda Football Association (BFA)","joined":1962,"established":1928,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/BER","isTaiwan":false},{"code":"BHU","nameEn":"Bhutan","nameZh":"不丹","iso2":"BT","flagEmoji":"🇧🇹","flagAsset":"","associationName":"Bhutan Football Federation (BFF)","joined":2000,"established":1983,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/BHU","isTaiwan":false},{"code":"BOL","nameEn":"Bolivia","nameZh":"玻利維亞","iso2":"BO","flagEmoji":"🇧🇴","flagAsset":"","associationName":"Federación Boliviana de Fútbol (FBF)","joined":1926,"established":1925,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/BOL","isTaiwan":false},{"code":"BIH","nameEn":"Bosnia and Herzegovina","nameZh":"波士尼亞與赫塞哥維納","iso2":"BA","flagEmoji":"🇧🇦","flagAsset":"","associationName":"Nogometni/Fudbalski Savez Bosne i Hercegovine (NFSBIH)","joined":1996,"established":1992,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/BIH","isTaiwan":false},{"code":"BOT","nameEn":"Botswana","nameZh":"波札那","iso2":"BW","flagEmoji":"🇧🇼","flagAsset":"","associationName":"Botswana Football Association (BFA)","joined":1976,"established":1960,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/BOT","isTaiwan":false},{"code":"BRA","nameEn":"Brazil","nameZh":"巴西","iso2":"BR","flagEmoji":"🇧🇷","flagAsset":"","associationName":"Confederação Brasileira de Futebol (CBF)","joined":1917,"established":1914,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/BRA","isTaiwan":false},{"code":"VGB","nameEn":"British Virgin Islands","nameZh":"英屬維京群島","iso2":"VG","flagEmoji":"🇻🇬","flagAsset":"","associationName":"British Virgin Islands Football Association (BVIFA)","joined":1996,"established":1974,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/VGB","isTaiwan":false},{"code":"BRU","nameEn":"Brunei","nameZh":"汶萊","iso2":"BN","flagEmoji":"🇧🇳","flagAsset":"","associationName":"National Football Association of Brunei Darussalam","joined":1969,"established":1952,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/BRU","isTaiwan":false},{"code":"BUL","nameEn":"Bulgaria","nameZh":"保加利亞","iso2":"BG","flagEmoji":"🇧🇬","flagAsset":"","associationName":"Bulgarski futbolen Sojus (BFS)","joined":1924,"established":1923,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/BUL","isTaiwan":false},{"code":"BFA","nameEn":"Burkina Faso","nameZh":"布吉納法索","iso2":"BF","flagEmoji":"🇧🇫","flagAsset":"","associationName":"Fédération Burkinabè de Football (FBF)","joined":1964,"established":1960,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/BFA","isTaiwan":false},{"code":"BDI","nameEn":"Burundi","nameZh":"蒲隆地","iso2":"BI","flagEmoji":"🇧🇮","flagAsset":"","associationName":"Fédération de Football du Burundi (FFB)","joined":1972,"established":1948,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/BDI","isTaiwan":false},{"code":"CAM","nameEn":"Cambodia","nameZh":"柬埔寨","iso2":"KH","flagEmoji":"🇰🇭","flagAsset":"","associationName":"Football Federation of Cambodia (FFC)","joined":1953,"established":1933,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/CAM","isTaiwan":false},{"code":"CMR","nameEn":"Cameroon","nameZh":"喀麥隆","iso2":"CM","flagEmoji":"🇨🇲","flagAsset":"","associationName":"Fédération Camerounaise de Football (FCF)","joined":1962,"established":1959,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/CMR","isTaiwan":false},{"code":"CAN","nameEn":"Canada","nameZh":"加拿大","iso2":"CA","flagEmoji":"🇨🇦","flagAsset":"","associationName":"Canadian Soccer Association (CSA)","joined":1912,"established":1912,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/CAN","isTaiwan":false},{"code":"CPV","nameEn":"Cape Verde","nameZh":"維德角","iso2":"CV","flagEmoji":"🇨🇻","flagAsset":"","associationName":"Federação Caboverdiana de Futebol (FCF)","joined":1986,"established":1982,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/CPV","isTaiwan":false},{"code":"CAY","nameEn":"Cayman Islands","nameZh":"開曼群島","iso2":"KY","flagEmoji":"🇰🇾","flagAsset":"","associationName":"Cayman Islands Football Association (CIFA)","joined":1992,"established":1966,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/CAY","isTaiwan":false},{"code":"CTA","nameEn":"Central African Republic","nameZh":"中非共和國","iso2":"CF","flagEmoji":"🇨🇫","flagAsset":"","associationName":"Fédération Centrafricaine de Football (RCA)","joined":1963,"established":1961,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/CTA","isTaiwan":false},{"code":"CHA","nameEn":"Chad","nameZh":"查德","iso2":"TD","flagEmoji":"🇹🇩","flagAsset":"","associationName":"Fédération Tchadienne de Football Association (FTFA)","joined":1964,"established":1962,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/CHA","isTaiwan":false},{"code":"CHI","nameEn":"Chile","nameZh":"智利","iso2":"CL","flagEmoji":"🇨🇱","flagAsset":"","associationName":"Federación de Fútbol de Chile","joined":1912,"established":1895,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/CHI","isTaiwan":false},{"code":"CHN","nameEn":"China","nameZh":"中國","iso2":"CN","flagEmoji":"🇨🇳","flagAsset":"","associationName":"Chinese Football Association (CFA)","joined":1931,"established":1924,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/CHN","isTaiwan":false},{"code":"TPE","nameEn":"Chinese Taipei","nameZh":"台灣","iso2":"TW","flagEmoji":"🇹🇼","flagAsset":"","associationName":"Chinese Taipei Football Association (CTFA)","joined":1954,"established":1936,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/TPE","isTaiwan":true},{"code":"COL","nameEn":"Colombia","nameZh":"哥倫比亞","iso2":"CO","flagEmoji":"🇨🇴","flagAsset":"","associationName":"Federación Colombiana de Fútbol (FCF)","joined":1936,"established":1924,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/COL","isTaiwan":false},{"code":"COM","nameEn":"Comoros","nameZh":"葛摩","iso2":"KM","flagEmoji":"🇰🇲","flagAsset":"","associationName":"Fédération Comorienne de Football (FCF)","joined":2005,"established":1979,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/COM","isTaiwan":false},{"code":"CGO","nameEn":"Congo","nameZh":"剛果共和國","iso2":"CG","flagEmoji":"🇨🇬","flagAsset":"","associationName":"Fédération Congolaise de Football (FECOFOOT)","joined":1962,"established":1962,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/CGO","isTaiwan":false},{"code":"COK","nameEn":"Cook Islands","nameZh":"庫克群島","iso2":"CK","flagEmoji":"🇨🇰","flagAsset":"","associationName":"Cook Islands Football Association (CIFA)","joined":1994,"established":1971,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/COK","isTaiwan":false},{"code":"CRC","nameEn":"Costa Rica","nameZh":"哥斯大黎加","iso2":"CR","flagEmoji":"🇨🇷","flagAsset":"","associationName":"Federación Costarricense de Fútbol (FCF)","joined":1921,"established":1921,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/CRC","isTaiwan":false},{"code":"CRO","nameEn":"Croatia","nameZh":"克羅埃西亞","iso2":"HR","flagEmoji":"🇭🇷","flagAsset":"","associationName":"Hrvatski nogometni savez (HNS)","joined":1941,"established":1912,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/CRO","isTaiwan":false},{"code":"CUB","nameEn":"Cuba","nameZh":"古巴","iso2":"CU","flagEmoji":"🇨🇺","flagAsset":"","associationName":"Asociación de Fútbol de Cuba (AFC)","joined":1932,"established":1924,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/CUB","isTaiwan":false},{"code":"CUW","nameEn":"Curaçao","nameZh":"古拉索","iso2":"CW","flagEmoji":"🇨🇼","flagAsset":"","associationName":"Federashon Futbòl Kòrsou (FFK)","joined":1932,"established":1921,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/CUW","isTaiwan":false},{"code":"CYP","nameEn":"Cyprus","nameZh":"賽普勒斯","iso2":"CY","flagEmoji":"🇨🇾","flagAsset":"","associationName":"Cyprus Football Association (CFA)","joined":1948,"established":1934,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/CYP","isTaiwan":false},{"code":"CZE","nameEn":"Czech Republic","nameZh":"捷克","iso2":"CZ","flagEmoji":"🇨🇿","flagAsset":"","associationName":"Fotbalová asociace České republiky (FAČR)","joined":1907,"established":1993,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/CZE","isTaiwan":false},{"code":"DEN","nameEn":"Denmark","nameZh":"丹麥","iso2":"DK","flagEmoji":"🇩🇰","flagAsset":"","associationName":"Dansk Boldspil-Union (DBU)","joined":1904,"established":1889,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/DEN","isTaiwan":false},{"code":"DJI","nameEn":"Djibouti","nameZh":"吉布地","iso2":"DJ","flagEmoji":"🇩🇯","flagAsset":"","associationName":"Fédération Djiboutienne de Football (FDF)","joined":1958,"established":1977,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/DJI","isTaiwan":false},{"code":"DMA","nameEn":"Dominica","nameZh":"多米尼克","iso2":"DM","flagEmoji":"🇩🇲","flagAsset":"","associationName":"Dominica Football Association (DFA)","joined":1993,"established":1973,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/DMA","isTaiwan":false},{"code":"DOM","nameEn":"Dominican Republic","nameZh":"多明尼加","iso2":"DO","flagEmoji":"🇩🇴","flagAsset":"","associationName":"Federación Dominicana de Fútbol (FDF)","joined":1958,"established":1953,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/DOM","isTaiwan":false},{"code":"COD","nameEn":"DR Congo","nameZh":"剛果民主共和國","iso2":"CD","flagEmoji":"🇨🇩","flagAsset":"","associationName":"Fédération Congolaise de Football-Association (FE.CO.F.A.)","joined":1962,"established":1919,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/COD","isTaiwan":false},{"code":"ECU","nameEn":"Ecuador","nameZh":"厄瓜多","iso2":"EC","flagEmoji":"🇪🇨","flagAsset":"","associationName":"Federación Ecuatoriana de Fútbol (FEF)","joined":1926,"established":1925,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/ECU","isTaiwan":false},{"code":"EGY","nameEn":"Egypt","nameZh":"埃及","iso2":"EG","flagEmoji":"🇪🇬","flagAsset":"","associationName":"Egyptian Football Association (EFA)","joined":1923,"established":1921,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/EGY","isTaiwan":false},{"code":"SLV","nameEn":"El Salvador","nameZh":"薩爾瓦多","iso2":"SV","flagEmoji":"🇸🇻","flagAsset":"","associationName":"Federación Salvadoreña de Fútbol (FSF)","joined":1938,"established":1935,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/SLV","isTaiwan":false},{"code":"ENG","nameEn":"England","nameZh":"英格蘭","iso2":"GB","flagEmoji":"🇬🇧","flagAsset":"assets/flags/ENG.svg","associationName":"The Football Association (FA)","joined":1905,"established":1863,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/ENG","isTaiwan":false},{"code":"EQG","nameEn":"Equatorial Guinea","nameZh":"赤道幾內亞","iso2":"GQ","flagEmoji":"🇬🇶","flagAsset":"","associationName":"Federación Ecuatoguineana de Fútbol (FEF)","joined":1986,"established":1928,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/EQG","isTaiwan":false},{"code":"ERI","nameEn":"Eritrea","nameZh":"厄利垂亞","iso2":"ER","flagEmoji":"🇪🇷","flagAsset":"","associationName":"Eritrean National Football Federation (ENFF)","joined":1998,"established":1992,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/ERI","isTaiwan":false},{"code":"EST","nameEn":"Estonia","nameZh":"愛沙尼亞","iso2":"EE","flagEmoji":"🇪🇪","flagAsset":"","associationName":"Eesti Jalgpalli Liit (EJL)","joined":1923,"established":1921,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/EST","isTaiwan":false},{"code":"SWZ","nameEn":"Eswatini","nameZh":"史瓦帝尼","iso2":"SZ","flagEmoji":"🇸🇿","flagAsset":"","associationName":"Eswatini Football Association (EFA)","joined":1976,"established":1968,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/SWZ","isTaiwan":false},{"code":"ETH","nameEn":"Ethiopia","nameZh":"衣索比亞","iso2":"ET","flagEmoji":"🇪🇹","flagAsset":"","associationName":"Ethiopian Football Federation (EFF)","joined":1953,"established":1943,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/ETH","isTaiwan":false},{"code":"FRO","nameEn":"Faroe Islands","nameZh":"法羅群島","iso2":"FO","flagEmoji":"🇫🇴","flagAsset":"","associationName":"Fótbóltssamband Føroya (FSF)","joined":1988,"established":1979,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/FRO","isTaiwan":false},{"code":"FIJ","nameEn":"Fiji","nameZh":"斐濟","iso2":"FJ","flagEmoji":"🇫🇯","flagAsset":"","associationName":"Fiji Football Association (FFA)","joined":1963,"established":1938,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/FIJ","isTaiwan":false},{"code":"FIN","nameEn":"Finland","nameZh":"芬蘭","iso2":"FI","flagEmoji":"🇫🇮","flagAsset":"","associationName":"Suomen Palloliitto (SPL)","joined":1908,"established":1907,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/FIN","isTaiwan":false},{"code":"FRA","nameEn":"France","nameZh":"法國","iso2":"FR","flagEmoji":"🇫🇷","flagAsset":"","associationName":"Fédération Française de Football (FFF)","joined":1904,"established":1919,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/FRA","isTaiwan":false},{"code":"GAB","nameEn":"Gabon","nameZh":"加彭","iso2":"GA","flagEmoji":"🇬🇦","flagAsset":"","associationName":"Fédération Gabonaise de Football (FGF)","joined":1963,"established":1962,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/GAB","isTaiwan":false},{"code":"GAM","nameEn":"Gambia","nameZh":"甘比亞","iso2":"GM","flagEmoji":"🇬🇲","flagAsset":"","associationName":"Gambia Football Federation (GFF)","joined":1966,"established":1952,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/GAM","isTaiwan":false},{"code":"GEO","nameEn":"Georgia","nameZh":"喬治亞","iso2":"GE","flagEmoji":"🇬🇪","flagAsset":"","associationName":"Sakartwelos Pechburtis Pederazis (SPP)","joined":1992,"established":1990,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/GEO","isTaiwan":false},{"code":"GER","nameEn":"Germany","nameZh":"德國","iso2":"DE","flagEmoji":"🇩🇪","flagAsset":"","associationName":"Deutscher Fußball-Bund (DFB)","joined":1904,"established":1900,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/GER","isTaiwan":false},{"code":"GHA","nameEn":"Ghana","nameZh":"迦納","iso2":"GH","flagEmoji":"🇬🇭","flagAsset":"","associationName":"Ghana Football Association (GFA)","joined":1958,"established":1957,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/GHA","isTaiwan":false},{"code":"GIB","nameEn":"Gibraltar","nameZh":"直布羅陀","iso2":"GI","flagEmoji":"🇬🇮","flagAsset":"","associationName":"Gibraltar Football Association (GFA)","joined":2016,"established":1895,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/GIB","isTaiwan":false},{"code":"GRE","nameEn":"Greece","nameZh":"希臘","iso2":"GR","flagEmoji":"🇬🇷","flagAsset":"","associationName":"Elliniki Podosferiki Omospondia (EPO)","joined":1927,"established":1926,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/GRE","isTaiwan":false},{"code":"GRN","nameEn":"Grenada","nameZh":"格瑞那達","iso2":"GD","flagEmoji":"🇬🇩","flagAsset":"","associationName":"Grenada Football Association (GFA)","joined":1976,"established":1924,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/GRN","isTaiwan":false},{"code":"GUM","nameEn":"Guam","nameZh":"關島","iso2":"GU","flagEmoji":"🇬🇺","flagAsset":"","associationName":"Guam Football Association (GFA)","joined":1996,"established":1975,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/GUM","isTaiwan":false},{"code":"GUA","nameEn":"Guatemala","nameZh":"瓜地馬拉","iso2":"GT","flagEmoji":"🇬🇹","flagAsset":"","associationName":"Federación Nacional de Fútbol de Guatemala (FENAFUTG)","joined":1933,"established":1926,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/GUA","isTaiwan":false},{"code":"GUI","nameEn":"Guinea","nameZh":"幾內亞","iso2":"GN","flagEmoji":"🇬🇳","flagAsset":"","associationName":"Fédération Guinéenne de Football (FGF)","joined":1961,"established":1959,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/GUI","isTaiwan":false},{"code":"GNB","nameEn":"Guinea-Bissau","nameZh":"幾內亞比索","iso2":"GW","flagEmoji":"🇬🇼","flagAsset":"","associationName":"Federação de Futebol da Guiné-Bissau (FFGB)","joined":1986,"established":1974,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/GNB","isTaiwan":false},{"code":"GUY","nameEn":"Guyana","nameZh":"蓋亞那","iso2":"GY","flagEmoji":"🇬🇾","flagAsset":"","associationName":"Guyana Football Federation (GFF)","joined":1968,"established":1902,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/GUY","isTaiwan":false},{"code":"HAI","nameEn":"Haiti","nameZh":"海地","iso2":"HT","flagEmoji":"🇭🇹","flagAsset":"","associationName":"Fédération Haïtienne de Football (FHF)","joined":1937,"established":1933,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/HAI","isTaiwan":false},{"code":"HON","nameEn":"Honduras","nameZh":"宏都拉斯","iso2":"HN","flagEmoji":"🇭🇳","flagAsset":"","associationName":"Federación Nacional Autónoma de Fútbol de Honduras (FENAFUTH)","joined":1951,"established":1935,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/HON","isTaiwan":false},{"code":"HKG","nameEn":"Hong Kong","nameZh":"香港","iso2":"HK","flagEmoji":"🇭🇰","flagAsset":"","associationName":"The Hong Kong Football Association (HFA)","joined":1954,"established":1914,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/HKG","isTaiwan":false},{"code":"HUN","nameEn":"Hungary","nameZh":"匈牙利","iso2":"HU","flagEmoji":"🇭🇺","flagAsset":"","associationName":"Magyar Labdarúgó Szövetség (MLS)","joined":1907,"established":1901,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/HUN","isTaiwan":false},{"code":"ISL","nameEn":"Iceland","nameZh":"冰島","iso2":"IS","flagEmoji":"🇮🇸","flagAsset":"","associationName":"Knattspyrnusamband Íslands (KSI)","joined":1929,"established":1907,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/ISL","isTaiwan":false},{"code":"IND","nameEn":"India","nameZh":"印度","iso2":"IN","flagEmoji":"🇮🇳","flagAsset":"","associationName":"All India Football Federation (AIFF)","joined":1948,"established":1937,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/IND","isTaiwan":false},{"code":"IDN","nameEn":"Indonesia","nameZh":"印尼","iso2":"ID","flagEmoji":"🇮🇩","flagAsset":"","associationName":"Football Association of Indonesia (PSSI)","joined":1952,"established":1930,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/IDN","isTaiwan":false},{"code":"IRN","nameEn":"Iran","nameZh":"伊朗","iso2":"IR","flagEmoji":"🇮🇷","flagAsset":"","associationName":"Football Federation Islamic Republic of Iran (FFIRI)","joined":1948,"established":1922,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/IRN","isTaiwan":false},{"code":"IRQ","nameEn":"Iraq","nameZh":"伊拉克","iso2":"IQ","flagEmoji":"🇮🇶","flagAsset":"","associationName":"Iraq Football Association (IFA)","joined":1950,"established":1948,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/IRQ","isTaiwan":false},{"code":"ISR","nameEn":"Israel","nameZh":"以色列","iso2":"IL","flagEmoji":"🇮🇱","flagAsset":"","associationName":"Israel Football Association (IFA)","joined":1929,"established":1928,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/ISR","isTaiwan":false},{"code":"ITA","nameEn":"Italy","nameZh":"義大利","iso2":"IT","flagEmoji":"🇮🇹","flagAsset":"","associationName":"Federazione Italiana Giuoco Calcio (FIGC)","joined":1905,"established":1898,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/ITA","isTaiwan":false},{"code":"CIV","nameEn":"Ivory Coast","nameZh":"象牙海岸","iso2":"CI","flagEmoji":"🇨🇮","flagAsset":"","associationName":"Fédération Ivoirienne de Football (FIF)","joined":1960,"established":1960,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/CIV","isTaiwan":false},{"code":"JAM","nameEn":"Jamaica","nameZh":"牙買加","iso2":"JM","flagEmoji":"🇯🇲","flagAsset":"","associationName":"Jamaica Football Federation (JFF)","joined":1962,"established":1910,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/JAM","isTaiwan":false},{"code":"JPN","nameEn":"Japan","nameZh":"日本","iso2":"JP","flagEmoji":"🇯🇵","flagAsset":"","associationName":"Japan Football Association (JFA)","joined":1929,"established":1921,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/JPN","isTaiwan":false},{"code":"JOR","nameEn":"Jordan","nameZh":"約旦","iso2":"JO","flagEmoji":"🇯🇴","flagAsset":"","associationName":"Jordan Football Association (JFA)","joined":1958,"established":1949,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/JOR","isTaiwan":false},{"code":"KAZ","nameEn":"Kazakhstan","nameZh":"哈薩克","iso2":"KZ","flagEmoji":"🇰🇿","flagAsset":"","associationName":"Qasaqstannyng Futbol Federazijassy (KFF)","joined":1994,"established":1989,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/KAZ","isTaiwan":false},{"code":"KEN","nameEn":"Kenya","nameZh":"肯亞","iso2":"KE","flagEmoji":"🇰🇪","flagAsset":"","associationName":"Football Kenya Federation (FKF)","joined":1960,"established":1960,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/KEN","isTaiwan":false},{"code":"KOS","nameEn":"Kosovo","nameZh":"科索沃","iso2":"XK","flagEmoji":"🇽🇰","flagAsset":"","associationName":"Federata e Futbollit e Kosovës (FFK)","joined":2016,"established":1946,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/KOS","isTaiwan":false},{"code":"KUW","nameEn":"Kuwait","nameZh":"科威特","iso2":"KW","flagEmoji":"🇰🇼","flagAsset":"","associationName":"Kuwait Football Association (KFA)","joined":1962,"established":1952,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/KUW","isTaiwan":false},{"code":"KGZ","nameEn":"Kyrgyzstan","nameZh":"吉爾吉斯","iso2":"KG","flagEmoji":"🇰🇬","flagAsset":"","associationName":"Football Federation of Kyrgyz Republic (FFKR)","joined":1994,"established":1992,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/KGZ","isTaiwan":false},{"code":"LAO","nameEn":"Laos","nameZh":"寮國","iso2":"LA","flagEmoji":"🇱🇦","flagAsset":"","associationName":"Fédération Lao de Football (FLF)","joined":1952,"established":1951,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/LAO","isTaiwan":false},{"code":"LVA","nameEn":"Latvia","nameZh":"拉脫維亞","iso2":"LV","flagEmoji":"🇱🇻","flagAsset":"","associationName":"Latvijas Futbola federācija (LFF)","joined":1923,"established":1921,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/LVA","isTaiwan":false},{"code":"LBN","nameEn":"Lebanon","nameZh":"黎巴嫩","iso2":"LB","flagEmoji":"🇱🇧","flagAsset":"","associationName":"Fédération Libanaise de Football Association (FLFA)","joined":1935,"established":1933,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/LBN","isTaiwan":false},{"code":"LES","nameEn":"Lesotho","nameZh":"賴索托","iso2":"LS","flagEmoji":"🇱🇸","flagAsset":"","associationName":"Lesotho Football Association (LFA)","joined":1964,"established":1932,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/LES","isTaiwan":false},{"code":"LBR","nameEn":"Liberia","nameZh":"賴比瑞亞","iso2":"LR","flagEmoji":"🇱🇷","flagAsset":"","associationName":"Liberia Football Association (LFA)","joined":1962,"established":1936,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/LBR","isTaiwan":false},{"code":"LBY","nameEn":"Libya","nameZh":"利比亞","iso2":"LY","flagEmoji":"🇱🇾","flagAsset":"","associationName":"Libyan Football Federation (LFF)","joined":1963,"established":1962,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/LBY","isTaiwan":false},{"code":"LIE","nameEn":"Liechtenstein","nameZh":"列支敦斯登","iso2":"LI","flagEmoji":"🇱🇮","flagAsset":"","associationName":"Liechtensteiner Fussballverband (LFV)","joined":1974,"established":1934,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/LIE","isTaiwan":false},{"code":"LTU","nameEn":"Lithuania","nameZh":"立陶宛","iso2":"LT","flagEmoji":"🇱🇹","flagAsset":"","associationName":"Lietuvos futbolo federacija (LFF)","joined":1923,"established":1923,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/LTU","isTaiwan":false},{"code":"LUX","nameEn":"Luxembourg","nameZh":"盧森堡","iso2":"LU","flagEmoji":"🇱🇺","flagAsset":"","associationName":"Fédération Luxembourgeoise de Football (FLF)","joined":1910,"established":1908,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/LUX","isTaiwan":false},{"code":"MAC","nameEn":"Macau","nameZh":"澳門","iso2":"MO","flagEmoji":"🇲🇴","flagAsset":"","associationName":"Associação de Futebol de Macau (AFM)","joined":1976,"established":1939,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/MAC","isTaiwan":false},{"code":"MAD","nameEn":"Madagascar","nameZh":"馬達加斯加","iso2":"MG","flagEmoji":"🇲🇬","flagAsset":"","associationName":"Fédération Malagasy de Football (FMF)","joined":1962,"established":1961,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/MAD","isTaiwan":false},{"code":"MWI","nameEn":"Malawi","nameZh":"馬拉威","iso2":"MW","flagEmoji":"🇲🇼","flagAsset":"","associationName":"Football Association of Malawi (FAM)","joined":1967,"established":1966,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/MWI","isTaiwan":false},{"code":"MAS","nameEn":"Malaysia","nameZh":"馬來西亞","iso2":"MY","flagEmoji":"🇲🇾","flagAsset":"","associationName":"Football Association of Malaysia (PBM)","joined":1956,"established":1933,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/MAS","isTaiwan":false},{"code":"MDV","nameEn":"Maldives","nameZh":"馬爾地夫","iso2":"MV","flagEmoji":"🇲🇻","flagAsset":"","associationName":"Football Association of Maldives (FAM)","joined":1986,"established":1982,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/MDV","isTaiwan":false},{"code":"MLI","nameEn":"Mali","nameZh":"馬利","iso2":"ML","flagEmoji":"🇲🇱","flagAsset":"","associationName":"Fédération Malienne de Football (FMF)","joined":1962,"established":1960,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/MLI","isTaiwan":false},{"code":"MLT","nameEn":"Malta","nameZh":"馬爾他","iso2":"MT","flagEmoji":"🇲🇹","flagAsset":"","associationName":"Malta Football Association (MFA)","joined":1959,"established":1900,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/MLT","isTaiwan":false},{"code":"MTN","nameEn":"Mauritania","nameZh":"茅利塔尼亞","iso2":"MR","flagEmoji":"🇲🇷","flagAsset":"","associationName":"Fédération de Football de la République Islamique de Mauritanie (FFRIM)","joined":1964,"established":1961,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/MTN","isTaiwan":false},{"code":"MRI","nameEn":"Mauritius","nameZh":"模里西斯","iso2":"MU","flagEmoji":"🇲🇺","flagAsset":"","associationName":"Mauritius Football Association (MFA)","joined":1962,"established":1952,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/MRI","isTaiwan":false},{"code":"MEX","nameEn":"Mexico","nameZh":"墨西哥","iso2":"MX","flagEmoji":"🇲🇽","flagAsset":"","associationName":"Federación Mexicana de Fútbol Asociación (FMF)","joined":1929,"established":1927,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/MEX","isTaiwan":false},{"code":"MDA","nameEn":"Moldova","nameZh":"摩爾多瓦","iso2":"MD","flagEmoji":"🇲🇩","flagAsset":"","associationName":"Federația Moldovenească de Fotbal (FMF)","joined":1994,"established":1990,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/MDA","isTaiwan":false},{"code":"MNG","nameEn":"Mongolia","nameZh":"蒙古","iso2":"MN","flagEmoji":"🇲🇳","flagAsset":"","associationName":"Mongolian Football Federation (MFF)","joined":1998,"established":1959,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/MNG","isTaiwan":false},{"code":"MNE","nameEn":"Montenegro","nameZh":"蒙特內哥羅","iso2":"ME","flagEmoji":"🇲🇪","flagAsset":"","associationName":"Fudbalski savez Crne Gore (FSCG)","joined":2007,"established":2006,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/MNE","isTaiwan":false},{"code":"MSR","nameEn":"Montserrat","nameZh":"蒙哲臘","iso2":"MS","flagEmoji":"🇲🇸","flagAsset":"","associationName":"Montserrat Football Association (MFA)","joined":1996,"established":1994,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/MSR","isTaiwan":false},{"code":"MAR","nameEn":"Morocco","nameZh":"摩洛哥","iso2":"MA","flagEmoji":"🇲🇦","flagAsset":"","associationName":"Fédération Royale Marocaine de Football (FMF)","joined":1956,"established":1955,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/MAR","isTaiwan":false},{"code":"MOZ","nameEn":"Mozambique","nameZh":"莫三比克","iso2":"MZ","flagEmoji":"🇲🇿","flagAsset":"","associationName":"Federação Moçambicana de Futebol (FMF)","joined":1980,"established":1975,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/MOZ","isTaiwan":false},{"code":"MYA","nameEn":"Myanmar","nameZh":"緬甸","iso2":"MM","flagEmoji":"🇲🇲","flagAsset":"","associationName":"Myanmar Football Federation (MFF)","joined":1957,"established":1947,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/MYA","isTaiwan":false},{"code":"NAM","nameEn":"Namibia","nameZh":"納米比亞","iso2":"NA","flagEmoji":"🇳🇦","flagAsset":"","associationName":"Namibia Football Association (NFA)","joined":1992,"established":1990,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/NAM","isTaiwan":false},{"code":"NEP","nameEn":"Nepal","nameZh":"尼泊爾","iso2":"NP","flagEmoji":"🇳🇵","flagAsset":"","associationName":"All Nepal Football Association (ANFA)","joined":1970,"established":1951,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/NEP","isTaiwan":false},{"code":"NED","nameEn":"Netherlands","nameZh":"荷蘭","iso2":"NL","flagEmoji":"🇳🇱","flagAsset":"","associationName":"Koninklijke Nederlandse Voetbal Bond (KNVB)","joined":1904,"established":1889,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/NED","isTaiwan":false},{"code":"NCL","nameEn":"New Caledonia","nameZh":"新喀里多尼亞","iso2":"NC","flagEmoji":"🇳🇨","flagAsset":"","associationName":"Fédération Calédonienne de Football (LFNC)","joined":2004,"established":1928,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/NCL","isTaiwan":false},{"code":"NZL","nameEn":"New Zealand","nameZh":"紐西蘭","iso2":"NZ","flagEmoji":"🇳🇿","flagAsset":"","associationName":"New Zealand Football (NZF)","joined":1948,"established":1891,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/NZL","isTaiwan":false},{"code":"NCA","nameEn":"Nicaragua","nameZh":"尼加拉瓜","iso2":"NI","flagEmoji":"🇳🇮","flagAsset":"","associationName":"Federación Nicaragüense de Fútbol (FNF)","joined":1950,"established":1931,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/NCA","isTaiwan":false},{"code":"NIG","nameEn":"Niger","nameZh":"尼日","iso2":"NE","flagEmoji":"🇳🇪","flagAsset":"","associationName":"Fédération Nigérienne de Football (FNF)","joined":1967,"established":1967,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/NIG","isTaiwan":false},{"code":"NGA","nameEn":"Nigeria","nameZh":"奈及利亞","iso2":"NG","flagEmoji":"🇳🇬","flagAsset":"","associationName":"Nigeria Football Federation (NFF)","joined":1960,"established":1945,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/NGA","isTaiwan":false},{"code":"PRK","nameEn":"North Korea","nameZh":"北韓","iso2":"KP","flagEmoji":"🇰🇵","flagAsset":"","associationName":"DPR Korea Football Association","joined":1958,"established":1945,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/PRK","isTaiwan":false},{"code":"MKD","nameEn":"North Macedonia","nameZh":"北馬其頓","iso2":"MK","flagEmoji":"🇲🇰","flagAsset":"","associationName":"Fudbalska Federacija na Makedonija","joined":1994,"established":1992,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/MKD","isTaiwan":false},{"code":"NIR","nameEn":"Northern Ireland","nameZh":"北愛爾蘭","iso2":"GB","flagEmoji":"🇬🇧","flagAsset":"assets/history_flags/northern_ireland.svg","associationName":"Irish Football Association (IFA)","joined":1911,"established":1880,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/NIR","isTaiwan":false},{"code":"NOR","nameEn":"Norway","nameZh":"挪威","iso2":"NO","flagEmoji":"🇳🇴","flagAsset":"","associationName":"Norges Fotballforbund (NF)","joined":1908,"established":1902,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/NOR","isTaiwan":false},{"code":"OMA","nameEn":"Oman","nameZh":"阿曼","iso2":"OM","flagEmoji":"🇴🇲","flagAsset":"","associationName":"Oman Football Association (OFA)","joined":1980,"established":1978,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/OMA","isTaiwan":false},{"code":"PAK","nameEn":"Pakistan","nameZh":"巴基斯坦","iso2":"PK","flagEmoji":"🇵🇰","flagAsset":"","associationName":"Pakistan Football Federation (PFF)","joined":1948,"established":1948,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/PAK","isTaiwan":false},{"code":"PLE","nameEn":"Palestine","nameZh":"巴勒斯坦","iso2":"PS","flagEmoji":"🇵🇸","flagAsset":"","associationName":"Palestinian Football Association (PFA)","joined":1998,"established":1964,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/PLE","isTaiwan":false},{"code":"PAN","nameEn":"Panama","nameZh":"巴拿馬","iso2":"PA","flagEmoji":"🇵🇦","flagAsset":"","associationName":"Federación Panameña de Fútbol (FEPAFUT)","joined":1938,"established":1937,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/PAN","isTaiwan":false},{"code":"PNG","nameEn":"Papua New Guinea","nameZh":"巴布亞紐幾內亞","iso2":"PG","flagEmoji":"🇵🇬","flagAsset":"","associationName":"Papua New Guinea Football Association (PNGFA)","joined":1966,"established":1962,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/PNG","isTaiwan":false},{"code":"PAR","nameEn":"Paraguay","nameZh":"巴拉圭","iso2":"PY","flagEmoji":"🇵🇾","flagAsset":"","associationName":"Asociación Paraguaya de Fútbol (APF)","joined":1921,"established":1906,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/PAR","isTaiwan":false},{"code":"PER","nameEn":"Peru","nameZh":"秘魯","iso2":"PE","flagEmoji":"🇵🇪","flagAsset":"","associationName":"Federación Peruana de Fútbol (FPF)","joined":1924,"established":1922,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/PER","isTaiwan":false},{"code":"PHI","nameEn":"Philippines","nameZh":"菲律賓","iso2":"PH","flagEmoji":"🇵🇭","flagAsset":"","associationName":"Philippine Football Federation (PFF)","joined":1928,"established":1907,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/PHI","isTaiwan":false},{"code":"POL","nameEn":"Poland","nameZh":"波蘭","iso2":"PL","flagEmoji":"🇵🇱","flagAsset":"","associationName":"Polski Związek Piłki Nożnej (PZPN)","joined":1923,"established":1919,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/POL","isTaiwan":false},{"code":"POR","nameEn":"Portugal","nameZh":"葡萄牙","iso2":"PT","flagEmoji":"🇵🇹","flagAsset":"","associationName":"Federação Portuguesa de Futebol (FPF)","joined":1923,"established":1914,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/POR","isTaiwan":false},{"code":"PUR","nameEn":"Puerto Rico","nameZh":"波多黎各","iso2":"PR","flagEmoji":"🇵🇷","flagAsset":"","associationName":"Federación Puertorriqueña de Fútbol (FPF)","joined":1960,"established":1940,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/PUR","isTaiwan":false},{"code":"QAT","nameEn":"Qatar","nameZh":"卡達","iso2":"QA","flagEmoji":"🇶🇦","flagAsset":"","associationName":"Qatar Football Association (QFA)","joined":1970,"established":1960,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/QAT","isTaiwan":false},{"code":"IRL","nameEn":"Republic of Ireland","nameZh":"愛爾蘭","iso2":"IE","flagEmoji":"🇮🇪","flagAsset":"","associationName":"Football Association of Ireland (FAI)","joined":1923,"established":1921,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/IRL","isTaiwan":false},{"code":"ROU","nameEn":"Romania","nameZh":"羅馬尼亞","iso2":"RO","flagEmoji":"🇷🇴","flagAsset":"","associationName":"Federația Română de Fotbal (FRF)","joined":1923,"established":1909,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/ROU","isTaiwan":false},{"code":"RUS","nameEn":"Russia","nameZh":"俄羅斯","iso2":"RU","flagEmoji":"🇷🇺","flagAsset":"","associationName":"Rossijski Futbolny Sojus (RFS)","joined":1912,"established":1912,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/RUS","isTaiwan":false},{"code":"RWA","nameEn":"Rwanda","nameZh":"盧安達","iso2":"RW","flagEmoji":"🇷🇼","flagAsset":"","associationName":"Fédération Rwandaise de Football Association (FRFA)","joined":1976,"established":1972,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/RWA","isTaiwan":false},{"code":"SKN","nameEn":"Saint Kitts and Nevis","nameZh":"聖克里斯多福及尼維斯","iso2":"KN","flagEmoji":"🇰🇳","flagAsset":"","associationName":"St. Kitts and Nevis Football Association (SKNFA)","joined":1992,"established":1932,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/SKN","isTaiwan":false},{"code":"LCA","nameEn":"Saint Lucia","nameZh":"聖露西亞","iso2":"LC","flagEmoji":"🇱🇨","flagAsset":"","associationName":"St. Lucia Football Association (LFA)","joined":1988,"established":1979,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/LCA","isTaiwan":false},{"code":"VIN","nameEn":"Saint Vincent and the Grenadines","nameZh":"聖文森及格瑞那丁","iso2":"VC","flagEmoji":"🇻🇨","flagAsset":"","associationName":"St. Vincent and The Grenadines Football Federation (VGFF)","joined":1988,"established":1979,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/VIN","isTaiwan":false},{"code":"SAM","nameEn":"Samoa","nameZh":"薩摩亞","iso2":"WS","flagEmoji":"🇼🇸","flagAsset":"","associationName":"Football Federation Samoa (SFA)","joined":1986,"established":1968,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/SAM","isTaiwan":false},{"code":"SMR","nameEn":"San Marino","nameZh":"聖馬利諾","iso2":"SM","flagEmoji":"🇸🇲","flagAsset":"","associationName":"Federazione Sammarinese Giuoco Calcio (FSGC)","joined":1988,"established":1931,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/SMR","isTaiwan":false},{"code":"STP","nameEn":"São Tomé and Príncipe","nameZh":"聖多美普林西比","iso2":"ST","flagEmoji":"🇸🇹","flagAsset":"","associationName":"Federação Santomense de Futebol (FSF)","joined":1986,"established":1975,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/STP","isTaiwan":false},{"code":"KSA","nameEn":"Saudi Arabia","nameZh":"沙烏地阿拉伯","iso2":"SA","flagEmoji":"🇸🇦","flagAsset":"","associationName":"Saudi Arabian Football Federation (SAFF)","joined":1959,"established":1959,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/KSA","isTaiwan":false},{"code":"SCO","nameEn":"Scotland","nameZh":"蘇格蘭","iso2":"GB","flagEmoji":"🇬🇧","flagAsset":"assets/flags/SCO.svg","associationName":"Scottish Football Association (SFA)","joined":1910,"established":1873,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/SCO","isTaiwan":false},{"code":"SEN","nameEn":"Senegal","nameZh":"塞內加爾","iso2":"SN","flagEmoji":"🇸🇳","flagAsset":"","associationName":"Fédération Sénégalaise de Football (FSF)","joined":1962,"established":1960,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/SEN","isTaiwan":false},{"code":"SRB","nameEn":"Serbia","nameZh":"塞爾維亞","iso2":"RS","flagEmoji":"🇷🇸","flagAsset":"","associationName":"Fudbalski savez Srbije (FSS)","joined":1919,"established":1919,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/SRB","isTaiwan":false},{"code":"SEY","nameEn":"Seychelles","nameZh":"塞席爾","iso2":"SC","flagEmoji":"🇸🇨","flagAsset":"","associationName":"Seychelles Football Federation (SFF)","joined":1986,"established":1979,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/SEY","isTaiwan":false},{"code":"SLE","nameEn":"Sierra Leone","nameZh":"獅子山","iso2":"SL","flagEmoji":"🇸🇱","flagAsset":"","associationName":"Sierra Leone Football Association (SLFA)","joined":1967,"established":1967,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/SLE","isTaiwan":false},{"code":"SGP","nameEn":"Singapore","nameZh":"新加坡","iso2":"SG","flagEmoji":"🇸🇬","flagAsset":"","associationName":"Football Association of Singapore (FAS)","joined":1952,"established":1892,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/SGP","isTaiwan":false},{"code":"SVK","nameEn":"Slovakia","nameZh":"斯洛伐克","iso2":"SK","flagEmoji":"🇸🇰","flagAsset":"","associationName":"Slovenský futbalový zväz (SFZ)","joined":1993,"established":1993,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/SVK","isTaiwan":false},{"code":"SVN","nameEn":"Slovenia","nameZh":"斯洛維尼亞","iso2":"SI","flagEmoji":"🇸🇮","flagAsset":"","associationName":"Nogometna zveza Slovenije (NZS)","joined":1992,"established":1920,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/SVN","isTaiwan":false},{"code":"SOL","nameEn":"Solomon Islands","nameZh":"索羅門群島","iso2":"SB","flagEmoji":"🇸🇧","flagAsset":"","associationName":"Solomon Islands Football Federation (SIFF)","joined":1988,"established":1978,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/SOL","isTaiwan":false},{"code":"SOM","nameEn":"Somalia","nameZh":"索馬利亞","iso2":"SO","flagEmoji":"🇸🇴","flagAsset":"","associationName":"Somali Football Federation (SFF)","joined":1960,"established":1951,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/SOM","isTaiwan":false},{"code":"RSA","nameEn":"South Africa","nameZh":"南非","iso2":"ZA","flagEmoji":"🇿🇦","flagAsset":"","associationName":"South African Football Association (SAFA)","joined":1992,"established":1991,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/RSA","isTaiwan":false},{"code":"KOR","nameEn":"South Korea","nameZh":"南韓","iso2":"KR","flagEmoji":"🇰🇷","flagAsset":"","associationName":"Korea Football Association (KFA)","joined":1948,"established":1945,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/KOR","isTaiwan":false},{"code":"SSD","nameEn":"South Sudan","nameZh":"南蘇丹","iso2":"SS","flagEmoji":"🇸🇸","flagAsset":"","associationName":"South Sudan Football Association (SSFA)","joined":2012,"established":2011,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/SSD","isTaiwan":false},{"code":"ESP","nameEn":"Spain","nameZh":"西班牙","iso2":"ES","flagEmoji":"🇪🇸","flagAsset":"","associationName":"Real Federación Española de Fútbol (FEF)","joined":1904,"established":1913,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/ESP","isTaiwan":false},{"code":"SRI","nameEn":"Sri Lanka","nameZh":"斯里蘭卡","iso2":"LK","flagEmoji":"🇱🇰","flagAsset":"","associationName":"Football Federation of Sri Lanka (SLFA)","joined":1950,"established":1939,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/SRI","isTaiwan":false},{"code":"SDN","nameEn":"Sudan","nameZh":"蘇丹","iso2":"SD","flagEmoji":"🇸🇩","flagAsset":"","associationName":"Sudan Football Association (SFA)","joined":1948,"established":1936,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/SDN","isTaiwan":false},{"code":"SUR","nameEn":"Suriname","nameZh":"蘇利南","iso2":"SR","flagEmoji":"🇸🇷","flagAsset":"","associationName":"Surinaamse Voetbal Bond (SVB)","joined":1929,"established":1920,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/SUR","isTaiwan":false},{"code":"SWE","nameEn":"Sweden","nameZh":"瑞典","iso2":"SE","flagEmoji":"🇸🇪","flagAsset":"","associationName":"Svenska Fotbollförbundet (SF)","joined":1904,"established":1904,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/SWE","isTaiwan":false},{"code":"SUI","nameEn":"Switzerland","nameZh":"瑞士","iso2":"CH","flagEmoji":"🇨🇭","flagAsset":"","associationName":"Schweizerischer Fussballverband (SFV)","joined":1904,"established":1895,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/SUI","isTaiwan":false},{"code":"SYR","nameEn":"Syria","nameZh":"敘利亞","iso2":"SY","flagEmoji":"🇸🇾","flagAsset":"","associationName":"Syrischer Arabischer Fußballverband (SAF)","joined":1937,"established":1936,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/SYR","isTaiwan":false},{"code":"TAH","nameEn":"Tahiti","nameZh":"大溪地","iso2":"PF","flagEmoji":"🇵🇫","flagAsset":"","associationName":"Fédération Tahitienne de Football (FTF)","joined":1990,"established":1989,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/TAH","isTaiwan":false},{"code":"TJK","nameEn":"Tajikistan","nameZh":"塔吉克","iso2":"TJ","flagEmoji":"🇹🇯","flagAsset":"","associationName":"Tajikistan Football Federation (TFF)","joined":1994,"established":1936,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/TJK","isTaiwan":false},{"code":"TAN","nameEn":"Tanzania","nameZh":"坦尚尼亞","iso2":"TZ","flagEmoji":"🇹🇿","flagAsset":"","associationName":"Tanzania Football Federation (TFF)","joined":1964,"established":1930,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/TAN","isTaiwan":false},{"code":"THA","nameEn":"Thailand","nameZh":"泰國","iso2":"TH","flagEmoji":"🇹🇭","flagAsset":"","associationName":"Football Association of Thailand (FAT)","joined":1925,"established":1916,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/THA","isTaiwan":false},{"code":"TLS","nameEn":"Timor-Leste","nameZh":"東帝汶","iso2":"TL","flagEmoji":"🇹🇱","flagAsset":"","associationName":"Federação Futebol Timor-Leste (FFTL)","joined":2005,"established":2002,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/TLS","isTaiwan":false},{"code":"TOG","nameEn":"Togo","nameZh":"多哥","iso2":"TG","flagEmoji":"🇹🇬","flagAsset":"","associationName":"Fédération Togolaise de Football (FTF)","joined":1962,"established":1960,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/TOG","isTaiwan":false},{"code":"TGA","nameEn":"Tonga","nameZh":"東加","iso2":"TO","flagEmoji":"🇹🇴","flagAsset":"","associationName":"Tonga Football Association (TFA)","joined":1994,"established":1965,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/TGA","isTaiwan":false},{"code":"TRI","nameEn":"Trinidad and Tobago","nameZh":"千里達及托巴哥","iso2":"TT","flagEmoji":"🇹🇹","flagAsset":"","associationName":"Trinidad and Tobago Football Association (TTFA)","joined":1963,"established":1908,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/TRI","isTaiwan":false},{"code":"TUN","nameEn":"Tunisia","nameZh":"突尼西亞","iso2":"TN","flagEmoji":"🇹🇳","flagAsset":"","associationName":"Fédération Tunisienne de Football (FTF)","joined":1960,"established":1956,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/TUN","isTaiwan":false},{"code":"TUR","nameEn":"Turkey","nameZh":"土耳其","iso2":"TR","flagEmoji":"🇹🇷","flagAsset":"","associationName":"Türkiye Futbol Federasyonu (TFF)","joined":1923,"established":1923,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/TUR","isTaiwan":false},{"code":"TKM","nameEn":"Turkmenistan","nameZh":"土庫曼","iso2":"TM","flagEmoji":"🇹🇲","flagAsset":"","associationName":"Türkmenistanyň Futbol Federasiýasy (TFF)","joined":1994,"established":1992,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/TKM","isTaiwan":false},{"code":"TCA","nameEn":"Turks and Caicos Islands","nameZh":"特克斯與凱科斯群島","iso2":"TC","flagEmoji":"🇹🇨","flagAsset":"","associationName":"Turks and Caicos Islands Football Association (TCIFA)","joined":1998,"established":1996,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/TCA","isTaiwan":false},{"code":"UGA","nameEn":"Uganda","nameZh":"烏干達","iso2":"UG","flagEmoji":"🇺🇬","flagAsset":"","associationName":"Federation of Uganda Football Associations (UFA)","joined":1959,"established":1924,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/UGA","isTaiwan":false},{"code":"UKR","nameEn":"Ukraine","nameZh":"烏克蘭","iso2":"UA","flagEmoji":"🇺🇦","flagAsset":"","associationName":"Ukrajinska Assoziazija Futbolu (FFU)","joined":1992,"established":1991,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/UKR","isTaiwan":false},{"code":"UAE","nameEn":"United Arab Emirates","nameZh":"阿拉伯聯合大公國","iso2":"AE","flagEmoji":"🇦🇪","flagAsset":"","associationName":"United Arab Emirates Football Association (UAEFA)","joined":1972,"established":1971,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/UAE","isTaiwan":false},{"code":"USA","nameEn":"United States","nameZh":"美國","iso2":"US","flagEmoji":"🇺🇸","flagAsset":"","associationName":"United States Soccer Federation (USSF)","joined":1913,"established":1913,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/USA","isTaiwan":false},{"code":"URU","nameEn":"Uruguay","nameZh":"烏拉圭","iso2":"UY","flagEmoji":"🇺🇾","flagAsset":"","associationName":"Asociación Uruguaya de Fútbol (AUF)","joined":1923,"established":1900,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/URU","isTaiwan":false},{"code":"VIR","nameEn":"U.S. Virgin Islands","nameZh":"美屬維京群島","iso2":"VI","flagEmoji":"🇻🇮","flagAsset":"","associationName":"U.S. Virgin Islands Soccer Federation (VISA)","joined":1998,"established":1987,"confederation":"CONCACAF","confederationZh":"中北美洲及加勒比海","officialUrl":"https://inside.fifa.com/associations/VIR","isTaiwan":false},{"code":"UZB","nameEn":"Uzbekistan","nameZh":"烏茲別克","iso2":"UZ","flagEmoji":"🇺🇿","flagAsset":"","associationName":"Oʻzbekiston Futbol Federatsiyasi (UFF)","joined":1994,"established":1946,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/UZB","isTaiwan":false},{"code":"VAN","nameEn":"Vanuatu","nameZh":"萬那杜","iso2":"VU","flagEmoji":"🇻🇺","flagAsset":"","associationName":"Vanuatu Football Federation (VFA)","joined":1988,"established":1934,"confederation":"OFC","confederationZh":"大洋洲","officialUrl":"https://inside.fifa.com/associations/VAN","isTaiwan":false},{"code":"VEN","nameEn":"Venezuela","nameZh":"委內瑞拉","iso2":"VE","flagEmoji":"🇻🇪","flagAsset":"","associationName":"Federación Venezolana de Fútbol (FVF)","joined":1952,"established":1926,"confederation":"CONMEBOL","confederationZh":"南美洲","officialUrl":"https://inside.fifa.com/associations/VEN","isTaiwan":false},{"code":"VIE","nameEn":"Vietnam","nameZh":"越南","iso2":"VN","flagEmoji":"🇻🇳","flagAsset":"","associationName":"Vietnam Football Federation (VFF)","joined":1964,"established":1962,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/VIE","isTaiwan":false},{"code":"WAL","nameEn":"Wales","nameZh":"威爾斯","iso2":"GB","flagEmoji":"🇬🇧","flagAsset":"assets/history_flags/wales.svg","associationName":"Football Association of Wales (FAW)","joined":1910,"established":1876,"confederation":"UEFA","confederationZh":"歐洲","officialUrl":"https://inside.fifa.com/associations/WAL","isTaiwan":false},{"code":"YEM","nameEn":"Yemen","nameZh":"葉門","iso2":"YE","flagEmoji":"🇾🇪","flagAsset":"","associationName":"Yemen Football Association (YFA)","joined":1980,"established":1962,"confederation":"AFC","confederationZh":"亞洲","officialUrl":"https://inside.fifa.com/associations/YEM","isTaiwan":false},{"code":"ZAM","nameEn":"Zambia","nameZh":"尚比亞","iso2":"ZM","flagEmoji":"🇿🇲","flagAsset":"","associationName":"Football Association of Zambia (FAZ)","joined":1964,"established":1929,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/ZAM","isTaiwan":false},{"code":"ZIM","nameEn":"Zimbabwe","nameZh":"辛巴威","iso2":"ZW","flagEmoji":"🇿🇼","flagAsset":"","associationName":"Zimbabwe Football Association (ZFA)","joined":1965,"established":1965,"confederation":"CAF","confederationZh":"非洲","officialUrl":"https://inside.fifa.com/associations/ZIM","isTaiwan":false}];
@@ -15393,7 +15687,6 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
     card.addEventListener("click", apply);
     card.addEventListener("keydown", event => { if(event.key==="Enter" || event.key===" "){event.preventDefault();apply();} });
   });
-  renderDirectory();
 })();
 </script>
 <script id="fifaPresidentsController">
@@ -18751,7 +19044,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
 
 
       const competitionSquadRegistry = window.EUROPE_TOP5_SQUADS || {};
-      competitionSquadRegistry["mls"] = competitionSquadRegistry["mls"] || {espnLeagueCode:"usa.1", clubs:[]};
+      competitionSquadRegistry["major-league-soccer"] = competitionSquadRegistry["major-league-soccer"] || {espnLeagueCode:"usa.1", clubs:[]};
       competitionSquadRegistry["j1-league"] = competitionSquadRegistry["j1-league"] || {espnLeagueCode:"jpn.1", clubs:[]};
       const competitionLeagueMap = new Map((footballCompetitionGuide.leagues || []).map(league => [String(league.id), league]));
       const competitionTeamListCache = new Map();
@@ -18759,6 +19052,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
       const COMPETITION_SQUAD_CACHE_PREFIX = "fifa2026-top5-squad-v2.68:";
       const COMPETITION_SQUAD_CACHE_TTL = 12 * 60 * 60 * 1000;
       let activeCompetitionTeamState = null;
+      let activeCompetitionTeamTrigger = null;
 
       function competitionTeamKey(leagueId, teamNameEn) {
         return `${String(leagueId || "league")}::${String(teamNameEn || "team")}`;
@@ -18787,7 +19081,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
       }
 
       function competitionUsesLiveSquad(league) {
-        return ["mls", "j1-league"].includes(String(league?.id)) || !league?.staticOnly;
+        return ["major-league-soccer", "j1-league"].includes(String(league?.id)) || !league?.staticOnly;
       }
 
       function competitionRegistryClub(leagueId, teamNameEn) {
@@ -19217,11 +19511,13 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
         }
       }
 
-      function openCompetitionTeamModal(leagueId, teamNameEn) {
+      function openCompetitionTeamModal(leagueId, teamNameEn, trigger = null) {
         const league = competitionLeagueMap.get(String(leagueId));
         if (!league) return;
         const team = (league.teams || []).find(item => String(item.nameEn) === String(teamNameEn));
         if (!team) return;
+        activeCompetitionTeamTrigger = trigger instanceof HTMLElement ? trigger : document.activeElement;
+        window.UiModalController?.rememberTrigger?.(competitionTeamModal, activeCompetitionTeamTrigger);
         if (!competitionUsesLiveSquad(league)) {
           activeCompetitionTeamState = {league, team, squad:null, loading:false, error:"", query:"", position:"all"};
           competitionTeamBody.innerHTML = renderCompetitionTeamModal(team, league, activeCompetitionTeamState);
@@ -19242,6 +19538,13 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
         competitionTeamModal.setAttribute("aria-hidden", "true");
         competitionTeamBody.innerHTML = "";
         activeCompetitionTeamState = null;
+        const trigger = activeCompetitionTeamTrigger;
+        activeCompetitionTeamTrigger = null;
+        window.requestAnimationFrame(() => {
+          if (trigger instanceof HTMLElement && trigger.isConnected && trigger.getClientRects().length) {
+            trigger.focus({preventScroll:true});
+          }
+        });
       }
 
       function competitionTeamInitials(name) {
@@ -19451,7 +19754,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
         competitionInternationalPanel.innerHTML = `<div class="competition-guide-intro"><div><h3>跨國與洲際賽事</h3><p>同時涵蓋俱樂部與國家隊賽事，可用「參賽主體」與「舉辦週期」快速分辨。</p></div><span class="competition-guide-summary">${footballCompetitionGuide.internationalCompetitions.length} 項</span></div><div class="competition-card-grid">${footballCompetitionGuide.internationalCompetitions.map(renderCompetitionCard).join("")}</div>`;
         competitionKnowledgePanel.innerHTML = `<div class="competition-guide-intro"><div><h3>足球知識 YouTube 頻道</h3><p>點選頻道圖示或名稱，即可直接前往對應的 YouTube 頻道。</p></div><span class="competition-guide-summary">${footballKnowledgeChannels.length} 個頻道</span></div><div class="football-knowledge-grid">${footballKnowledgeChannels.map(renderFootballKnowledgeChannel).join("")}</div>`;
         competitionLeaguePanel.querySelectorAll('.league-team-launch').forEach(button => {
-          button.addEventListener('click', () => openCompetitionTeamModal(button.dataset.leagueId, button.dataset.teamName));
+          button.addEventListener('click', () => openCompetitionTeamModal(button.dataset.leagueId, button.dataset.teamName, button));
         });
         competitionLeaguePanel.querySelectorAll("[data-league-stadium-map]").forEach(button => {
           button.addEventListener("click", event => {
@@ -21272,16 +21575,17 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
   
 
 
-  <dialog id="finalsRankingDialog" class="finals-ranking-native-dialog">
-    <div class="finals-ranking-native-head">
+  <dialog id="finalsRankingDialog" class="finals-ranking-native-dialog" aria-labelledby="finalsRankingTitle">
+    <div class="finals-ranking-native-head" data-modal-title>
       <div>
-        <h2>決賽次數排行</h2>
+        <h2 id="finalsRankingTitle">決賽次數排行</h2>
         <p>統計各國晉級世界盃決賽次數、冠軍與亞軍成績；金色年份代表該屆奪冠。</p>
       </div>
-      <button class="secondary" type="button"
+      <button class="secondary" data-modal-close type="button"
               onclick="document.getElementById('finalsRankingDialog').close()">關閉</button>
     </div>
 
+    <div class="finals-ranking-scroll-region" data-modal-scroll>
     <div class="finals-ranking-native-grid">
       <article class="finals-ranking-card">
         <div class="finals-ranking-rank">#1</div>
@@ -21352,11 +21656,72 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
           <small><span class="finals-champion-year" title="世界盃冠軍">2010</span>、<span class="finals-champion-year" title="世界盃冠軍">2026</span></small>
         </div>
       </article>
+
+      <article class="finals-ranking-card">
+        <div class="finals-ranking-rank">#7</div>
+        <div class="finals-ranking-flag">🇺🇾</div>
+        <div class="finals-ranking-main">
+          <strong>烏拉圭</strong>
+          <span>晉級決賽 2 次｜2 冠 0 亞</span>
+          <small><span class="finals-champion-year" title="世界盃冠軍">1930</span>、<span class="finals-champion-year" title="世界盃冠軍">1950</span>（決勝輪）</small>
+        </div>
+      </article>
+
+      <article class="finals-ranking-card">
+        <div class="finals-ranking-rank">#7</div>
+        <div class="finals-ranking-flag">🇨🇿</div>
+        <div class="finals-ranking-main">
+          <strong>捷克斯洛伐克</strong>
+          <span>晉級決賽 2 次｜0 冠 2 亞</span>
+          <small>1934、1962</small>
+        </div>
+      </article>
+
+      <article class="finals-ranking-card">
+        <div class="finals-ranking-rank">#7</div>
+        <div class="finals-ranking-flag">🇭🇺</div>
+        <div class="finals-ranking-main">
+          <strong>匈牙利</strong>
+          <span>晉級決賽 2 次｜0 冠 2 亞</span>
+          <small>1938、1954</small>
+        </div>
+      </article>
+
+      <article class="finals-ranking-card">
+        <div class="finals-ranking-rank">#11</div>
+        <div class="finals-ranking-flag">🏴</div>
+        <div class="finals-ranking-main">
+          <strong>英格蘭</strong>
+          <span>晉級決賽 1 次｜1 冠 0 亞</span>
+          <small><span class="finals-champion-year" title="世界盃冠軍">1966</span></small>
+        </div>
+      </article>
+
+      <article class="finals-ranking-card">
+        <div class="finals-ranking-rank">#11</div>
+        <div class="finals-ranking-flag">🇭🇷</div>
+        <div class="finals-ranking-main">
+          <strong>克羅埃西亞</strong>
+          <span>晉級決賽 1 次｜0 冠 1 亞</span>
+          <small>2018</small>
+        </div>
+      </article>
+
+      <article class="finals-ranking-card">
+        <div class="finals-ranking-rank">#11</div>
+        <div class="finals-ranking-flag">🇸🇪</div>
+        <div class="finals-ranking-main">
+          <strong>瑞典</strong>
+          <span>晉級決賽 1 次｜0 冠 1 亞</span>
+          <small>1958</small>
+        </div>
+      </article>
     </div>
 
     <p class="finals-ranking-note">
-      西班牙在2026年第二度奪冠；阿根廷第7度晉級決賽並獲得隊史第4次亞軍。
+      西班牙在2026年第二度奪冠；阿根廷第7度晉級決賽並獲得隊史第4次亞軍。1950年沒有單場冠軍戰，最後四隊採決勝循環賽；烏拉圭列冠軍、巴西列亞軍。
     </p>
+    </div>
   </dialog>
 
   <script>
@@ -21531,6 +21896,166 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
   window.addEventListener("resize", () => {
     if (window.innerWidth > 760 && menu.classList.contains("open")) closeMenu(false);
   });
+})();
+</script>
+
+<script id="v2135CommonModalController">
+(function () {
+  "use strict";
+
+  const selector = "[data-ui-modal], #finalsRankingDialog";
+  const returnTargets = new WeakMap();
+  const openStates = new WeakMap();
+  const openOrder = new WeakMap();
+  let orderCounter = 0;
+  let pendingActivator = null;
+
+  function roots() {
+    return Array.from(document.querySelectorAll(selector));
+  }
+
+  function isOpen(root) {
+    return root instanceof HTMLDialogElement ? root.open : root.classList.contains("open");
+  }
+
+  function visibleActivator(element) {
+    if (!(element instanceof HTMLElement)) return null;
+    if (element.closest("#mobileFeatureMenu")) return document.getElementById("mobileFeatureMenuBtn");
+    if (element.closest("#desktopMegaMenu")) return document.getElementById("desktopMegaMenuBtn");
+    return element;
+  }
+
+  function closeButton(root) {
+    return root.querySelector("[data-modal-close], .modal-close, [id^='close'][id$='Btn'], button[onclick*='.close()']");
+  }
+
+  function focusables(root) {
+    return Array.from(root.querySelectorAll(
+      "a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex='-1'])"
+    )).filter(element => !element.hidden && element.getClientRects().length > 0);
+  }
+
+  function openRoots() {
+    return roots()
+      .filter(isOpen)
+      .sort((a, b) => (openOrder.get(a) || 0) - (openOrder.get(b) || 0));
+  }
+
+  function topRoot() {
+    const opened = openRoots();
+    return opened[opened.length - 1] || null;
+  }
+
+  function rememberTrigger(root, trigger) {
+    const target = visibleActivator(trigger);
+    if (root instanceof Element && target instanceof HTMLElement && !root.contains(target)) {
+      returnTargets.set(root, target);
+    }
+  }
+
+  function restoreFocus(root) {
+    const target = returnTargets.get(root);
+    returnTargets.delete(root);
+    if (!(target instanceof HTMLElement) || !target.isConnected) return;
+    window.setTimeout(() => {
+      if (target.getClientRects().length > 0) target.focus({ preventScroll:true });
+    }, 40);
+  }
+
+  function sync() {
+    roots().forEach(root => {
+      const opened = isOpen(root);
+      const wasOpen = Boolean(openStates.get(root));
+      if (opened && !wasOpen) {
+        const active = visibleActivator(pendingActivator) || visibleActivator(document.activeElement);
+        if (!returnTargets.has(root) && active && !root.contains(active)) returnTargets.set(root, active);
+        pendingActivator = null;
+        openOrder.set(root, ++orderCounter);
+        root.querySelector("[data-modal-scroll]")?.scrollTo({ top:0, left:0 });
+        window.requestAnimationFrame(() => {
+          if (!isOpen(root)) return;
+          const initial = closeButton(root) || focusables(root)[0];
+          if (initial instanceof HTMLElement && !root.contains(document.activeElement)) {
+            initial.focus({ preventScroll:true });
+          }
+        });
+      } else if (!opened && wasOpen) {
+        restoreFocus(root);
+      }
+      openStates.set(root, opened);
+    });
+    const modalOpen = openRoots().length > 0;
+    document.documentElement.classList.toggle("ui-modal-open", modalOpen);
+    document.body.classList.toggle("ui-modal-open", modalOpen);
+  }
+
+  function closeTop() {
+    const root = topRoot();
+    if (!root) return false;
+    const close = closeButton(root);
+    if (close instanceof HTMLElement) {
+      close.click();
+    } else if (root instanceof HTMLDialogElement) {
+      root.close();
+    }
+    return true;
+  }
+
+  document.addEventListener("click", event => {
+    const candidate = event.target instanceof Element
+      ? event.target.closest("button, a[href], [role='button'], [tabindex]")
+      : null;
+    if (!event.isTrusted && pendingActivator) return;
+    if (candidate && !candidate.closest("[data-modal-close]")) {
+      pendingActivator = visibleActivator(candidate);
+    }
+  }, true);
+
+  document.addEventListener("keydown", event => {
+    const root = topRoot();
+    if (!root) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      closeTop();
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const items = focusables(root);
+    if (!items.length) {
+      event.preventDefault();
+      root.querySelector(".modal-dialog")?.focus({ preventScroll:true });
+      return;
+    }
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (event.shiftKey && (document.activeElement === first || !root.contains(document.activeElement))) {
+      event.preventDefault();
+      last.focus({ preventScroll:true });
+    } else if (!event.shiftKey && (document.activeElement === last || !root.contains(document.activeElement))) {
+      event.preventDefault();
+      first.focus({ preventScroll:true });
+    }
+  }, true);
+
+  const observer = new MutationObserver(sync);
+  roots().forEach(root => {
+    openStates.set(root, isOpen(root));
+    observer.observe(root, { attributes:true, attributeFilter:["class", "open", "aria-hidden"] });
+    root.querySelector(".modal-dialog")?.setAttribute("tabindex", "-1");
+  });
+
+  document.querySelectorAll("[data-ui-modal]").forEach(root => {
+    root.addEventListener("click", event => {
+      if (event.target !== root || root !== topRoot()) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      closeTop();
+    });
+  });
+
+  window.UiModalController = Object.freeze({ sync, closeTop, rememberTrigger });
+  sync();
 })();
 </script>
 

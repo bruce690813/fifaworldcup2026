@@ -1,0 +1,74 @@
+name: Mobile regression
+
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "assets/**"
+      - "data/**"
+      - "tests/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "playwright.config.mjs"
+      - ".github/workflows/mobile-regression.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "assets/**"
+      - "data/**"
+      - "tests/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "playwright.config.mjs"
+      - ".github/workflows/mobile-regression.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mobile-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.9.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install test dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run 390x844 mobile regression
+        run: pnpm test:mobile
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-mobile-report
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 7

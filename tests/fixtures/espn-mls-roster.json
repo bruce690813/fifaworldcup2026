@@ -1,0 +1,15 @@
+{
+  "athletes": [
+    {
+      "id": "10",
+      "displayName": "Lionel Messi",
+      "fullName": "Lionel Andrés Messi",
+      "jersey": "10",
+      "captain": true,
+      "position": {
+        "abbreviation": "FW",
+        "name": "Forward"
+      }
+    }
+  ]
+}
