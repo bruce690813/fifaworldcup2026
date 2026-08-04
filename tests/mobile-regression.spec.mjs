@@ -192,6 +192,41 @@ test("南美洲篩選完整顯示六支球隊標籤", async ({ page }) => {
   })).toBe(true);
 });
 
+test("mobile group labels remain visible and non-overlapping", async ({ page }) => {
+  await expect(page.locator("#map.leaflet-container")).toBeVisible({
+    timeout: 30_000
+  });
+
+  for (const group of ["C", "E", "H", "I", "J", "L"]) {
+    await page.locator("#groupFilter").selectOption(group);
+    const labels = page.locator(
+      "#map .leaflet-marker-pane .group-label-marker .marker-label"
+    );
+    await expect(labels).toHaveCount(4);
+
+    await expect.poll(async () => labels.evaluateAll(nodes => {
+      const map = document.querySelector("#map");
+      if (!(map instanceof HTMLElement)) return false;
+      const mapRect = map.getBoundingClientRect();
+      const rects = nodes.map(node => node.getBoundingClientRect());
+      const allInside = rects.every(rect =>
+        rect.width > 0 && rect.height > 0
+        && rect.left >= mapRect.left - 1
+        && rect.right <= mapRect.right + 1
+        && rect.top >= mapRect.top - 1
+        && rect.bottom <= mapRect.bottom + 1
+      );
+      const hasOverlap = rects.some((rect, index) =>
+        rects.slice(index + 1).some(other => !(
+          rect.right <= other.left || other.right <= rect.left
+          || rect.bottom <= other.top || other.bottom <= rect.top
+        ))
+      );
+      return allInside && !hasOverlap;
+    })).toBe(true);
+  }
+});
+
 test("FIFA 會員名錄只在首次開啟時延遲產生", async ({ page }) => {
   const cards = page.locator(
     "#fifaMemberDirectoryGrid .fifa-member-directory-card"
