@@ -155,6 +155,76 @@ test("賽事指南使用共用彈窗且只有一個垂直捲動區", async ({ pa
   await expect(page.locator("#mobileFeatureMenuBtn")).toBeFocused();
 });
 
+test("足球知識頻道從賽事指南移至足球知識獨立入口", async ({ page }) => {
+  const guideModal = await openMobileFeature(
+    page,
+    "competitionGuideBtn",
+    "#competitionGuideModal[data-ui-modal]"
+  );
+  await expect(guideModal.locator('[data-competition-tab="knowledge"]')).toHaveCount(0);
+  await page.locator("#closeCompetitionGuideBtn").click();
+
+  const channelsModal = await openMobileFeature(
+    page,
+    "footballKnowledgeChannelsBtn",
+    "#footballKnowledgeChannelsModal[data-ui-modal]"
+  );
+  await expect(channelsModal.locator(".football-knowledge-card").first()).toBeVisible();
+  await expect(channelsModal.locator("[data-modal-scroll]")).toHaveCount(1);
+});
+
+test("FIFA 排名國名保持單行且國家頁使用大型摘要標題", async ({ page }) => {
+  const rankingModal = await openMobileFeature(
+    page,
+    "fifaLatestRankingBtn",
+    "#fifaLatestRankingModal[data-ui-modal]"
+  );
+  const spainLink = rankingModal.locator(".fifa-ranking-map-link", { hasText:"西班牙" });
+  await expect(spainLink).toBeVisible();
+  expect(await spainLink.evaluate(node => getComputedStyle(node).whiteSpace)).toBe("nowrap");
+
+  await rankingModal.locator('[data-team-code="ESP"]').click();
+  await expect(page.locator(".country-hero-card")).toHaveCount(0);
+  await expect(page.locator(".country-summary-title h2")).toHaveText("西班牙");
+  await expect(page.locator(".country-summary-title-subline")).toContainText("SPAIN");
+  await expect(page.locator(".country-summary-title-subline")).toContainText("ESP");
+});
+
+test("手機球員卡顯示紅黃牌欄位與巴洛根紅牌", async ({ page }) => {
+  await openMobileFeature(page, "teamListBtn", "#teamDrawer");
+  await page.locator('.team-item[data-code="USA"]').click();
+
+  const balogunRow = page.locator('tr[data-player-name="BALOGUN Folarin"]');
+  await expect(balogunRow).toBeVisible();
+  await expect(balogunRow.locator(".discipline-card.is-red")).toHaveCount(1);
+  await expect(balogunRow.locator(".discipline")).toHaveAttribute("data-label", "黃／紅牌");
+  const disciplineGridColumn = await balogunRow.locator(".discipline").evaluate(node =>
+    getComputedStyle(node).gridColumnStart
+  );
+  expect(disciplineGridColumn).toBe("2");
+});
+
+test("忠義各梯隊背號使用粉紅球衣造型", async ({ page }) => {
+  const guideModal = await openMobileFeature(
+    page,
+    "competitionGuideBtn",
+    "#competitionGuideModal[data-ui-modal]"
+  );
+  const zyesLeague = guideModal.locator('[data-league-id="zyes-youth-football"]');
+  await zyesLeague.locator("summary").click();
+  await zyesLeague.locator('[data-team-name="ZYES U10"]').click();
+
+  const jersey = page.locator(".zyes-youth-roster .competition-squad-number").first();
+  await expect(jersey).toBeVisible();
+  const style = await jersey.evaluate(node => {
+    const computed = getComputedStyle(node);
+    return { backgroundImage:computed.backgroundImage, clipPath:computed.clipPath };
+  });
+  expect(style.backgroundImage).toContain("linear-gradient");
+  expect(style.backgroundImage).toMatch(/rgb\((223, 49, 91|240, 83, 117)\)/);
+  expect(style.clipPath).toContain("polygon");
+});
+
 test("南美洲篩選完整顯示六支球隊標籤", async ({ page }) => {
   await expect(page.locator("#map.leaflet-container")).toBeVisible({
     timeout: 30_000
@@ -274,12 +344,16 @@ test("決賽排行包含所有 13 個曾晉級決賽國家", async ({ page }) =>
 test("MLS 使用 major-league-soccer ID 進入 ESPN 球員名單流程", async ({ page }) => {
   const espnRequests = [];
   await page.route(
-    "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/**",
+    /https:\/\/site\.api\.espn\.com\/apis\/site\/v2\/sports\/soccer\/usa\.1\/.*$/,
     async route => {
       const url = route.request().url();
       espnRequests.push(url);
       if (/\/teams\/2026\/roster(?:\?|$)/.test(url)) {
         await route.fulfill({ json: mlsRosterFixture });
+        return;
+      }
+      if (/\/teams\/2026(?:\?|$)/.test(url)) {
+        await route.fulfill({ json: { coach: { displayName: "Javier Mascherano" } } });
         return;
       }
       if (/\/teams(?:\?|$)/.test(url)) {
@@ -303,6 +377,7 @@ test("MLS 使用 major-league-soccer ID 進入 ESPN 球員名單流程", async (
   await mls.locator(
     '.league-team-launch[data-team-name="Inter Miami CF"]'
   ).click();
+  await expect.poll(() => espnRequests, { timeout:5_000 }).not.toHaveLength(0);
 
   const teamModal = page.locator(
     "#competitionTeamModal[data-ui-modal]"
