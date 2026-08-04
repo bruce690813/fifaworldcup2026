@@ -777,6 +777,7 @@
     {
       "flag": "🏴",
       "nameZh": "英格蘭足總盃",
+      "logo": "assets/competitions/fa-cup.svg",
       "nameEn": "FA Cup",
       "organizer": "英格蘭足球總會（FA）",
       "frequency": "每年舉辦",
@@ -786,6 +787,7 @@
     {
       "flag": "🏴",
       "nameZh": "英格蘭聯賽盃",
+      "logo": "assets/competitions/efl-cup.svg",
       "nameEn": "EFL Cup / League Cup",
       "organizer": "英格蘭足球聯賽（EFL）",
       "frequency": "每年舉辦",
@@ -795,6 +797,7 @@
     {
       "flag": "🇪🇸",
       "nameZh": "西班牙國王盃",
+      "logo": "assets/competitions/copa-del-rey.svg",
       "nameEn": "Copa del Rey",
       "organizer": "西班牙皇家足球協會（RFEF）",
       "frequency": "每年舉辦",
@@ -804,6 +807,7 @@
     {
       "flag": "🇩🇪",
       "nameZh": "德國足協盃",
+      "logo": "assets/competitions/dfb-pokal.svg",
       "nameEn": "DFB-Pokal",
       "organizer": "德國足球協會（DFB）",
       "frequency": "每年舉辦",
@@ -813,6 +817,7 @@
     {
       "flag": "🇫🇷",
       "nameZh": "法國盃",
+      "logo": "assets/competitions/coupe-de-france.svg",
       "nameEn": "Coupe de France",
       "organizer": "法國足球總會（FFF）",
       "frequency": "每年舉辦",
@@ -822,6 +827,7 @@
     {
       "flag": "🇮🇹",
       "nameZh": "義大利盃",
+      "logo": "assets/competitions/coppa-italia.svg",
       "nameEn": "Coppa Italia",
       "organizer": "義大利甲級聯賽聯盟（Lega Serie A）",
       "frequency": "每年舉辦",
@@ -833,6 +839,7 @@
     {
       "icon": "🏆",
       "nameZh": "歐洲冠軍聯賽（歐冠）",
+      "logo": "assets/competitions/uefa-champions-league.svg",
       "nameEn": "UEFA Champions League",
       "category": "歐洲俱樂部",
       "frequency": "每年舉辦",
@@ -842,6 +849,7 @@
     {
       "icon": "🏆",
       "nameZh": "歐洲超級盃",
+      "logo": "assets/competitions/uefa-super-cup.svg",
       "nameEn": "UEFA Super Cup",
       "category": "歐洲俱樂部",
       "frequency": "每年一場",

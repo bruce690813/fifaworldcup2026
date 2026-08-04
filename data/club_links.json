@@ -784,8 +784,8 @@
     "source": ""
   },
   "FC Tokyo (JPN)": {
-    "url": "",
-    "source": ""
+    "url": "https://www.fctokyo.co.jp/",
+    "source": "manual-official-url"
   },
   "FC Twente (NED)": {
     "url": "https://fctwente.nl/",
@@ -892,8 +892,8 @@
     "source": "manual-official-url"
   },
   "Gangwon FC (KOR)": {
-    "url": "",
-    "source": ""
+    "url": "https://gangwon-fc.com/",
+    "source": "manual-official-url"
   },
   "Gaziantep FK (TUR)": {
     "url": "",
@@ -1032,8 +1032,8 @@
     "source": ""
   },
   "Kashima Antlers (JPN)": {
-    "url": "",
-    "source": ""
+    "url": "https://www.antlers.co.jp/",
+    "source": "manual-official-url"
   },
   "Kasımpaşa SK (TUR)": {
     "url": "",

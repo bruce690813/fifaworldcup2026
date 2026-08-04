@@ -1,0 +1,12 @@
+v2.136 賽事 Logo 來源
+
+顯示連結均指向賽事官方網站；Logo 圖檔取自 Wikimedia Commons／Wikipedia 的賽事識別圖，DFB-Pokal 使用德國足協官方 sprite 中的獎盃圖示製作獨立 SVG。
+
+- fa-cup.svg — FA Cup logo (2020), Wikipedia/Wikimedia；官方頁：https://www.thefa.com/competitions/thefacup
+- efl-cup.svg — EFL (Carabao) Cup logo, Wikipedia/Wikimedia；官方頁：https://www.efl.com/competitions/carabao-cup/
+- copa-del-rey.svg — Copa del Rey logo (2021), Wikimedia Commons；官方頁：https://rfef.es/es/competiciones/copa-del-rey
+- dfb-pokal.svg — DFB 官方 sprite 的 dfb-icon-pokal 路徑；官方頁：https://www.dfb.de/maenner/wettbewerbe/dfb-pokal
+- coupe-de-france.svg — Coupe de France logo (2022), Wikipedia/Wikimedia；官方頁：https://www.fff.fr/
+- coppa-italia.svg — Coppa Italia Frecciarossa logo (2024/25), Wikimedia Commons；官方頁：https://en.legaseriea.it/coppa-italia
+- uefa-champions-league.svg — UEFA Champions League logo, Wikipedia/Wikimedia；官方頁：https://www.uefa.com/uefachampionsleague/
+- uefa-super-cup.svg — UEFA Super Cup logo, Wikipedia/Wikimedia；官方頁：https://www.uefa.com/uefasupercup/
