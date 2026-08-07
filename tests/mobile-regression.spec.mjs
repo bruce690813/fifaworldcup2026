@@ -88,6 +88,46 @@ test.beforeEach(async ({ page }) => {
   await expect(page.locator(".version-badge")).toBeVisible();
 });
 
+test("v2.139 總教練搜尋可直達國家隊紀錄", async ({ page }) => {
+  await page.locator("#searchBox").fill("森保一");
+  const coachResult = page.locator('.search-suggestion[data-type="coach"][data-code="JPN"]');
+  await expect(coachResult).toBeVisible();
+  await coachResult.click();
+  await expect(page.locator(".roster-team-summary")).toContainText("總教練");
+  await expect(page.locator(".roster-team-summary")).toContainText("森保一");
+});
+
+test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page }) => {
+  await page.locator("#searchBox").fill("日本");
+  await page.locator('.search-suggestion[data-type="team"][data-code="JPN"]').click();
+  await expect(page.locator(".roster-team-summary")).toContainText("世界盃最佳名次");
+  await expect(page.locator(".country-summary-list")).toContainText("國內足球聯賽");
+  await expect(page.locator(".country-summary-list")).toContainText("熱門景點");
+  await expect(page.locator("#countryEncyclopediaBtn")).toHaveCount(0);
+  const playerRow = page.locator('tr[data-player-name="SUZUKI Zion"]');
+  await expect(playerRow).toContainText("鈴木彩艷");
+  await expect(playerRow.locator('[data-label="出生日期"]')).toContainText(/\d{4}\/\d{2}\/\d{2}/);
+  await playerRow.click();
+  await expect(page.locator("#playerDetailModal")).toHaveClass(/open/);
+  await expect(page.locator("#playerDetailBody")).toContainText("國家隊紀錄");
+  await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
+});
+
+test("v2.139 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+  const errors = [];
+  page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await expect(page.locator(".version-badge")).toHaveText("v2.139");
+    await page.screenshot({ path:`test-results/v2.139-${viewport.width}x${viewport.height}.png`, fullPage:false });
+  }
+  expect(errors).toEqual([]);
+});
+
 test("手機控制與輔助文字符合最小可讀／可觸控尺寸", async ({ page }) => {
   const controls = [
     ["#groupFilter", "組別篩選"],
