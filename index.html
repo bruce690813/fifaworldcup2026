@@ -15469,7 +15469,11 @@
 <style id="v2141FollowupLayoutFixes">
   /* v2.141 follow-up: roster density, bracket winners, ranking rhythm and about entry. */
   .version-badge { display:none !important; }
-  .roster-player-name-wrap { column-gap:14px !important; }
+  .roster-player-name-wrap,
+  body.detail-mode .roster-section .roster-player-name-wrap {
+    justify-content:flex-start !important;
+    gap:24px !important;
+  }
   .roster-player-name-text { min-width:0; }
   .roster-player-name-line {
     display:flex;
@@ -15504,13 +15508,20 @@
     box-shadow:0 1px 4px rgba(151,12,29,.18);
   }
   .bracket-modal-scroll .bracket-board {
-    grid-template-columns:1fr 1fr 1fr 1.14fr 1fr 1fr 1fr !important;
+    grid-template-columns:1fr 1fr 1fr 1.38fr 1fr 1fr 1fr !important;
+  }
+  .bracket-modal-scroll .trophy-icon { line-height:1; }
+  .bracket-modal-scroll .trophy-icon .world-cup-trophy-icon {
+    width:46px;
+    height:64px;
+    filter:drop-shadow(0 8px 16px rgba(255,196,0,.28));
   }
 
   .fifa-ranking-table-head,
   .fifa-ranking-row {
-    grid-template-columns:62px minmax(270px,360px) minmax(190px,245px) minmax(220px,1fr) !important;
+    grid-template-columns:62px minmax(280px,390px) minmax(250px,300px) 220px !important;
     column-gap:18px !important;
+    justify-content:start;
   }
   .fifa-ranking-row-confed {
     justify-self:start;
@@ -15518,10 +15529,78 @@
     border-radius:999px;
     background:#edf4fc;
     color:#355675;
+    white-space:nowrap;
+  }
+  .fifa-ranking-row-status button {
+    display:inline-flex;
+    align-items:stretch;
+    overflow:hidden;
+    border-radius:999px;
+    background:#f6c83f !important;
+    box-shadow:0 2px 7px rgba(166,119,0,.16);
+    white-space:nowrap;
+  }
+  .fifa-ranking-row-status button b,
+  .fifa-ranking-row-status button small {
+    display:flex;
+    align-items:center;
+    margin:0;
+    background:transparent !important;
+    color:#604600 !important;
+    font-weight:900;
+    line-height:1;
+  }
+  .fifa-ranking-row-status button b { padding:10px 9px 10px 12px !important; }
+  .fifa-ranking-row-status button small {
+    padding:10px 12px 10px 9px !important;
+    border-left:1px solid rgba(96,70,0,.24);
+    font-size:12px !important;
   }
 
-  .desktop-mega-title-wrap strong { font-size:24px !important; }
-  .desktop-mega-header { min-height:64px !important; padding:11px 17px !important; }
+  .desktop-mega-title-wrap strong { font-size:26px !important; }
+  .desktop-mega-header { min-height:80px !important; padding:16px 20px !important; }
+
+  .country-team-analysis {
+    overflow:hidden;
+    border-color:#b8cee5 !important;
+    background:linear-gradient(145deg,#f8fbff,#edf5fd) !important;
+    box-shadow:0 12px 30px rgba(16,61,108,.10);
+  }
+  .country-team-analysis h3 {
+    position:relative;
+    margin:-18px -20px 16px !important;
+    padding:18px 22px 18px 62px;
+    border-bottom:3px solid #e4b82f;
+    background:linear-gradient(115deg,#092b52,#175b94);
+    color:#fff !important;
+    font-size:22px;
+  }
+  .country-team-analysis h3::before {
+    content:"⚽";
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    display:grid;
+    place-items:center;
+    width:30px;
+    height:30px;
+    border-radius:9px;
+    background:rgba(255,255,255,.14);
+  }
+  .country-team-analysis p {
+    padding:16px 18px;
+    border-left:4px solid #e4b82f;
+    border-radius:12px;
+    background:#fff;
+    box-shadow:0 5px 16px rgba(15,48,83,.07);
+    font-size:16px;
+  }
+  .country-team-analysis small {
+    padding-top:12px;
+    border-top:1px solid #d7e3ef;
+    font-weight:700;
+  }
 
   .about-site-entry {
     border:1px solid #dbe4ef;
@@ -15561,15 +15640,15 @@
   .discipline-card-none { color:#62758c; font-size:12px; font-weight:700; }
 
   @media (min-width:761px) {
-    body.detail-mode .roster-table { min-width:1180px !important; }
+    body.detail-mode .roster-table { min-width:1120px !important; table-layout:fixed; }
     body.detail-mode .roster-table th:nth-child(1),
     body.detail-mode .roster-table td:nth-child(1) { width:62px !important; }
     body.detail-mode .roster-table th:nth-child(2),
     body.detail-mode .roster-table td:nth-child(2) { width:110px !important; }
     body.detail-mode .roster-table th:nth-child(3),
-    body.detail-mode .roster-table td:nth-child(3) { width:390px !important; }
+    body.detail-mode .roster-table td:nth-child(3) { width:330px !important; }
     body.detail-mode .roster-table th:nth-child(4),
-    body.detail-mode .roster-table td:nth-child(4) { width:165px !important; text-align:center !important; }
+    body.detail-mode .roster-table td:nth-child(4) { width:175px !important; text-align:center !important; }
     body.detail-mode .roster-table th:nth-child(5),
     body.detail-mode .roster-table td:nth-child(5) { width:86px !important; text-align:center !important; }
     body.detail-mode .roster-table th:nth-child(6),
@@ -15577,10 +15656,13 @@
   }
 
   @media (max-width:760px) {
-    .roster-player-name-wrap { column-gap:11px !important; }
+    .roster-player-name-wrap,
+    body.detail-mode .roster-section .roster-player-name-wrap { gap:16px !important; }
     .person-portrait--coach { width:58px !important; height:58px !important; }
     .bracket-winner-mark { width:22px; height:22px; font-size:11px; }
     .mobile-about-site { margin:0 0 14px; }
+    .country-team-analysis h3 { font-size:20px; }
+    .country-team-analysis p { padding:14px; font-size:15px; }
   }
 </style>
 </head>
@@ -17210,7 +17292,12 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
       "AEK Athens (GRE)": { leagueZh:"希超", nameZh:"AEK雅典" },
       "Club Tijuana (MEX)": { leagueZh:"墨超", nameZh:"堤華納" },
       "FC Dynamo Moscow (RUS)": { leagueZh:"俄超", nameZh:"莫斯科發電機" },
-      "Pumas UNAM (MEX)": { leagueZh:"墨超", nameZh:"美洲獅" }
+      "Pumas UNAM (MEX)": { leagueZh:"墨超", nameZh:"美洲獅" },
+      "Crystal Palace FC (ENG)": {
+        leagueZh:"英超",
+        nameZh:"水晶宮",
+        logo:"https://media-cdn.cortextech.io/ab9a3de9-4596-459d-b53d-6021022e9c22.svg"
+      }
     });
 
     const eltaOfficialChannelUrl = "https://www.youtube.com/@ELTASPORTSHD/videos";
@@ -21276,7 +21363,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
                   <tr>
                     <th style="width:42px;text-align:center;">背號</th>
                     <th style="min-width:78px;text-align:center;">POS｜位置</th>
-                    <th>姓名</th>
+                    <th>球員姓名</th>
                     <th style="min-width:120px;text-align:center;">出生日期</th>
                     <th style="width:68px;text-align:center;">身高</th>
                     <th style="min-width:220px;">俱樂部｜聯賽與中文名稱</th>
@@ -21604,7 +21691,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
             <h3 class="round-title">冠軍戰／季軍戰</h3>
             <div class="center-stage">
               <div class="trophy-card">
-                <div class="trophy-icon">🏆</div>
+                <div class="trophy-icon"><img class="world-cup-trophy-icon" src="assets/branding/world_cup_trophy.png" alt="FIFA 世界盃大力神盃"></div>
                 <div class="trophy-label">2026世界盃冠軍：西班牙</div>
                 <div class="final-card">${renderBracketMatch(knockoutBracket.final)}</div>
               </div>
