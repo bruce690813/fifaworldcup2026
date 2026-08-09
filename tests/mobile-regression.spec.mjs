@@ -85,7 +85,8 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toBeVisible();
+  await expect(page.locator(".version-badge")).toHaveText("v2.141");
+  await expect(page.locator(".version-badge")).toBeHidden();
 });
 
 test("v2.139 總教練搜尋可直達國家隊紀錄", async ({ page }) => {
