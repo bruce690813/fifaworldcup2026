@@ -20527,6 +20527,19 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
         if (!folder || !player?.name) return '';
         return `assets/team_photos/${folder}/${encodeURIComponent(String(player.name).trim())}.png`;
       }
+      function playerPhotoFallbackUrl(team, player) {
+        const folder = teamPhotoFolder(team);
+        const parts = String(player?.name || '').trim().split(/\s+/).filter(Boolean);
+        if (!folder || parts.length < 2) return '';
+        const candidates = [
+          [...parts.slice(1), parts[0]].join(' '),
+          [parts[parts.length - 1], ...parts.slice(0, -1)].join(' '),
+          parts.join(' ')
+        ];
+        const index = Number(player?.photoFallbackIndex || 0);
+        player.photoFallbackIndex = index + 1;
+        return index < candidates.length ? `assets/team_photos/${folder}/${encodeURIComponent(candidates[index])}.png` : '';
+      }
       function coachPhotoUrl(team) {
         const coach = coachesByTeam[team?.code];
         if (!coach) return '';
@@ -20768,7 +20781,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
         const zh = playerNamesZhTw[player.name] || "尚無可靠中文通行譯名";
         const cards = discipline ? `${discipline.yellow || 0} 黃／${discipline.red || 0} 紅` : "FIFA 完整個人牌卡資料尚待匯入";
         body.innerHTML = `<div class="player-detail-grid">
-          <div class="player-detail-item player-detail-person">${playerPhotoUrl(team, player) ? `<img class="person-portrait" src="${playerPhotoUrl(team, player)}" alt="${escapeHtml(zh)}" loading="lazy" onerror="this.hidden=true">` : ""}<span><small>球員</small><strong>${escapeHtml(broadcastPersonName(player.name))}｜${escapeHtml(zh)}</strong></span></div>
+          <div class="player-detail-item player-detail-person">${playerPhotoUrl(team, player) ? `<img class="person-portrait" src="${playerPhotoUrl(team, player)}" alt="${escapeHtml(zh)}" loading="lazy" onerror="this.onerror=null;this.src=playerPhotoFallbackUrl(team,player)||'';this.onerror=function(){this.hidden=true}">` : ""}<span><small>球員</small><strong>${escapeHtml(broadcastPersonName(player.name))}｜${escapeHtml(zh)}</strong></span></div>
           <div class="player-detail-item"><small>背號／位置</small><strong>${escapeHtml(player.number ?? "—")}｜${escapeHtml(renderPosition(player))}</strong></div>
           <div class="player-detail-item"><small>球衣顯示名稱</small><strong>${escapeHtml(String(player.name || "").split(/\s+/)[0] || "—")}</strong></div>
           <div class="player-detail-item"><small>官方完整姓名</small><strong>${escapeHtml(broadcastPersonName(player.name))}</strong></div>
@@ -20818,7 +20831,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
           <tr data-player-name="${escapeHtml(p.name)}">
             <td class="num" data-label="背號">${renderRosterJerseyNumber(team, p.number)}</td>
             <td class="pos" data-label="位置">${renderPosition(p)}</td>
-            <td class="player" data-label="英文姓名"><div class="roster-player-name-wrap">${playerPhotoUrl(team, p) ? `<img class="person-portrait person-portrait--player" src="${playerPhotoUrl(team, p)}" alt="${escapeHtml(playerNamesZhTw[p.name] || p.name)}" loading="lazy" onerror="this.hidden=true">` : ""}<span class="roster-player-name-text">${renderPlayerNamePhotoLink(team, p)}</span><span class="roster-player-tools">${renderPlayerPronunciationButton(team, p)}${renderCaptainArmband(team, p)}</span></div></td>
+            <td class="player" data-label="英文姓名"><div class="roster-player-name-wrap">${playerPhotoUrl(team, p) ? `<img class="person-portrait person-portrait--player" src="${playerPhotoUrl(team, p)}" alt="${escapeHtml(playerNamesZhTw[p.name] || p.name)}" loading="lazy" onerror="this.onerror=null;this.src=playerPhotoFallbackUrl(team,p)||'';this.onerror=function(){this.hidden=true}">` : ""}<span class="roster-player-name-text">${renderPlayerNamePhotoLink(team, p)}</span><span class="roster-player-tools">${renderPlayerPronunciationButton(team, p)}${renderCaptainArmband(team, p)}</span></div></td>
             <td class="player-zh" data-label="中文常用名"><span class="roster-two-line">${renderPlayerChineseName(p)}</span></td>
             <td class="club" data-label="俱樂部／聯賽">${renderClubLink(p.club)}</td>
             <td class="wc-exp-count" data-label="世足入選"><span class="wc-exp-badge" title="${escapeHtml(experienceTooltip)}" aria-label="世足入選 ${experience.count} 屆，${escapeHtml(experienceTooltip)}">${experience.count} 屆</span></td>
