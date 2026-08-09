@@ -18142,9 +18142,9 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
         const coachName = coach.nameZh
           ? `${escapeHtml(coach.nameZh)}（${escapeHtml(coachDisplayName)}）`
           : escapeHtml(coachDisplayName);
-        const coachPhotoUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(`${coach.name} football coach`)}`;
+        const coachSearchUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(`${coach.name} football coach`)}`;
         const portrait = coachPhotoUrl(team);
-        return `<p class="detail-row coach-detail-row">${portrait ? `<img class="person-portrait person-portrait--coach" src="${portrait}" alt="${escapeHtml(coach.nameZh || coach.name)}" loading="lazy" onerror="this.hidden=true">` : ""}<strong>總教練：</strong><span class="coach-name-audio-wrap"><a class="coach-name-photo-link" href="${coachPhotoUrl}" target="_blank" rel="noopener noreferrer" title="Google 圖片搜尋 ${escapeHtml(coach.name)}" aria-label="Google 圖片搜尋 ${escapeHtml(coach.name)}">${coachName}</a>${renderCoachPronunciationButton(team, coach)}</span>${nationality}</p>`;
+        return `<p class="detail-row coach-detail-row">${portrait ? `<img class="person-portrait person-portrait--coach" src="${portrait}" alt="${escapeHtml(coach.nameZh || coach.name)}" loading="lazy" onerror="this.hidden=true">` : ""}<strong>總教練：</strong><span class="coach-name-audio-wrap"><a class="coach-name-photo-link" href="${coachSearchUrl}" target="_blank" rel="noopener noreferrer" title="Google 圖片搜尋 ${escapeHtml(coach.name)}" aria-label="Google 圖片搜尋 ${escapeHtml(coach.name)}">${coachName}</a>${renderCoachPronunciationButton(team, coach)}</span>${nationality}</p>`;
       }
 
 
