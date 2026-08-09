@@ -15638,6 +15638,10 @@
   .discipline-card-red { background:#e32636; }
   .discipline-card-note,
   .discipline-card-none { color:#62758c; font-size:12px; font-weight:700; }
+  .roster-table .discipline.roster-discipline-data {
+    display:none !important;
+    grid-column:2 !important;
+  }
 
   @media (min-width:761px) {
     body.detail-mode .roster-table { min-width:1120px !important; table-layout:fixed; }
@@ -21295,7 +21299,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
         const experience = playerWorldCupExperience[`${team.code}|${player.name}`] || {count:1,years:[2026]};
         const zh = playerNamesZhTw[player.name] || "尚無可靠中文通行譯名";
         const cards = discipline
-          ? `<span class="discipline-card-summary">${discipline.yellow ? `<span class="discipline-card discipline-card-yellow" aria-label="${discipline.yellow} 張黃牌"></span><b>${discipline.yellow}</b>` : ""}${discipline.red ? `<span class="discipline-card discipline-card-red" aria-label="${discipline.red} 張紅牌"></span><b>${discipline.red}</b>` : ""}</span><small class="discipline-card-note">${escapeHtml(discipline.note || "FIFA 官方紀律資料")}</small>`
+          ? `<span class="discipline-card-summary">${discipline.yellow ? `<span class="discipline-card discipline-card-yellow is-yellow" aria-label="${discipline.yellow} 張黃牌"></span><b>${discipline.yellow}</b>` : ""}${discipline.red ? `<span class="discipline-card discipline-card-red is-red" aria-label="${discipline.red} 張紅牌"></span><b>${discipline.red}</b>` : ""}</span><small class="discipline-card-note">${escapeHtml(discipline.note || "FIFA 官方紀律資料")}</small>`
           : `<span class="discipline-card-none">FIFA 官方頁面未列出牌卡紀錄</span>`;
         body.innerHTML = `<div class="player-detail-grid">
           <div class="player-detail-item player-detail-person">${playerPhotoUrl(team, player) ? `<img class="person-portrait" src="${playerPhotoUrl(team, player)}" alt="" loading="lazy" onerror="this.remove()">` : ""}<span><small>球員</small><strong>${escapeHtml(broadcastPersonName(player.name))}｜${escapeHtml(zh)}</strong></span></div>
@@ -21339,6 +21343,10 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
           `;
         }
         const rows = players.map(p => {
+          const discipline = playerDiscipline[`${team.code}|${p.name}`] || null;
+          const disciplineData = discipline
+            ? `${discipline.yellow ? `<span class="discipline-card is-yellow" aria-label="${discipline.yellow} 張黃牌"></span>` : ""}${discipline.red ? `<span class="discipline-card is-red" aria-label="${discipline.red} 張紅牌"></span>` : ""}`
+            : "";
           return `
           <tr data-player-name="${escapeHtml(p.name)}">
             <td class="num" data-label="背號">${renderRosterJerseyNumber(team, p.number)}</td>
@@ -21347,6 +21355,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
             <td class="age" data-label="出生日期">${escapeHtml(formatPlayerBirthDate(p))}</td>
             <td class="height" data-label="身高">${p.heightCm ? p.heightCm + " cm" : "—"}</td>
             <td class="club" data-label="俱樂部／聯賽">${renderClubLink(p.club)}</td>
+            <td class="discipline roster-discipline-data" data-label="黃／紅牌" aria-hidden="true">${disciplineData}</td>
           </tr>
         `}).join("");
 
