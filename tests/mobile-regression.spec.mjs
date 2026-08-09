@@ -85,7 +85,8 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toBeVisible();
+  await expect(page.locator(".version-badge")).toHaveText("v2.141");
+  await expect(page.locator(".version-badge")).toBeHidden();
 });
 
 test("v2.139 總教練搜尋可直達國家隊紀錄", async ({ page }) => {
@@ -113,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.139 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.141 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -122,8 +123,8 @@ test("v2.139 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.139");
-    await page.screenshot({ path:`test-results/v2.139-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.141");
+    await page.screenshot({ path:`test-results/v2.141-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -209,8 +210,44 @@ test("足球知識頻道從賽事指南移至足球知識獨立入口", async ({
     "footballKnowledgeChannelsBtn",
     "#footballKnowledgeChannelsModal[data-ui-modal]"
   );
-  await expect(channelsModal.locator(".football-knowledge-card").first()).toBeVisible();
+  const channelCards = channelsModal.locator(".football-knowledge-card");
+  await expect(channelCards).toHaveCount(4);
+  await expect(channelCards.locator(".football-knowledge-copy strong")).toHaveText([
+    "足球元年", "越位先生_Mr. Offside", "老K足球新聞", "綠茵實戰錄"
+  ]);
+  await expect(channelCards.nth(3).locator('img[src="assets/knowledge_channels/green-field-practice.png"]')).toBeVisible();
   await expect(channelsModal.locator("[data-modal-scroll]")).toHaveCount(1);
+});
+
+test("v2.141 桌面球員出生日期與身高欄位不重疊", async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  await page.locator("#searchBox").fill("突尼西亞");
+  await page.locator('.search-suggestion[data-type="team"][data-code="TUN"]').click();
+  const birthCell = page.locator(".roster-table tbody tr").first().locator("td.age");
+  const heightCell = page.locator(".roster-table tbody tr").first().locator("td.height");
+  await expect(birthCell).toBeVisible();
+  await expect(heightCell).toBeVisible();
+  const birthBox = await birthCell.boundingBox();
+  const heightBox = await heightCell.boundingBox();
+  expect(birthBox.x + birthBox.width).toBeLessThanOrEqual(heightBox.x + 0.5);
+  expect(birthBox.width).toBeGreaterThanOrEqual(149);
+  expect(heightBox.width).toBeGreaterThanOrEqual(81);
+  await page.screenshot({ path:"test-results/v2.141-roster-columns-1366x768.png", fullPage:false });
+});
+
+test("v2.141 荷蘭對摩洛哥比分與 PK 結果分行顯示", async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  await page.locator("#searchBox").fill("摩洛哥");
+  await page.locator('.search-suggestion[data-type="team"][data-code="MAR"]').click();
+  const matchRow = page.locator(".results-table tbody tr", { hasText:"荷蘭" }).filter({ hasText:"PK" });
+  await expect(matchRow).toBeVisible();
+  await expect(matchRow.locator(".scoreline-score")).toHaveText("1-1");
+  await expect(matchRow.locator(".match-score-context")).toHaveText("PK 荷蘭 2-3 摩洛哥");
+  await expect(matchRow.locator('[data-tooltip]')).toHaveCount(0);
+  const scoreBox = await matchRow.locator(".scoreline-score").boundingBox();
+  const contextBox = await matchRow.locator(".match-score-context").boundingBox();
+  expect(scoreBox.y + scoreBox.height).toBeLessThanOrEqual(contextBox.y + 0.5);
+  await matchRow.screenshot({ path:"test-results/v2.141-netherlands-morocco-score.png" });
 });
 
 test("FIFA 排名國名保持單行且國家頁使用大型摘要標題", async ({ page }) => {
