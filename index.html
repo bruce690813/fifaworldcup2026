@@ -12675,9 +12675,37 @@
   .fifa-ranking-row-team { min-width:0; }
   .fifa-ranking-row-team strong { display:block; color:#153e70; font-size:16px; }
   .person-portrait { width:48px; height:48px; border-radius:50%; object-fit:cover; flex:0 0 auto; border:2px solid #d6e3f2; background:#fff; }
-  .person-portrait--player { width:34px; height:34px; }
+  .person-portrait--player { width:52px; height:52px; }
   .person-portrait--coach { width:42px; height:42px; margin-right:7px; vertical-align:middle; }
+  .player-detail-person .person-portrait { width:88px; height:88px; }
   .coach-detail-row, .player-detail-person, .roster-player-name-wrap { display:flex; align-items:center; gap:8px; }
+  body.detail-mode .roster-player-name-wrap {
+    grid-template-columns:52px minmax(0,1fr) auto !important;
+    column-gap:10px !important;
+  }
+  body.detail-mode .roster-player-name-text,
+  body.detail-mode .roster-player-name-text a {
+    white-space:nowrap !important;
+    overflow-wrap:normal !important;
+    word-break:keep-all !important;
+  }
+  body.detail-mode .roster-table {
+    min-width:1080px !important;
+  }
+  body.detail-mode .roster-table th:nth-child(1),
+  body.detail-mode .roster-table td:nth-child(1) { width:58px !important; }
+  body.detail-mode .roster-table th:nth-child(2),
+  body.detail-mode .roster-table td:nth-child(2) { width:100px !important; }
+  body.detail-mode .roster-table th:nth-child(3),
+  body.detail-mode .roster-table td:nth-child(3) { width:290px !important; }
+  body.detail-mode .roster-table th:nth-child(4),
+  body.detail-mode .roster-table td:nth-child(4) { width:135px !important; }
+  body.detail-mode .roster-table th:nth-child(5),
+  body.detail-mode .roster-table td:nth-child(5) { width:300px !important; }
+  body.detail-mode .roster-table th:nth-child(6),
+  body.detail-mode .roster-table td:nth-child(6) { width:150px !important; text-align:center !important; }
+  body.detail-mode .roster-table th:nth-child(7),
+  body.detail-mode .roster-table td:nth-child(7) { width:80px !important; text-align:center !important; }
   .roster-player-name-text { white-space:nowrap; }
   .player-detail-person > span { min-width:0; }
   .fifa-ranking-row-team { white-space:nowrap; }
@@ -20833,11 +20861,6 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
           `;
         }
         const rows = players.map(p => {
-          const experience = playerWorldCupExperience[`${team.code}|${p.name}`] || { count:1, years:[2026] };
-          const discipline = playerDiscipline[`${team.code}|${p.name}`] || {yellow:0,red:0};
-          const disciplineHtml = `${discipline.yellow ? `<span class="discipline-card is-yellow" title="${discipline.yellow} 張黃牌" aria-label="${discipline.yellow} 張黃牌">${discipline.yellow > 1 ? discipline.yellow : ""}</span>` : ""}${discipline.red ? `<span class="discipline-card is-red" title="${discipline.red} 張紅牌" aria-label="${discipline.red} 張紅牌">${discipline.red > 1 ? discipline.red : ""}</span>` : ""}` || "—";
-          const experienceYearsText = (experience.years || [2026]).join("、");
-          const experienceTooltip = `入選年份：${experienceYearsText}`;
           return `
           <tr data-player-name="${escapeHtml(p.name)}">
             <td class="num" data-label="背號">${renderRosterJerseyNumber(team, p.number)}</td>
@@ -20845,8 +20868,6 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
             <td class="player" data-label="英文姓名"><div class="roster-player-name-wrap">${playerPhotoUrl(team, p) ? `<img class="person-portrait person-portrait--player" src="${playerPhotoUrl(team, p)}" alt="" loading="lazy" onerror="this.remove()">` : ""}<span class="roster-player-name-text">${renderPlayerNamePhotoLink(team, p)}</span><span class="roster-player-tools">${renderPlayerPronunciationButton(team, p)}${renderCaptainArmband(team, p)}</span></div></td>
             <td class="player-zh" data-label="中文常用名"><span class="roster-two-line">${renderPlayerChineseName(p)}</span></td>
             <td class="club" data-label="俱樂部／聯賽">${renderClubLink(p.club)}</td>
-            <td class="wc-exp-count" data-label="世足入選"><span class="wc-exp-badge" title="${escapeHtml(experienceTooltip)}" aria-label="世足入選 ${experience.count} 屆，${escapeHtml(experienceTooltip)}">${experience.count} 屆</span></td>
-            <td class="discipline" data-label="黃／紅牌" title="${escapeHtml(discipline.note || "本屆賽事牌卡")}">${disciplineHtml}</td>
             <td class="age" data-label="出生日期">${escapeHtml(formatPlayerBirthDate(p))}</td>
             <td class="height" data-label="身高">${p.heightCm ? p.heightCm + " cm" : "—"}</td>
           </tr>
@@ -20868,8 +20889,6 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
                     <th>英文姓名</th>
                     <th style="min-width:112px;">中文常用名</th>
                     <th style="min-width:220px;">俱樂部｜聯賽與中文名稱</th>
-                    <th style="min-width:84px;text-align:center;">世足入選屆數</th>
-                    <th style="min-width:72px;text-align:center;">黃／紅牌</th>
                     <th style="min-width:120px;text-align:center;">出生日期</th>
                     <th style="width:68px;text-align:center;">身高</th>
                   </tr>
