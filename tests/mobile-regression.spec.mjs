@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.143");
+  await expect(page.locator(".version-badge")).toHaveText("v2.144");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.143 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.144 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.143 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.143");
-    await page.screenshot({ path:`test-results/v2.143-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.144");
+    await page.screenshot({ path:`test-results/v2.144-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -279,10 +279,10 @@ test("手機球員卡不顯示牌卡欄位，紅牌保留在球員詳細資料",
   await expect(detail).toBeVisible();
   await expect(detail.getByText("本屆累計牌卡", { exact:true })).toBeVisible();
   await expect(detail.locator(".discipline-card-red")).toHaveCount(1);
-  await page.screenshot({ path:"test-results/v2.143-player-detail-discipline-390x844.png", fullPage:false });
+  await page.screenshot({ path:"test-results/v2.144-player-detail-discipline-390x844.png", fullPage:false });
 });
 
-test("手機全部功能抽屜位於遮罩上方且可點擊", async ({ page }) => {
+test("手機全部功能分組不裁切且可捲動點擊最後一項", async ({ page }) => {
   await page.locator("#mobileFeatureMenuBtn").click();
   const menu = page.locator("#mobileFeatureMenu");
   await expect(menu).toHaveClass(/open/);
@@ -293,15 +293,26 @@ test("手機全部功能抽屜位於遮罩上方且可點擊", async ({ page }) 
   }));
   expect(layers.drawer).toBeGreaterThan(layers.backdrop);
 
-  const item = menu.locator('[data-mobile-nav-target="teamListBtn"]');
+  const groups = menu.locator(".mobile-feature-group");
+  await expect(groups).toHaveCount(4);
+  const groupOverflow = await groups.evaluateAll(nodes => nodes.map(node => ({
+    clientHeight:node.clientHeight,
+    scrollHeight:node.scrollHeight
+  })));
+  expect(groupOverflow.every(({ clientHeight, scrollHeight }) => scrollHeight <= clientHeight + 1)).toBe(true);
+  const scroll = menu.locator(".mobile-feature-scroll");
+  expect(await scroll.evaluate(node => node.scrollHeight > node.clientHeight)).toBe(true);
+
+  const item = menu.locator('[data-mobile-nav-target="competitionGuideBtn"]');
+  await item.scrollIntoViewIfNeeded();
   const hitTarget = await item.evaluate(node => {
     const rect = node.getBoundingClientRect();
     return document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2)?.closest("[data-mobile-nav-target]")?.dataset.mobileNavTarget || "";
   });
-  expect(hitTarget).toBe("teamListBtn");
-  await page.screenshot({ path:"test-results/v2.143-mobile-drawer-clickable-390x844.png", fullPage:false });
+  expect(hitTarget).toBe("competitionGuideBtn");
+  await page.screenshot({ path:"test-results/v2.144-mobile-drawer-scroll-390x844.png", fullPage:false });
   await item.click();
-  await expect(page.locator("#teamDrawer")).toHaveAttribute("aria-hidden", "false");
+  await expect(page.locator("#competitionGuideModal")).toHaveClass(/open/);
 });
 
 test("忠義各梯隊背號使用粉紅球衣造型", async ({ page }) => {
