@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.149");
+  await expect(page.locator(".version-badge")).toHaveText("v2.150");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.149 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.150 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.149 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.149");
-    await page.screenshot({ path:`test-results/v2.149-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.150");
+    await page.screenshot({ path:`test-results/v2.150-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -284,13 +284,14 @@ test("FIFA 排名國名保持單行且國家頁使用大型摘要標題", async 
   expect(Math.abs(firstCompactBox.y - secondCompactBox.y)).toBeLessThan(2);
   expect(Math.abs(firstCompactBox.width - secondCompactBox.width)).toBeLessThan(2);
   expect(await page.locator(".country-ranking-verification").evaluate(node => parseFloat(getComputedStyle(node).fontSize))).toBeLessThanOrEqual(10);
-  await page.screenshot({ path:"test-results/v2.149-mobile-country-outline-390x844.png", fullPage:false });
+  await expect(page.locator(".country-hero-location")).toBeHidden();
+  await page.screenshot({ path:"test-results/v2.150-mobile-country-outline-390x844.png", fullPage:false });
 
   await summaryTabs.nth(1).click();
   await expect(summaryTabs.nth(1)).toHaveClass(/is-active/);
 });
 
-test("v2.149 小型島國 Hero 亦有國土輪廓", async ({ page }) => {
+test("v2.150 小型島國 Hero 亦有國土輪廓", async ({ page }) => {
   for (const [query, code] of [["古拉索", "CUW"], ["維德角", "CPV"]]) {
     await page.locator("#searchBox").fill(query);
     await page.locator(`.search-suggestion[data-type="team"][data-code="${code}"]`).click();
@@ -300,21 +301,35 @@ test("v2.149 小型島國 Hero 亦有國土輪廓", async ({ page }) => {
   }
 });
 
-test("v2.149 桌面國土輪廓位於 Hero 右側且不遮擋標題", async ({ page }) => {
+test("v2.150 桌面 Hero 顯示低對比國土輪廓、定位資訊與四欄摘要", async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   await page.locator("#searchBox").fill("西班牙");
   await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
   const hero = page.locator(".country-summary-hero");
   const title = page.locator(".country-summary-title");
   const outline = page.locator('.country-hero-outline[data-country-outline="ESP"]');
+  const location = page.locator(".country-hero-location");
   await expect(outline).toBeVisible();
+  await expect(location).toBeVisible();
+  await expect(location).toContainText("EUROPE");
+  await expect(location).toContainText("Southern Europe");
+  await expect(location).toContainText("歐洲｜南歐");
   const heroBox = await hero.boundingBox();
   const titleBox = await title.boundingBox();
   const outlineBox = await outline.boundingBox();
   expect(outlineBox.x).toBeGreaterThan(heroBox.x + heroBox.width * .5);
   expect(titleBox.x + titleBox.width).toBeLessThan(outlineBox.x + outlineBox.width * .35);
-  expect(Number(await outline.evaluate(node => getComputedStyle(node).opacity))).toBeLessThanOrEqual(.15);
-  await page.screenshot({ path:"test-results/v2.149-desktop-country-outline-1366x768.png", fullPage:false });
+  expect(Number(await outline.evaluate(node => getComputedStyle(node).opacity))).toBeLessThanOrEqual(.08);
+  const compactRows = page.locator(".country-summary-row--compact");
+  const firstCompactBox = await compactRows.nth(0).boundingBox();
+  const fourthCompactBox = await compactRows.nth(3).boundingBox();
+  expect(Math.abs(firstCompactBox.y - fourthCompactBox.y)).toBeLessThan(2);
+  const secondaryRows = page.locator(".country-summary-row--secondary");
+  await expect(secondaryRows).toHaveCount(2);
+  const firstSecondaryBox = await secondaryRows.nth(0).boundingBox();
+  const secondSecondaryBox = await secondaryRows.nth(1).boundingBox();
+  expect(Math.abs(firstSecondaryBox.y - secondSecondaryBox.y)).toBeLessThan(2);
+  await page.screenshot({ path:"test-results/v2.150-desktop-country-outline-1366x768.png", fullPage:false });
 });
 
 test("手機球員卡不顯示牌卡欄位，紅牌保留在球員詳細資料", async ({ page }) => {
