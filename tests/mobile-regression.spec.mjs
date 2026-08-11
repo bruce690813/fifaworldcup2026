@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.146");
+  await expect(page.locator(".version-badge")).toHaveText("v2.147");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.146 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.147 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.146 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.146");
-    await page.screenshot({ path:`test-results/v2.146-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.147");
+    await page.screenshot({ path:`test-results/v2.147-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -510,7 +510,7 @@ test("MLS 使用 major-league-soccer ID 進入 ESPN 球員名單流程", async (
   ).toBe(true);
 });
 
-test("v2.146 桌面全部功能與決賽排行版面", async ({ page }) => {
+test("v2.147 桌面全部功能與決賽排行版面", async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   await page.reload({ waitUntil:"domcontentloaded" });
   await page.locator("#desktopMegaMenuBtn").click();
@@ -530,7 +530,7 @@ test("v2.146 桌面全部功能與決賽排行版面", async ({ page }) => {
   const themeSongs = menu.locator('[data-desktop-nav-target="themeSongsBtn"]');
   await themeSongs.scrollIntoViewIfNeeded();
   await expect(themeSongs).toBeVisible();
-  await page.screenshot({ path:"test-results/v2.146-desktop-mega-1366x768.png", fullPage:false });
+  await page.screenshot({ path:"test-results/v2.147-desktop-mega-1366x768.png", fullPage:false });
 
   const finals = menu.locator('[data-desktop-nav-target="finalsRankingBtn"]');
   await finals.scrollIntoViewIfNeeded();
@@ -541,5 +541,28 @@ test("v2.146 桌面全部功能與決賽排行版面", async ({ page }) => {
   await expect(dialog.locator(".finals-ranking-country-flag svg")).toHaveCount(13);
   await expect(dialog.locator(".finals-ranking-flag")).toHaveCount(0);
   await expect(dialog.locator('[data-country-code="ENG"] svg')).toHaveCount(1);
-  await page.screenshot({ path:"test-results/v2.146-finals-ranking-1366x768.png", fullPage:false });
+  await page.screenshot({ path:"test-results/v2.147-finals-ranking-1366x768.png", fullPage:false });
+});
+
+test("v2.147 世界地圖完整視角與手機控制列不遮圖", async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  await page.reload({ waitUntil:"domcontentloaded" });
+  await page.locator("#map .leaflet-overlay-pane svg path").first().waitFor();
+
+  await expect(page.locator(".mobile-map-controls strong")).toHaveText("48 隊世界分布");
+  const desktopMapBox = await page.locator("#map").boundingBox();
+  expect(desktopMapBox).not.toBeNull();
+  expect(desktopMapBox.height).toBeGreaterThan(450);
+  await page.screenshot({ path:"test-results/v2.147-map-1366x768.png", fullPage:false });
+
+  await page.setViewportSize({ width:390, height:844 });
+  await page.reload({ waitUntil:"domcontentloaded" });
+  const controls = page.locator(".mobile-map-control-actions");
+  const map = page.locator("#map");
+  await expect(controls).toBeVisible();
+  const [controlsBox, mapBox] = await Promise.all([controls.boundingBox(), map.boundingBox()]);
+  expect(controlsBox).not.toBeNull();
+  expect(mapBox).not.toBeNull();
+  expect(controlsBox.y + controlsBox.height).toBeLessThanOrEqual(mapBox.y + 1);
+  await page.screenshot({ path:"test-results/v2.147-map-390x844.png", fullPage:false });
 });
