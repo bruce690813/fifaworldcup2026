@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.145");
+  await expect(page.locator(".version-badge")).toHaveText("v2.146");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.145 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.146 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.145 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.145");
-    await page.screenshot({ path:`test-results/v2.145-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.146");
+    await page.screenshot({ path:`test-results/v2.146-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -508,4 +508,38 @@ test("MLS 使用 major-league-soccer ID 進入 ESPN 球員名單流程", async (
     ),
     "MLS 應以 usa.1 讀取 ESPN 球隊與球員名單"
   ).toBe(true);
+});
+
+test("v2.146 桌面全部功能與決賽排行版面", async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  await page.reload({ waitUntil:"domcontentloaded" });
+  await page.locator("#desktopMegaMenuBtn").click();
+
+  const menu = page.locator("#desktopMegaMenu");
+  await expect(menu).toHaveClass(/open/);
+  const groups = menu.locator(".desktop-mega-group");
+  await expect(groups).toHaveCount(4);
+
+  const about = menu.locator(".desktop-about-site");
+  const firstGroup = groups.first();
+  const [aboutBox, groupBox] = await Promise.all([about.boundingBox(), firstGroup.boundingBox()]);
+  expect(aboutBox).not.toBeNull();
+  expect(groupBox).not.toBeNull();
+  expect(aboutBox.width).toBeGreaterThan(groupBox.width * 3);
+
+  const themeSongs = menu.locator('[data-desktop-nav-target="themeSongsBtn"]');
+  await themeSongs.scrollIntoViewIfNeeded();
+  await expect(themeSongs).toBeVisible();
+  await page.screenshot({ path:"test-results/v2.146-desktop-mega-1366x768.png", fullPage:false });
+
+  const finals = menu.locator('[data-desktop-nav-target="finalsRankingBtn"]');
+  await finals.scrollIntoViewIfNeeded();
+  await finals.click();
+  const dialog = page.locator("#finalsRankingDialog");
+  await expect(dialog).toBeVisible();
+  await expect(dialog.locator(".finals-ranking-card")).toHaveCount(13);
+  await expect(dialog.locator(".finals-ranking-country-flag svg")).toHaveCount(13);
+  await expect(dialog.locator(".finals-ranking-flag")).toHaveCount(0);
+  await expect(dialog.locator('[data-country-code="ENG"] svg')).toHaveCount(1);
+  await page.screenshot({ path:"test-results/v2.146-finals-ranking-1366x768.png", fullPage:false });
 });
