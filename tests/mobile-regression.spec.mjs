@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.144");
+  await expect(page.locator(".version-badge")).toHaveText("v2.145");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.144 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.145 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.144 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.144");
-    await page.screenshot({ path:`test-results/v2.144-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.145");
+    await page.screenshot({ path:`test-results/v2.145-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
