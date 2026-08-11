@@ -14387,6 +14387,114 @@
     .fifa-president-term { grid-column:2; justify-self:start; }
   }
 </style>
+<style id="v2148MobileCountryProfileStyles">
+  /* v2.148：手機國家頁縮短識別區、強化導覽，並以雙欄呈現成對短資料。 */
+  @media (max-width:760px) {
+    body.detail-mode .country-summary-hero {
+      gap:10px;
+      padding:14px 16px 12px;
+    }
+    body.detail-mode .country-summary-title {
+      grid-template-columns:64px minmax(0,1fr);
+      gap:12px;
+    }
+    body.detail-mode .country-summary-title .country-summary-flag {
+      width:64px;
+      height:45px;
+    }
+    body.detail-mode .country-summary-title-label {
+      margin-bottom:0;
+      font-size:11px;
+      line-height:1.15;
+    }
+    body.detail-mode .country-summary-title h2 {
+      font-size:32px;
+      line-height:1.04;
+    }
+    body.detail-mode .country-summary-title-subline {
+      gap:5px;
+      margin-top:4px;
+      font-size:14px;
+      line-height:1.2;
+    }
+    body.detail-mode .country-summary-title-subline .country-pronunciation-button {
+      width:22px !important;
+      min-width:22px !important;
+      height:22px !important;
+      border-color:rgba(255,255,255,.25) !important;
+      background:rgba(255,255,255,.08) !important;
+      font-size:10px !important;
+    }
+    body.detail-mode .country-summary-nav {
+      gap:7px;
+      padding:8px 14px;
+      background:#edf5ff;
+    }
+    body.detail-mode .country-summary-nav button {
+      min-height:40px;
+      padding:7px 9px;
+      border:1px solid #8fb3d6 !important;
+      border-radius:12px !important;
+      background:#fff !important;
+      color:#154b82 !important;
+      font-weight:900;
+      opacity:1 !important;
+    }
+    body.detail-mode .country-summary-nav button.is-active {
+      border-color:#154b82 !important;
+      background:#154b82 !important;
+      color:#fff !important;
+    }
+    .country-summary-list {
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:1px;
+      background:#dfe9f3;
+    }
+    .country-summary-row {
+      grid-column:1 / -1;
+      grid-template-columns:1fr;
+      gap:3px;
+      min-width:0;
+      padding:9px 12px;
+      border-top:0;
+      background:#fff;
+    }
+    .country-summary-row--compact {
+      grid-column:auto;
+      min-height:74px;
+    }
+    .country-summary-row > strong {
+      font-size:14px;
+      line-height:1.3;
+    }
+    .country-summary-row > div {
+      font-size:15px;
+      line-height:1.5;
+    }
+    .country-summary-row--ranking > div > strong {
+      color:#142b45;
+      font-size:17px;
+    }
+    .country-ranking-verification {
+      display:block;
+      margin-top:3px;
+      color:#7a8999 !important;
+      font-size:10px !important;
+      font-weight:600 !important;
+      line-height:1.35 !important;
+    }
+    .country-summary-capital { gap:4px; }
+    .country-summary-row .capital-pronunciation-button {
+      width:21px !important;
+      min-width:21px !important;
+      height:21px !important;
+      border:0 !important;
+      background:transparent !important;
+      box-shadow:none !important;
+      font-size:10px !important;
+    }
+  }
+</style>
 <style id="v2131MobileUiMapStyles">
   /* v2.131：分組標題與功能列使用不同資訊層級，避免視覺混淆。 */
   .desktop-mega-group-heading,
@@ -22273,8 +22381,9 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
         `;
       }
 
-      function countrySummaryRow(label, value) {
-        return `<div class="country-summary-row"><strong>${escapeHtml(label)}</strong><div>${value}</div></div>`;
+      function countrySummaryRow(label, value, modifier = "") {
+        const modifierClass = modifier ? ` country-summary-row--${modifier}` : "";
+        return `<div class="country-summary-row${modifierClass}"><strong>${escapeHtml(label)}</strong><div>${value}</div></div>`;
       }
 
       const TAIWAN_AREA_SQ_KM = 36197;
@@ -22319,9 +22428,9 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
             <h2>${escapeHtml(team.nameZh)}</h2>
             <div class="country-summary-title-subline">
               <span>${escapeHtml(team.nameEn.toUpperCase())}</span>
-              ${renderCountryPronunciationButton(team)}
               <span class="country-summary-separator">｜</span>
               <span>${escapeHtml(team.code)}</span>
+              ${renderCountryPronunciationButton(team)}
               ${championStars(team)}
             </div>
           </div>
@@ -22362,21 +22471,21 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
               ${renderCountrySummaryIdentity(team)}
             </div>
             <nav class="country-quick-nav country-summary-nav" aria-label="國家頁面快速導覽">
-              <button type="button" data-target=".country-overview-grid">國家摘要</button>
+              <button type="button" class="is-active" data-target=".country-overview-grid">國家摘要</button>
               <button type="button" data-target=".results-section">本屆戰績</button>
               <button type="button" data-target=".roster-section">參賽球員</button>
             </nav>
             <div class="country-summary-list">
-              ${countrySummaryRow("國家暱稱", escapeHtml(nationalTeamSymbols[team.code] || "—"))}
-              ${countrySummaryRow("分組", `${escapeHtml(team.group)} 組`)}
-              ${countrySummaryRow("FIFA 男足世界排名", `<strong>第 ${escapeHtml(fifaRankings[team.code] ?? "—")} 名</strong><small class="country-ranking-verification">${escapeHtml(fifaRankingMeta.status)}｜查核：${escapeHtml(fifaRankingMeta.updated)}｜下次更新：${escapeHtml(fifaRankingMeta.nextUpdate)}</small>`)}
-              ${countrySummaryRow("首都", renderCountrySummaryCapital(team))}
+              ${countrySummaryRow("國家暱稱", escapeHtml(nationalTeamSymbols[team.code] || "—"), "compact")}
+              ${countrySummaryRow("分組", `${escapeHtml(team.group)} 組`, "compact")}
+              ${countrySummaryRow("FIFA 男足世界排名", `<strong>第 ${escapeHtml(fifaRankings[team.code] ?? "—")} 名</strong><small class="country-ranking-verification">${escapeHtml(fifaRankingMeta.status)}｜查核：${escapeHtml(fifaRankingMeta.updated)}｜下次更新：${escapeHtml(fifaRankingMeta.nextUpdate)}</small>`, "compact country-summary-row--ranking")}
+              ${countrySummaryRow("首都", renderCountrySummaryCapital(team), "compact")}
               ${countrySummaryRow("政體", escapeHtml(profile.politics || "—"))}
               ${countrySummaryRow("官方語言", escapeHtml(profile.language || "—"))}
               ${countrySummaryRow("地理位置", escapeHtml(team.intro || "—"))}
               ${countrySummaryRow("面積", renderAreaWithTaiwanComparison(profile.area))}
-              ${countrySummaryRow("人口", escapeHtml(profile.population || "—"))}
-              ${countrySummaryRow("國慶日", escapeHtml(nationalDay))}
+              ${countrySummaryRow("人口", escapeHtml(profile.population || "—"), "compact")}
+              ${countrySummaryRow("國慶日", escapeHtml(nationalDay), "compact")}
               ${countrySummaryRow("國歌", anthem)}
               ${countrySummaryRow("時區與時差", timezone)}
               ${countrySummaryRow("貨幣", currency)}
@@ -22386,8 +22495,8 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
               ${countrySummaryRow("國內足球聯賽", escapeHtml(domesticLeagueText(team)))}
               ${countrySummaryRow("代表美食", escapeHtml(profile.food || "—"))}
               ${countrySummaryRow("歷史簡介", escapeHtml(profile.history || "—"))}
-              ${countrySummaryRow("球衣品牌", renderKitBrand(team))}
-              ${countrySummaryRow("代表色", renderTeamColorSwatches(team))}
+              ${countrySummaryRow("球衣品牌", renderKitBrand(team), "compact")}
+              ${countrySummaryRow("代表色", renderTeamColorSwatches(team), "compact")}
               ${countrySummaryRow("球衣特色", renderKitFeature(team))}
             </div>
           </section>`;
@@ -22430,6 +22539,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
 
         document.querySelectorAll(".country-quick-nav button[data-target]").forEach(button => {
           button.addEventListener("click", () => {
+            button.closest(".country-quick-nav")?.querySelectorAll("button").forEach(item => item.classList.toggle("is-active", item === button));
             const target = infoPanel.querySelector(button.dataset.target);
             if (target) target.scrollIntoView({ behavior:"smooth", block:"start" });
           });

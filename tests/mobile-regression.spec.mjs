@@ -265,6 +265,25 @@ test("FIFA 排名國名保持單行且國家頁使用大型摘要標題", async 
   await expect(page.locator(".country-summary-title h2")).toHaveText("西班牙");
   await expect(page.locator(".country-summary-title-subline")).toContainText("SPAIN");
   await expect(page.locator(".country-summary-title-subline")).toContainText("ESP");
+
+  const heroBox = await page.locator(".country-summary-hero").boundingBox();
+  expect(heroBox.height).toBeLessThan(120);
+  const summaryTabs = page.locator(".country-summary-nav button");
+  await expect(summaryTabs).toHaveCount(3);
+  await expect(summaryTabs.first()).toHaveClass(/is-active/);
+  expect(await summaryTabs.first().evaluate(node => getComputedStyle(node).backgroundColor)).toBe("rgb(21, 75, 130)");
+
+  const compactRows = page.locator(".country-summary-row--compact");
+  await expect(compactRows).toHaveCount(8);
+  const firstCompactBox = await compactRows.nth(0).boundingBox();
+  const secondCompactBox = await compactRows.nth(1).boundingBox();
+  expect(Math.abs(firstCompactBox.y - secondCompactBox.y)).toBeLessThan(2);
+  expect(Math.abs(firstCompactBox.width - secondCompactBox.width)).toBeLessThan(2);
+  expect(await page.locator(".country-ranking-verification").evaluate(node => parseFloat(getComputedStyle(node).fontSize))).toBeLessThanOrEqual(10);
+  await page.screenshot({ path:"test-results/v2.148-mobile-country-summary-390x844.png", fullPage:false });
+
+  await summaryTabs.nth(1).click();
+  await expect(summaryTabs.nth(1)).toHaveClass(/is-active/);
 });
 
 test("手機球員卡不顯示牌卡欄位，紅牌保留在球員詳細資料", async ({ page }) => {
