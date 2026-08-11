@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.150");
+  await expect(page.locator(".version-badge")).toHaveText("v2.151");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.150 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.151 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.150 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.150");
-    await page.screenshot({ path:`test-results/v2.150-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.151");
+    await page.screenshot({ path:`test-results/v2.151-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -235,6 +235,30 @@ test("v2.141 桌面球員出生日期與身高欄位不重疊", async ({ page })
   await page.screenshot({ path:"test-results/v2.141-roster-columns-1366x768.png", fullPage:false });
 });
 
+test("v2.151 桌機球員名單使用精簡表頭與緊湊欄位層級", async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  await page.locator("#searchBox").fill("西班牙");
+  await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
+
+  const table = page.locator(".roster-table");
+  await expect(table).toBeVisible();
+  await table.scrollIntoViewIfNeeded();
+  await expect(table.locator("thead th")).toHaveText([
+    "背號", "位置", "球員姓名", "出生日期", "身高", "俱樂部／聯賽"
+  ]);
+
+  const firstRow = table.locator("tbody tr").first();
+  const nameBox = await firstRow.locator("td.player").boundingBox();
+  const birthBox = await firstRow.locator("td.age").boundingBox();
+  const heightBox = await firstRow.locator("td.height").boundingBox();
+  const clubBox = await firstRow.locator("td.club").boundingBox();
+  expect(nameBox.width).toBeLessThan(clubBox.width);
+  expect(birthBox.x + birthBox.width).toBeLessThanOrEqual(heightBox.x + 0.5);
+  await expect(firstRow.locator(".roster-player-name-zh:empty")).toBeHidden();
+  expect(await firstRow.locator(".player-pronunciation-button").evaluate(node => parseFloat(getComputedStyle(node).width))).toBeLessThanOrEqual(22);
+  await page.screenshot({ path:"test-results/v2.151-desktop-roster-1366x768.png", fullPage:false });
+});
+
 test("v2.141 荷蘭對摩洛哥比分與 PK 結果分行顯示", async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   await page.locator("#searchBox").fill("摩洛哥");
@@ -330,6 +354,30 @@ test("v2.150 桌面 Hero 顯示低對比國土輪廓、定位資訊與四欄摘�
   const secondSecondaryBox = await secondaryRows.nth(1).boundingBox();
   expect(Math.abs(firstSecondaryBox.y - secondSecondaryBox.y)).toBeLessThan(2);
   await page.screenshot({ path:"test-results/v2.150-desktop-country-outline-1366x768.png", fullPage:false });
+});
+
+test("v2.151 桌機本屆戰績以比分為主並保留清楚階段層級", async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  await page.locator("#searchBox").fill("西班牙");
+  await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
+  await page.locator('.country-summary-nav button[data-target=".results-section"]').click();
+
+  const table = page.locator(".results-table");
+  await expect(table).toBeVisible();
+  await expect(table.locator(".match-stage-badge")).toHaveCount(8);
+  await expect(table.locator(".match-date-primary").first()).toHaveText("2026-06-16");
+  await expect(table.locator(".match-date-secondary").first()).toContainText("（二）");
+  await expect(table.locator(".match-phase-start")).toHaveCount(2);
+
+  const matchupWidth = await table.locator("col.results-col-matchup").evaluate(node => getComputedStyle(node).width);
+  const highlightWidth = await table.locator("col.results-col-highlight").evaluate(node => getComputedStyle(node).width);
+  expect(parseFloat(matchupWidth)).toBeGreaterThan(parseFloat(highlightWidth) * 3.5);
+  expect(await table.locator(".scoreline-score").first().evaluate(node => parseFloat(getComputedStyle(node).fontSize))).toBeGreaterThanOrEqual(24);
+
+  const finalRow = table.locator("tr.match-phase-final", { hasText:"冠軍戰" });
+  await expect(finalRow.locator(".match-stage-badge.is-final")).toBeVisible();
+  await expect(finalRow.locator(".match-score-context")).toHaveText("延長賽");
+  await page.screenshot({ path:"test-results/v2.151-desktop-results-1366x768.png", fullPage:false });
 });
 
 test("手機球員卡不顯示牌卡欄位，紅牌保留在球員詳細資料", async ({ page }) => {
