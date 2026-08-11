@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.151");
+  await expect(page.locator(".version-badge")).toHaveText("v2.152");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,10 +123,25 @@ test("v2.151 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.151");
-    await page.screenshot({ path:`test-results/v2.151-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.152");
+    await page.screenshot({ path:`test-results/v2.152-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
+});
+
+test("v2.152 球隊分析分段並以統計卡呈現世界盃紀錄", async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  await page.locator("#searchBox").fill("西班牙");
+  await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
+
+  await expect(page.locator(".country-team-analysis-copy p")).toHaveCount(3);
+  await expect(page.locator(".country-team-analysis-keyword").first()).toBeVisible();
+  await expect(page.locator(".country-team-analysis-source")).toContainText("來源：");
+  await expect(page.locator(".team-record-overview .team-record-stat")).toHaveCount(2);
+  await expect(page.locator(".team-record-overview")).toContainText("17");
+  await expect(page.locator(".team-record-overview")).toContainText("世界盃冠軍");
+  await expect(page.locator(".team-record-details .team-record-detail")).toHaveCount(3);
+  await expect(page.locator(".team-record-details")).toContainText("世界盃最佳名次");
 });
 
 test("手機控制與輔助文字符合最小可讀／可觸控尺寸", async ({ page }) => {
