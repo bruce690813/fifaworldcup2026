@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.154");
+  await expect(page.locator(".version-badge")).toHaveText("v2.155");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.154 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.155 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.154 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.154");
-    await page.screenshot({ path:`test-results/v2.154-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.155");
+    await page.screenshot({ path:`test-results/v2.155-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -259,7 +259,7 @@ test("v2.151 桌機球員名單使用精簡表頭與緊湊欄位層級", async (
   await page.screenshot({ path:"test-results/v2.151-desktop-roster-1366x768.png", fullPage:false });
 });
 
-test("v2.154 手機球員卡以球衣、照片與姓名資料三區呈現", async ({ page }) => {
+test("v2.155 手機球員卡依人物、基本資料與俱樂部順序呈現", async ({ page }) => {
   await page.setViewportSize({ width:390, height:844 });
   await page.locator("#searchBox").fill("阿根廷");
   await page.locator('.search-suggestion[data-type="team"][data-code="ARG"]').click();
@@ -270,18 +270,25 @@ test("v2.154 手機球員卡以球衣、照片與姓名資料三區呈現", asyn
 
   const portrait = firstCard.locator(".person-portrait--player");
   await expect(portrait).toBeVisible();
-  expect(await portrait.evaluate(node => parseFloat(getComputedStyle(node).width))).toBe(64);
-  expect(await portrait.evaluate(node => parseFloat(getComputedStyle(node).height))).toBe(64);
+  expect(await portrait.evaluate(node => parseFloat(getComputedStyle(node).width))).toBe(72);
+  expect(await portrait.evaluate(node => parseFloat(getComputedStyle(node).height))).toBe(72);
   expect(await firstCard.locator("td.player").evaluate(node => getComputedStyle(node, "::before").display)).toBe("none");
   expect(await firstCard.locator("td.num").evaluate(node => getComputedStyle(node, "::before").display)).toBe("none");
-  await expect(firstCard.locator("td.pos")).toBeHidden();
-  await expect(firstCard.locator(".roster-player-position-mobile")).toBeVisible();
+  await expect(firstCard.locator("td.pos")).toBeVisible();
+  await expect(firstCard.locator(".roster-player-position-mobile")).toBeHidden();
+  const positionBox = await firstCard.locator("td.pos").boundingBox();
+  const ageBox = await firstCard.locator("td.age").boundingBox();
+  const heightBox = await firstCard.locator("td.height").boundingBox();
+  const clubBox = await firstCard.locator("td.club").boundingBox();
+  expect(positionBox.x + positionBox.width).toBeLessThanOrEqual(ageBox.x + 1);
+  expect(ageBox.x + ageBox.width).toBeLessThanOrEqual(heightBox.x + 1);
+  expect(clubBox.y).toBeGreaterThan(heightBox.y + heightBox.height - 1);
   expect(await firstCard.locator(".player-pronunciation-button").evaluate(node => parseFloat(getComputedStyle(node).width))).toBeLessThanOrEqual(17);
   expect(await firstCard.locator("td.club a").evaluate(node => getComputedStyle(node).textDecorationLine)).toBe("none");
   expect(await firstCard.evaluate(node => node.getBoundingClientRect().height)).toBeLessThan(300);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
 
-  await page.screenshot({ path:"test-results/v2.154-mobile-player-card-390x844.png", fullPage:false });
+  await page.screenshot({ path:"test-results/v2.155-mobile-player-card-390x844.png", fullPage:false });
 });
 
 test("v2.141 荷蘭對摩洛哥比分與 PK 結果分行顯示", async ({ page }) => {
