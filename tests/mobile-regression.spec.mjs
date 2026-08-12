@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.155");
+  await expect(page.locator(".version-badge")).toHaveText("v2.156");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.155 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.156 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.155 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.155");
-    await page.screenshot({ path:`test-results/v2.155-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.156");
+    await page.screenshot({ path:`test-results/v2.156-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -259,7 +259,7 @@ test("v2.151 桌機球員名單使用精簡表頭與緊湊欄位層級", async (
   await page.screenshot({ path:"test-results/v2.151-desktop-roster-1366x768.png", fullPage:false });
 });
 
-test("v2.155 手機球員卡依人物、基本資料與俱樂部順序呈現", async ({ page }) => {
+test("v2.156 手機球員卡人物比例與固定姓名節奏", async ({ page }) => {
   await page.setViewportSize({ width:390, height:844 });
   await page.locator("#searchBox").fill("阿根廷");
   await page.locator('.search-suggestion[data-type="team"][data-code="ARG"]').click();
@@ -270,8 +270,8 @@ test("v2.155 手機球員卡依人物、基本資料與俱樂部順序呈現", a
 
   const portrait = firstCard.locator(".person-portrait--player");
   await expect(portrait).toBeVisible();
-  expect(await portrait.evaluate(node => parseFloat(getComputedStyle(node).width))).toBe(72);
-  expect(await portrait.evaluate(node => parseFloat(getComputedStyle(node).height))).toBe(72);
+  expect(await portrait.evaluate(node => parseFloat(getComputedStyle(node).width))).toBe(77);
+  expect(await portrait.evaluate(node => parseFloat(getComputedStyle(node).height))).toBe(77);
   expect(await firstCard.locator("td.player").evaluate(node => getComputedStyle(node, "::before").display)).toBe("none");
   expect(await firstCard.locator("td.num").evaluate(node => getComputedStyle(node, "::before").display)).toBe("none");
   await expect(firstCard.locator("td.pos")).toBeVisible();
@@ -285,10 +285,16 @@ test("v2.155 手機球員卡依人物、基本資料與俱樂部順序呈現", a
   expect(clubBox.y).toBeGreaterThan(heightBox.y + heightBox.height - 1);
   expect(await firstCard.locator(".player-pronunciation-button").evaluate(node => parseFloat(getComputedStyle(node).width))).toBeLessThanOrEqual(17);
   expect(await firstCard.locator("td.club a").evaluate(node => getComputedStyle(node).textDecorationLine)).toBe("none");
+  const portraitBox = await portrait.boundingBox();
+  const nameBox = await firstCard.locator(".roster-player-name-text").boundingBox();
+  const photoToNameGap = nameBox.x - (portraitBox.x + portraitBox.width);
+  expect(photoToNameGap).toBeGreaterThanOrEqual(8);
+  expect(photoToNameGap).toBeLessThanOrEqual(20);
+  expect(await firstCard.locator(".roster-player-name-zh").evaluate(node => parseFloat(getComputedStyle(node).minHeight))).toBeGreaterThanOrEqual(16);
   expect(await firstCard.evaluate(node => node.getBoundingClientRect().height)).toBeLessThan(300);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
 
-  await page.screenshot({ path:"test-results/v2.155-mobile-player-card-390x844.png", fullPage:false });
+  await page.screenshot({ path:"test-results/v2.156-mobile-player-card-390x844.png", fullPage:false });
 });
 
 test("v2.141 荷蘭對摩洛哥比分與 PK 結果分行顯示", async ({ page }) => {
