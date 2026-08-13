@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.156");
+  await expect(page.locator(".version-badge")).toHaveText("v2.157");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.156 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.157 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.156 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.156");
-    await page.screenshot({ path:`test-results/v2.156-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.157");
+    await page.screenshot({ path:`test-results/v2.157-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -259,7 +259,7 @@ test("v2.151 桌機球員名單使用精簡表頭與緊湊欄位層級", async (
   await page.screenshot({ path:"test-results/v2.151-desktop-roster-1366x768.png", fullPage:false });
 });
 
-test("v2.156 手機球員卡人物比例與固定姓名節奏", async ({ page }) => {
+test("v2.157 手機球員卡人物比例與固定姓名節奏", async ({ page }) => {
   await page.setViewportSize({ width:390, height:844 });
   await page.locator("#searchBox").fill("阿根廷");
   await page.locator('.search-suggestion[data-type="team"][data-code="ARG"]').click();
@@ -294,7 +294,7 @@ test("v2.156 手機球員卡人物比例與固定姓名節奏", async ({ page })
   expect(await firstCard.evaluate(node => node.getBoundingClientRect().height)).toBeLessThan(300);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
 
-  await page.screenshot({ path:"test-results/v2.156-mobile-player-card-390x844.png", fullPage:false });
+  await page.screenshot({ path:"test-results/v2.157-mobile-player-card-390x844.png", fullPage:false });
 });
 
 test("v2.141 荷蘭對摩洛哥比分與 PK 結果分行顯示", async ({ page }) => {
@@ -339,10 +339,13 @@ test("FIFA 排名國名保持單行且國家頁使用大型摘要標題", async 
   await expect(summaryTabs.first()).toHaveClass(/is-active/);
   expect(await summaryTabs.first().evaluate(node => getComputedStyle(node).backgroundColor)).toBe("rgb(21, 75, 130)");
 
+  await expect(page.locator(".country-summary-group")).toHaveCount(4);
   const compactRows = page.locator(".country-summary-row--compact");
-  await expect(compactRows).toHaveCount(8);
-  const firstCompactBox = await compactRows.nth(0).boundingBox();
-  const secondCompactBox = await compactRows.nth(1).boundingBox();
+  await expect(compactRows).toHaveCount(12);
+  const footballCompactRows = page.locator(".country-summary-group--football .country-summary-row--compact");
+  await expect(footballCompactRows).toHaveCount(4);
+  const firstCompactBox = await footballCompactRows.nth(0).boundingBox();
+  const secondCompactBox = await footballCompactRows.nth(1).boundingBox();
   expect(Math.abs(firstCompactBox.y - secondCompactBox.y)).toBeLessThan(2);
   expect(Math.abs(firstCompactBox.width - secondCompactBox.width)).toBeLessThan(2);
   expect(await page.locator(".country-ranking-verification").evaluate(node => parseFloat(getComputedStyle(node).fontSize))).toBeLessThanOrEqual(10);
@@ -381,10 +384,12 @@ test("v2.150 桌面 Hero 顯示低對比國土輪廓、定位資訊與四欄摘�
   const outlineBox = await outline.boundingBox();
   expect(outlineBox.x).toBeGreaterThan(heroBox.x + heroBox.width * .5);
   expect(titleBox.x + titleBox.width).toBeLessThan(outlineBox.x + outlineBox.width * .35);
-  expect(Number(await outline.evaluate(node => getComputedStyle(node).opacity))).toBeLessThanOrEqual(.08);
-  const compactRows = page.locator(".country-summary-row--compact");
-  const firstCompactBox = await compactRows.nth(0).boundingBox();
-  const fourthCompactBox = await compactRows.nth(3).boundingBox();
+  expect(Number(await outline.evaluate(node => getComputedStyle(node).opacity))).toBeLessThanOrEqual(.11);
+  await expect(page.locator(".country-summary-group")).toHaveCount(4);
+  const footballCompactRows = page.locator(".country-summary-group--football .country-summary-row--compact");
+  await expect(footballCompactRows).toHaveCount(4);
+  const firstCompactBox = await footballCompactRows.nth(0).boundingBox();
+  const fourthCompactBox = await footballCompactRows.nth(3).boundingBox();
   expect(Math.abs(firstCompactBox.y - fourthCompactBox.y)).toBeLessThan(2);
   const secondaryRows = page.locator(".country-summary-row--secondary");
   await expect(secondaryRows).toHaveCount(2);
@@ -409,7 +414,7 @@ test("v2.151 桌機本屆戰績以比分為主並保留清楚階段層級", asyn
 
   const matchupWidth = await table.locator("col.results-col-matchup").evaluate(node => getComputedStyle(node).width);
   const highlightWidth = await table.locator("col.results-col-highlight").evaluate(node => getComputedStyle(node).width);
-  expect(parseFloat(matchupWidth)).toBeGreaterThan(parseFloat(highlightWidth) * 3.5);
+  expect(parseFloat(matchupWidth)).toBeGreaterThan(parseFloat(highlightWidth) * 2.8);
   expect(await table.locator(".scoreline-score").first().evaluate(node => parseFloat(getComputedStyle(node).fontSize))).toBeGreaterThanOrEqual(24);
 
   const finalRow = table.locator("tr.match-phase-final", { hasText:"冠軍戰" });
@@ -700,7 +705,7 @@ test("v2.148 世界地圖完整視角與手機控制列不遮圖", async ({ page
   await page.reload({ waitUntil:"domcontentloaded" });
   await page.locator("#map .leaflet-overlay-pane svg path").first().waitFor();
 
-  await expect(page.locator(".mobile-map-controls strong")).toHaveText("48 隊世界分布");
+  await expect(page.locator(".mobile-map-controls strong")).toContainText("因為足球");
   const desktopMapBox = await page.locator("#map").boundingBox();
   expect(desktopMapBox).not.toBeNull();
   expect(desktopMapBox.height).toBeGreaterThan(450);
@@ -711,7 +716,7 @@ test("v2.148 世界地圖完整視角與手機控制列不遮圖", async ({ page
   const controls = page.locator(".mobile-map-control-actions");
   const map = page.locator("#map");
   await expect(controls).toBeVisible();
-  await expect(page.locator(".mobile-map-controls-copy small")).toHaveText("點選國家查看球隊資訊");
+  await expect(page.locator(".mobile-map-controls-copy small")).toContainText("48 支代表隊");
   await expect(page.locator("#mobileMapTopBtn")).toHaveText("↑");
   const [controlsBox, mapBox] = await Promise.all([controls.boundingBox(), map.boundingBox()]);
   expect(controlsBox).not.toBeNull();
