@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.160");
+  await expect(page.locator(".version-badge")).toHaveText("v2.161");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -114,7 +114,7 @@ test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page })
   await expect(page.locator("#playerDetailBody")).toContainText("FIFA 官方球員統計");
 });
 
-test("v2.160 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
+test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   const errors = [];
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const viewport of [
@@ -123,8 +123,8 @@ test("v2.160 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.160");
-    await page.screenshot({ path:`test-results/v2.160-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await expect(page.locator(".version-badge")).toHaveText("v2.161");
+    await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
 });
@@ -259,7 +259,7 @@ test("v2.151 桌機球員名單使用精簡表頭與緊湊欄位層級", async (
   await page.screenshot({ path:"test-results/v2.151-desktop-roster-1366x768.png", fullPage:false });
 });
 
-test("v2.160 手機球員卡人物比例與固定姓名節奏", async ({ page }) => {
+test("v2.161 手機球員卡人物比例與固定姓名節奏", async ({ page }) => {
   await page.setViewportSize({ width:390, height:844 });
   await page.locator("#searchBox").fill("阿根廷");
   await page.locator('.search-suggestion[data-type="team"][data-code="ARG"]').click();
@@ -294,10 +294,10 @@ test("v2.160 手機球員卡人物比例與固定姓名節奏", async ({ page })
   expect(await firstCard.evaluate(node => node.getBoundingClientRect().height)).toBeLessThan(300);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
 
-  await page.screenshot({ path:"test-results/v2.160-mobile-player-card-390x844.png", fullPage:false });
+  await page.screenshot({ path:"test-results/v2.161-mobile-player-card-390x844.png", fullPage:false });
 });
 
-test("v2.160 精確國家搜尋依國家、國家隊成員、俱樂部排序且不截斷俱樂部", async ({ page }) => {
+test("v2.161 精確國家搜尋依國家、國家隊成員、俱樂部排序且不截斷俱樂部", async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   await page.locator("#searchBox").fill("西班牙");
 
@@ -703,7 +703,7 @@ test("v2.148 桌面全部功能與決賽排行版面", async ({ page }) => {
   await page.screenshot({ path:"test-results/v2.148-finals-ranking-1366x768.png", fullPage:false });
 });
 
-test("v2.148 世界地圖完整視角與手機控制列不遮圖", async ({ page }) => {
+test("v2.161 世界地圖完整視角與手機控制浮在右上角", async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   await page.reload({ waitUntil:"domcontentloaded" });
   await page.locator("#map .leaflet-overlay-pane svg path").first().waitFor();
@@ -713,6 +713,18 @@ test("v2.148 世界地圖完整視角與手機控制列不遮圖", async ({ page
   expect(desktopMapBox).not.toBeNull();
   expect(desktopMapBox.height).toBeGreaterThan(450);
   await page.screenshot({ path:"test-results/v2.148-map-1366x768.png", fullPage:false });
+
+  await page.locator("#mobileMapFullscreenBtn").click();
+  await expect(page.locator("body")).toHaveClass(/mobile-map-fullscreen/);
+  const fullscreenMapBox = await page.locator("#map").boundingBox();
+  expect(fullscreenMapBox).not.toBeNull();
+  expect(fullscreenMapBox.x).toBeLessThanOrEqual(1);
+  expect(fullscreenMapBox.y).toBeLessThanOrEqual(1);
+  expect(fullscreenMapBox.width).toBeGreaterThanOrEqual(1365);
+  expect(fullscreenMapBox.height).toBeGreaterThanOrEqual(767);
+  await page.screenshot({ path:"test-results/v2.161-map-fullscreen-1366x768.png", fullPage:false });
+  await page.locator("#mobileMapFullscreenBtn").click();
+  await expect(page.locator("body")).not.toHaveClass(/mobile-map-fullscreen/);
 
   await page.setViewportSize({ width:390, height:844 });
   await page.reload({ waitUntil:"domcontentloaded" });
@@ -724,8 +736,11 @@ test("v2.148 世界地圖完整視角與手機控制列不遮圖", async ({ page
   const [controlsBox, mapBox] = await Promise.all([controls.boundingBox(), map.boundingBox()]);
   expect(controlsBox).not.toBeNull();
   expect(mapBox).not.toBeNull();
-  expect(controlsBox.y + controlsBox.height).toBeLessThanOrEqual(mapBox.y + 1);
-  await page.screenshot({ path:"test-results/v2.148-map-390x844.png", fullPage:false });
+  expect(controlsBox.y).toBeGreaterThanOrEqual(mapBox.y);
+  expect(controlsBox.y + controlsBox.height).toBeLessThanOrEqual(mapBox.y + mapBox.height);
+  expect(controlsBox.x + controlsBox.width).toBeLessThanOrEqual(mapBox.x + mapBox.width);
+  expect(mapBox.x + mapBox.width - (controlsBox.x + controlsBox.width)).toBeLessThanOrEqual(16);
+  await page.screenshot({ path:"test-results/v2.161-map-390x844.png", fullPage:false });
 });
 
 test("v2.148 四大位置搜尋完整列出所有球員", async ({ page }) => {
