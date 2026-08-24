@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.161");
+  await expect(page.locator(".version-badge")).toHaveText("v2.162");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.161");
+    await expect(page.locator(".version-badge")).toHaveText("v2.162");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -703,7 +703,7 @@ test("v2.148 桌面全部功能與決賽排行版面", async ({ page }) => {
   await page.screenshot({ path:"test-results/v2.148-finals-ranking-1366x768.png", fullPage:false });
 });
 
-test("v2.161 世界地圖完整視角與手機控制浮在右上角", async ({ page }) => {
+test("v2.162 世界地圖完整視角與手機控制浮在右上角", async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   await page.reload({ waitUntil:"domcontentloaded" });
   await page.locator("#map .leaflet-overlay-pane svg path").first().waitFor();
@@ -732,7 +732,9 @@ test("v2.161 世界地圖完整視角與手機控制浮在右上角", async ({ p
   const map = page.locator("#map");
   await expect(controls).toBeVisible();
   await expect(page.locator(".mobile-map-controls-copy small")).toContainText("48 支代表隊");
-  await expect(page.locator("#mobileMapTopBtn")).toHaveText("↑");
+  await expect(page.locator("#mobileMapTopBtn")).toHaveCount(0);
+  await expect(page.locator("#mobileMapWorldBtn")).toHaveText("↻ 重設視角");
+  await expect(page.locator("#mobileMapFullscreenBtn")).toHaveText("全螢幕");
   const [controlsBox, mapBox] = await Promise.all([controls.boundingBox(), map.boundingBox()]);
   expect(controlsBox).not.toBeNull();
   expect(mapBox).not.toBeNull();
