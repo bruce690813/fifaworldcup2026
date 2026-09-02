@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.163");
+  await expect(page.locator(".version-badge")).toHaveText("v2.164");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.163");
+    await expect(page.locator(".version-badge")).toHaveText("v2.164");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -380,7 +380,9 @@ test("FIFA 排名國名保持單行且國家頁使用大型摘要標題", async 
   expect(await countryOutline.getAttribute("aria-hidden")).toBe("true");
 
   const heroBox = await page.locator(".country-summary-hero").boundingBox();
-  expect(heroBox.height).toBeLessThan(120);
+  expect(heroBox.height).toBeLessThan(210);
+  await expect(page.locator(".country-hero-football-stat")).toHaveCount(3);
+  await expect(page.locator(".country-hero-football-stat--ranking")).toContainText("#1");
   const summaryTabs = page.locator(".country-summary-nav button");
   await expect(summaryTabs).toHaveCount(3);
   await expect(summaryTabs.first()).toHaveClass(/is-active/);
@@ -424,14 +426,50 @@ test("v2.150 桌面 Hero 顯示低對比國土輪廓、定位資訊與四欄摘�
   const heroBox = await hero.boundingBox();
   const titleBox = await title.boundingBox();
   const outlineBox = await outline.boundingBox();
-  expect(outlineBox.x).toBeGreaterThan(heroBox.x + heroBox.width * .5);
+  expect(outlineBox.x).toBeGreaterThan(heroBox.x + heroBox.width * .4);
   expect(titleBox.x + titleBox.width).toBeLessThan(outlineBox.x + outlineBox.width * .35);
   expect(Number(await outline.evaluate(node => getComputedStyle(node).opacity))).toBeLessThanOrEqual(.11);
   const summaryRows = page.locator(".country-summary-list .country-summary-row");
   expect(await summaryRows.count()).toBeGreaterThanOrEqual(20);
   await expect(page.locator(".country-summary-list .country-summary-row--ranking")).toHaveCount(1);
-  await expect(page.locator(".country-summary-list .country-summary-row--secondary")).toHaveCount(2);
+  await expect(page.locator(".country-summary-group--basics .country-summary-row--half")).toHaveCount(2);
+  const summaryGroups = page.locator(".country-summary-group");
+  await expect(summaryGroups).toHaveCount(4);
+  await expect(summaryGroups.locator("h3")).toHaveText(["足球焦點", "基本資料", "生活資訊", "文化特色"]);
+  await expect(page.locator(".country-summary-rank-value strong")).toHaveText("#1");
+  expect(await page.locator(".country-summary-rank-value strong").evaluate(node => parseFloat(getComputedStyle(node).fontSize))).toBeGreaterThanOrEqual(28);
+  const lifeRows = page.locator(".country-summary-group--life .country-summary-row");
+  await expect(lifeRows).toHaveCount(3);
+  const lifeGridBox = await page.locator(".country-summary-group--life .country-summary-group-grid").boundingBox();
+  const lastLifeBox = await lifeRows.last().boundingBox();
+  expect(lastLifeBox.x + lastLifeBox.width).toBeGreaterThanOrEqual(lifeGridBox.x + lifeGridBox.width - 1);
+  const basicThirds = page.locator(".country-summary-group--basics .country-summary-row--third");
+  await expect(basicThirds).toHaveCount(3);
+  const basicGridBox = await page.locator(".country-summary-group--basics .country-summary-group-grid").boundingBox();
+  const lastBasicBox = await basicThirds.last().boundingBox();
+  expect(lastBasicBox.x + lastBasicBox.width).toBeGreaterThanOrEqual(basicGridBox.x + basicGridBox.width - 1);
   await page.screenshot({ path:"test-results/v2.150-desktop-country-outline-1366x768.png", fullPage:false });
+});
+
+test("v2.164 國家頁足球焦點與四主題資訊層級", async ({ page }) => {
+  mkdirSync("artifacts/v2.164", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.locator("#searchBox").fill("西班牙");
+    await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
+
+    await expect(page.locator(".country-hero-football-stat")).toHaveCount(3);
+    await expect(page.locator(".country-summary-group")).toHaveCount(4);
+    await expect(page.locator(".country-summary-group > h3")).toHaveText(["足球焦點", "基本資料", "生活資訊", "文化特色"]);
+    await expect(page.locator(".country-summary-rank-value strong")).toHaveText("#1");
+    const horizontalOverflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(horizontalOverflow, "國家頁不可產生水平溢位").toBeLessThanOrEqual(1);
+    await page.screenshot({ path:`artifacts/v2.164/country-${viewport.width}x${viewport.height}.png`, fullPage:false });
+  }
 });
 
 test("v2.151 桌機本屆戰績以比分為主並保留清楚階段層級", async ({ page }) => {
