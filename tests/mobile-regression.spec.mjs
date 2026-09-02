@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.164");
+  await expect(page.locator(".version-badge")).toHaveText("v2.165");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -101,7 +101,7 @@ test("v2.139 總教練搜尋可直達國家隊紀錄", async ({ page }) => {
 test("v2.139 國家紀錄、出生日期與球員詳細視窗", async ({ page }) => {
   await page.locator("#searchBox").fill("日本");
   await page.locator('.search-suggestion[data-type="team"][data-code="JPN"]').click();
-  await expect(page.locator(".roster-team-summary")).toContainText("世界盃最佳名次");
+  await expect(page.locator(".roster-team-summary")).toContainText("最佳成績");
   await expect(page.locator(".country-summary-list")).toContainText("國內足球聯賽");
   await expect(page.locator(".country-summary-list")).toContainText("熱門景點");
   await expect(page.locator("#countryEncyclopediaBtn")).toHaveCount(0);
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.164");
+    await expect(page.locator(".version-badge")).toHaveText("v2.165");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -834,4 +834,51 @@ test("v2.148 四大位置搜尋完整列出所有球員", async ({ page }) => {
   await page.locator("#searchBox").fill("門將");
   await expect(page.locator(".search-result-summary")).toContainText("GK 門將｜共 145 位球員");
   await expect(page.locator('.search-suggestion[data-type="player"]')).toHaveCount(145);
+});
+
+test("v2.165 國家隊人物與世界盃紀錄面板四種尺寸", async ({ page }) => {
+  mkdirSync("artifacts/v2.165", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.locator("#searchBox").fill("西班牙");
+    await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
+
+    const roster = page.locator(".roster-section");
+    const summary = roster.locator(".roster-team-summary");
+    await expect(roster.locator(".roster-count-badge")).toHaveText("26 人");
+    await expect(summary.locator(".coach-profile-card .person-role-label")).toHaveText("總教練");
+    await expect(summary.locator(".coach-name-zh")).toContainText("德拉富恩特");
+    await expect(summary.locator(".coach-name-en")).toContainText("Luis");
+    await expect(summary.locator(".captain-profile-card .person-role-label")).toHaveText("隊長");
+    await expect(summary.locator(".captain-primary")).toContainText("羅德里");
+    await expect(summary.locator(".record-kpi-number")).toHaveText("17次");
+    await expect(summary.locator(".record-years")).toContainText("1934 · 1950");
+    await expect(summary.locator(".record-best-finish")).toContainText("最佳成績");
+    await expect(summary.locator(".world-cup-honour-card")).toContainText("2 次");
+    await expect(summary.locator(".honour-years")).toHaveText("2010 · 2026");
+    await expect(summary).not.toContainText("歷屆世界盃決賽成績");
+
+    const portraitBox = await summary.locator(".person-portrait--coach").boundingBox();
+    expect(portraitBox).not.toBeNull();
+    expect(portraitBox.width).toBeGreaterThanOrEqual(80);
+    const overflow = await summary.evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(1);
+    if (viewport.width > 900) {
+      const [leadershipBox, historyBox] = await Promise.all([
+        summary.locator(".roster-summary-group--leadership").boundingBox(),
+        summary.locator(".roster-summary-group--history").boundingBox()
+      ]);
+      expect(leadershipBox).not.toBeNull();
+      expect(historyBox).not.toBeNull();
+      expect(historyBox.width).toBeGreaterThan(leadershipBox.width);
+      expect(Math.abs(historyBox.height - leadershipBox.height)).toBeLessThanOrEqual(2);
+    }
+
+    await summary.scrollIntoViewIfNeeded();
+    await roster.locator(".roster-overview").screenshot({ path:`artifacts/v2.165/team-record-${viewport.width}x${viewport.height}.png` });
+  }
 });
