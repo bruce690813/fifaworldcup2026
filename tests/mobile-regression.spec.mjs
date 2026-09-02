@@ -147,7 +147,14 @@ test("v2.163 戰績表精華按鈕與中英文場館資訊", async ({ page }) =>
     await expect(results.locator(".match-venue-stadium .match-venue-name-zh").first()).toContainText("梅賽德斯-賓士體育場");
 
     const overflowCount = await results.locator(".match-highlight-btn").evaluateAll(buttons =>
-      buttons.filter(button => button.scrollWidth > button.clientWidth + 1 || button.scrollHeight > button.clientHeight + 1).length
+      buttons.filter(button => {
+        const frame = button.getBoundingClientRect();
+        return [...button.children].some(child => {
+          const content = child.getBoundingClientRect();
+          return content.left < frame.left - 1 || content.right > frame.right + 1
+            || content.top < frame.top - 1 || content.bottom > frame.bottom + 1;
+        });
+      }).length
     );
     expect(overflowCount, "YouTube 圖示與文字不可超出精華按鈕").toBe(0);
     await results.screenshot({ path:`artifacts/v2.163/results-${viewport.width}x${viewport.height}.png` });
