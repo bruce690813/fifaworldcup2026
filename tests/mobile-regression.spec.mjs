@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { mkdirSync, readFileSync } from "node:fs";
 import { expect, test } from "@playwright/test";
 
 const leafletScript = readFileSync(
@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.162");
+  await expect(page.locator(".version-badge")).toHaveText("v2.163");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,10 +123,35 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.162");
+    await expect(page.locator(".version-badge")).toHaveText("v2.163");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
+});
+
+test("v2.163 戰績表精華按鈕與中英文場館資訊", async ({ page }) => {
+  mkdirSync("artifacts/v2.163", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.locator("#searchBox").fill("西班牙");
+    await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
+
+    const results = page.locator(".results-section");
+    await expect(results).toBeVisible();
+    await expect(results.locator(".match-venue-name-zh").first()).toContainText("亞特蘭大，美國");
+    await expect(results.locator(".match-venue-name-en").first()).toContainText("Atlanta, United States");
+    await expect(results.locator(".match-venue-stadium .match-venue-name-zh").first()).toContainText("梅賽德斯-賓士體育場");
+
+    const overflowCount = await results.locator(".match-highlight-btn").evaluateAll(buttons =>
+      buttons.filter(button => button.scrollWidth > button.clientWidth + 1 || button.scrollHeight > button.clientHeight + 1).length
+    );
+    expect(overflowCount, "YouTube 圖示與文字不可超出精華按鈕").toBe(0);
+    await results.screenshot({ path:`artifacts/v2.163/results-${viewport.width}x${viewport.height}.png` });
+  }
 });
 
 test("手機控制與輔助文字符合最小可讀／可觸控尺寸", async ({ page }) => {
