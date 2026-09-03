@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.167");
+  await expect(page.locator(".version-badge")).toHaveText("v2.168");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.167");
+    await expect(page.locator(".version-badge")).toHaveText("v2.168");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -963,7 +963,6 @@ test("v2.166 FIFA 世界排名桌機與手機搜尋篩選體驗", async ({ page 
 });
 
 test("v2.167 國家摘要 Dashboard 四種尺寸與歷史展開", async ({ page }) => {
-  mkdirSync("artifacts/v2.167", { recursive:true });
   for (const viewport of [
     { width:1920, height:1080 }, { width:1366, height:768 },
     { width:1024, height:768 }, { width:390, height:844 }
@@ -1002,6 +1001,48 @@ test("v2.167 國家摘要 Dashboard 四種尺寸與歷史展開", async ({ page 
       expect(Math.abs(basicsBox.height - lifeBox.height)).toBeLessThanOrEqual(2);
     }
 
-    await dashboard.screenshot({ path:`artifacts/v2.167/country-summary-${viewport.width}x${viewport.height}.png` });
+    await dashboard.screenshot({ path:`test-results/v2.167-country-summary-${viewport.width}x${viewport.height}.png` });
+  }
+});
+
+test("v2.168 國家摘要與後續內容使用一致寬度", async ({ page }) => {
+  mkdirSync("artifacts/v2.168", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.locator("#searchBox").fill("西班牙");
+    await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
+
+    const shell = page.locator(".country-page-shell");
+    const modules = [
+      page.locator(".country-overview-grid"),
+      shell.locator(":scope > .country-feature-section").first(),
+      shell.locator(":scope > .country-team-analysis"),
+      shell.locator(":scope > .results-section"),
+      shell.locator(":scope > .roster-section")
+    ];
+    const boxes = [];
+    for (const module of modules) {
+      await expect(module).toBeVisible();
+      boxes.push(await module.boundingBox());
+    }
+    const reference = boxes[0];
+    for (const box of boxes.slice(1)) {
+      expect(Math.abs(box.x - reference.x)).toBeLessThanOrEqual(1);
+      expect(Math.abs(box.width - reference.width)).toBeLessThanOrEqual(1);
+    }
+    if (viewport.width === 1920) {
+      expect(reference.width).toBeGreaterThanOrEqual(1279);
+      expect(reference.width).toBeLessThanOrEqual(1281);
+    }
+    const pageOverflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(pageOverflow).toBeLessThanOrEqual(1);
+    await page.screenshot({ path:`artifacts/v2.168/content-rail-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    if (viewport.width === 1366) {
+      await page.screenshot({ path:"artifacts/v2.168/content-rail-1366x-full.png", fullPage:true });
+    }
   }
 });
