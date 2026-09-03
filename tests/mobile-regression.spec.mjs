@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.170");
+  await expect(page.locator(".version-badge")).toHaveText("v2.171");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.170");
+    await expect(page.locator(".version-badge")).toHaveText("v2.171");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -374,7 +374,7 @@ test("FIFA 排名國名保持單行且國家頁使用大型摘要標題", async 
   await expect(spainLink).toBeVisible();
   expect(await spainLink.evaluate(node => getComputedStyle(node).whiteSpace)).toBe("nowrap");
 
-  await rankingModal.locator('[data-team-code="ESP"]').click();
+  await rankingModal.locator('.fifa-ranking-mobile-status[data-team-code="ESP"]').click();
   await expect(page.locator(".country-hero-card")).toHaveCount(0);
   await expect(page.locator(".country-summary-title h2")).toHaveText("西班牙");
   await expect(page.locator(".country-summary-title-subline")).toContainText("SPAIN");
@@ -945,8 +945,13 @@ test("v2.166 FIFA 世界排名桌機與手機搜尋篩選體驗", async ({ page 
     await expect(grid.locator(".fifa-ranking-row")).toHaveCount(48);
     await expect(modal.locator("#fifaRankingSearchCount")).toHaveText("顯示 48／211 隊");
     await expect(grid.locator('.fifa-ranking-row[data-rank="1"] .fifa-ranking-rank')).toHaveText("#1");
-    await expect(grid.locator('[data-team-code="ESP"] small')).toHaveText("H 組");
-    if (viewport.width === 390) await expect(grid.locator('[data-team-code="ESP"] small')).toBeVisible();
+    if (viewport.width === 390) {
+      await expect(grid.locator('.fifa-ranking-mobile-status[data-team-code="ESP"]')).toBeVisible();
+      await expect(grid.locator('.fifa-ranking-mobile-status[data-team-code="ESP"]')).toContainText("H組");
+    } else {
+      await expect(grid.locator('.fifa-ranking-row-status [data-team-code="ESP"] small')).toHaveText("H 組");
+      await expect(grid.locator('.fifa-ranking-row-status [data-team-code="ESP"] small')).toBeVisible();
+    }
 
     const dialogBox = await modal.locator(".fifa-ranking-dialog").boundingBox();
     const closeBox = await modal.locator("#closeFifaLatestRankingBtn").boundingBox();
@@ -963,7 +968,6 @@ test("v2.166 FIFA 世界排名桌機與手機搜尋篩選體驗", async ({ page 
 });
 
 test("v2.169 FIFA 世界排名高密度桌機與手機介面", async ({ page }) => {
-  mkdirSync("artifacts/v2.169", { recursive:true });
   for (const viewport of [
     { width:1920, height:1080 }, { width:1366, height:768 },
     { width:1024, height:768 }, { width:390, height:844 }
@@ -985,7 +989,7 @@ test("v2.169 FIFA 世界排名高密度桌機與手機介面", async ({ page }) 
     expect(closeBox.height).toBeGreaterThanOrEqual(44);
     expect(searchBox.height).toBeGreaterThanOrEqual(44);
     expect(filterBox.height).toBeGreaterThanOrEqual(36);
-    expect(rowBox.height).toBeLessThanOrEqual(viewport.width > 760 ? 58 : 70);
+    expect(rowBox.height).toBeLessThanOrEqual(viewport.width > 760 ? 58 : 72);
 
     await expect(firstRow.locator(".fifa-ranking-confed-dot")).toHaveCount(1);
     await expect(firstRow.locator(".fifa-ranking-confed-copy strong")).toContainText("歐洲");
@@ -1003,13 +1007,12 @@ test("v2.169 FIFA 世界排名高密度桌機與手機介面", async ({ page }) 
     const horizontalOverflow = await modal.locator(".fifa-ranking-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
     expect(horizontalOverflow).toBeLessThanOrEqual(1);
     await page.waitForTimeout(1200);
-    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`artifacts/v2.169/fifa-ranking-${viewport.width}x${viewport.height}.png` });
+    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`test-results/v2.169-fifa-ranking-${viewport.width}x${viewport.height}.png` });
     await modal.locator("#closeFifaLatestRankingBtn").click();
   }
 });
 
 test("v2.170 FIFA 排名桌面欄距集中且手機資訊不擠壓", async ({ page }) => {
-  mkdirSync("artifacts/v2.170", { recursive:true });
   for (const viewport of [
     { width:1920, height:1080 }, { width:1366, height:768 },
     { width:1024, height:768 }, { width:390, height:844 }
@@ -1056,8 +1059,59 @@ test("v2.170 FIFA 排名桌面欄距集中且手機資訊不擠壓", async ({ pa
     const horizontalOverflow = await modal.locator(".fifa-ranking-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
     expect(horizontalOverflow).toBeLessThanOrEqual(1);
     await page.waitForTimeout(800);
-    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`artifacts/v2.170/fifa-ranking-columns-${viewport.width}x${viewport.height}.png` });
+    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`test-results/v2.170-fifa-ranking-columns-${viewport.width}x${viewport.height}.png` });
     await modal.locator("#closeFifaLatestRankingBtn").click();
+  }
+});
+
+test("v2.171 手機 FIFA 排名整合洲別與分組資格", async ({ page }) => {
+  mkdirSync("artifacts/v2.171", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.evaluate(() => document.getElementById("fifaLatestRankingBtn").click());
+
+    const modal = page.locator("#fifaLatestRankingModal");
+    const firstRow = modal.locator('.fifa-ranking-row[data-rank="1"]');
+    const desktopStatus = firstRow.locator(".fifa-ranking-row-status");
+    const mobileMeta = firstRow.locator(".fifa-ranking-mobile-meta");
+    const mobileStatus = firstRow.locator(".fifa-ranking-mobile-status");
+    await expect(modal.locator(".fifa-ranking-mobile-status")).toHaveCount(48);
+
+    if (viewport.width <= 760) {
+      await expect(desktopStatus).toBeHidden();
+      await expect(mobileMeta).toBeVisible();
+      await expect(mobileStatus).toBeVisible();
+      await expect(mobileStatus).toHaveText("✓2026 · H組");
+      await expect(mobileStatus).toHaveAttribute("aria-label", /已晉級 2026 世界盃.*H 組/);
+      const unqualifiedRow = modal.locator(".fifa-ranking-row:not(.is-world-cup-team)").first();
+      await expect(unqualifiedRow.locator(".fifa-ranking-mobile-meta")).toBeVisible();
+      await expect(unqualifiedRow.locator(".fifa-ranking-mobile-status")).toHaveCount(0);
+      const [rowBox, statusBox] = await Promise.all([firstRow.boundingBox(), mobileStatus.boundingBox()]);
+      expect(rowBox).not.toBeNull();
+      expect(statusBox).not.toBeNull();
+      expect(rowBox.height).toBeLessThanOrEqual(72);
+      expect(statusBox.x + statusBox.width).toBeLessThanOrEqual(rowBox.x + rowBox.width + 1);
+    } else {
+      await expect(desktopStatus).toBeVisible();
+      await expect(mobileMeta).toBeHidden();
+      await expect(mobileStatus).toBeHidden();
+    }
+
+    const horizontalOverflow = await modal.locator(".fifa-ranking-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(horizontalOverflow).toBeLessThanOrEqual(1);
+    await page.waitForTimeout(800);
+    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`artifacts/v2.171/fifa-ranking-mobile-status-${viewport.width}x${viewport.height}.png` });
+    if (viewport.width <= 760) {
+      await mobileStatus.click();
+      await expect(page.locator("body")).toHaveClass(/detail-mode/);
+      await expect(page.locator(".country-summary-title h2")).toHaveText("西班牙");
+    } else {
+      await modal.locator("#closeFifaLatestRankingBtn").click();
+    }
   }
 });
 
