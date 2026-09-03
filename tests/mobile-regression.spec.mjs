@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.168");
+  await expect(page.locator(".version-badge")).toHaveText("v2.169");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.168");
+    await expect(page.locator(".version-badge")).toHaveText("v2.169");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -952,12 +952,58 @@ test("v2.166 FIFA 世界排名桌機與手機搜尋篩選體驗", async ({ page 
     const closeBox = await modal.locator("#closeFifaLatestRankingBtn").boundingBox();
     expect(dialogBox).not.toBeNull();
     expect(closeBox).not.toBeNull();
-    expect(closeBox.height).toBeLessThanOrEqual(38);
+    expect(closeBox.height).toBeGreaterThanOrEqual(44);
     const horizontalOverflow = await modal.locator(".fifa-ranking-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
     expect(horizontalOverflow).toBeLessThanOrEqual(1);
     await modal.locator('[data-ranking-filter="all"]').click();
     await modal.locator("#fifaRankingFilters").evaluate(element => { element.scrollLeft = 0; });
     await modal.locator(".fifa-ranking-dialog").screenshot({ path:`test-results/v2.166-fifa-ranking-${viewport.width}x${viewport.height}.png` });
+    await modal.locator("#closeFifaLatestRankingBtn").click();
+  }
+});
+
+test("v2.169 FIFA 世界排名高密度桌機與手機介面", async ({ page }) => {
+  mkdirSync("artifacts/v2.169", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.evaluate(() => document.getElementById("fifaLatestRankingBtn").click());
+
+    const modal = page.locator("#fifaLatestRankingModal");
+    const firstRow = modal.locator('.fifa-ranking-row[data-rank="1"]');
+    const rowBox = await firstRow.boundingBox();
+    const closeBox = await modal.locator("#closeFifaLatestRankingBtn").boundingBox();
+    const searchBox = await modal.locator("#fifaRankingSearch").boundingBox();
+    const filterBox = await modal.locator('.fifa-ranking-filter[data-ranking-filter="all"]').boundingBox();
+    expect(rowBox).not.toBeNull();
+    expect(closeBox).not.toBeNull();
+    expect(searchBox).not.toBeNull();
+    expect(filterBox).not.toBeNull();
+    expect(closeBox.height).toBeGreaterThanOrEqual(44);
+    expect(searchBox.height).toBeGreaterThanOrEqual(44);
+    expect(filterBox.height).toBeGreaterThanOrEqual(36);
+    expect(rowBox.height).toBeLessThanOrEqual(viewport.width > 760 ? 58 : 70);
+
+    await expect(firstRow.locator(".fifa-ranking-confed-dot")).toHaveCount(1);
+    await expect(firstRow.locator(".fifa-ranking-confed-copy strong")).toContainText("歐洲");
+    await expect(firstRow.locator(".fifa-ranking-confed-copy small")).toHaveText("UEFA");
+    await expect(firstRow.locator(".fifa-ranking-status-check")).toHaveText("✓");
+    if (viewport.width <= 760) {
+      await expect(firstRow.locator(".fifa-ranking-row-confed")).toBeHidden();
+      await expect(firstRow.locator(".fifa-ranking-team-confed")).toBeVisible();
+      await expect(firstRow.locator(".fifa-ranking-team-confed")).toHaveText("歐洲 · UEFA");
+    } else {
+      await expect(firstRow.locator(".fifa-ranking-row-confed")).toBeVisible();
+      await expect(firstRow.locator(".fifa-ranking-team-confed")).toBeHidden();
+    }
+
+    const horizontalOverflow = await modal.locator(".fifa-ranking-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(horizontalOverflow).toBeLessThanOrEqual(1);
+    await page.waitForTimeout(1200);
+    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`artifacts/v2.169/fifa-ranking-${viewport.width}x${viewport.height}.png` });
     await modal.locator("#closeFifaLatestRankingBtn").click();
   }
 });
