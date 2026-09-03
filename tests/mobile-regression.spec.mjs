@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.165");
+  await expect(page.locator(".version-badge")).toHaveText("v2.166");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.165");
+    await expect(page.locator(".version-badge")).toHaveText("v2.166");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -145,6 +145,12 @@ test("v2.163 戰績表精華按鈕與中英文場館資訊", async ({ page }) =>
     await expect(results.locator(".match-venue-name-zh").first()).toContainText("亞特蘭大，美國");
     await expect(results.locator(".match-venue-name-en").first()).toContainText("Atlanta, United States");
     await expect(results.locator(".match-venue-stadium .match-venue-name-zh").first()).toContainText("梅賽德斯-賓士體育場");
+    if (viewport.width === 390) {
+      await expect(results.locator(".match-venue-city .match-venue-name-zh").first()).toBeVisible();
+      await expect(results.locator(".match-venue-city .match-venue-name-en").first()).toBeVisible();
+      await expect(results.locator(".match-venue-stadium .match-venue-name-zh").first()).toBeVisible();
+      await expect(results.locator(".match-venue-stadium .match-venue-name-en").first()).toBeVisible();
+    }
 
     const overflowCount = await results.locator(".match-highlight-btn").evaluateAll(buttons =>
       buttons.filter(button => {
@@ -422,7 +428,7 @@ test("v2.150 桌面 Hero 顯示低對比國土輪廓、定位資訊與四欄摘�
   await expect(location).toBeVisible();
   await expect(location).toContainText("EUROPE");
   await expect(location).toContainText("Southern Europe");
-  await expect(location).toContainText("歐洲｜南歐");
+  await expect(location).toContainText("歐洲 · 南歐");
   const heroBox = await hero.boundingBox();
   const titleBox = await title.boundingBox();
   const outlineBox = await outline.boundingBox();
@@ -468,7 +474,7 @@ test("v2.164 國家頁足球焦點與四主題資訊層級", async ({ page }) =>
     await expect(page.locator(".country-summary-rank-value strong")).toHaveText("#1");
     const horizontalOverflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     expect(horizontalOverflow, "國家頁不可產生水平溢位").toBeLessThanOrEqual(1);
-    await page.screenshot({ path:`artifacts/v2.164/country-${viewport.width}x${viewport.height}.png`, fullPage:false });
+    await page.screenshot({ path:`test-results/v2.164-country-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
 });
 
@@ -880,5 +886,94 @@ test("v2.165 國家隊人物與世界盃紀錄面板四種尺寸", async ({ page
 
     await summary.scrollIntoViewIfNeeded();
     await roster.locator(".roster-overview").screenshot({ path:`artifacts/v2.165/team-record-${viewport.width}x${viewport.height}.png` });
+  }
+});
+
+test("v2.166 國家 Hero 資訊層級與裁切式輪廓四種尺寸", async ({ page }) => {
+  mkdirSync("artifacts/v2.166", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.locator("#searchBox").fill("西班牙");
+    await page.locator('.search-suggestion[data-type="team"][data-code="ESP"]').click();
+
+    const hero = page.locator(".country-summary-hero");
+    const identity = hero.locator(".country-summary-title-subline");
+    await expect(identity).toContainText("SPAIN · ESP");
+    await expect(hero.locator(".country-summary-separator")).toHaveText("·");
+    await expect(hero.locator(".country-hero-football-stat").nth(1)).toContainText("分組H 組");
+    await expect(hero.locator(".country-hero-football-stat").nth(2)).toContainText("暱稱無敵艦隊");
+    await expect(hero).toHaveCSS("border-bottom-width", "3px");
+    await expect(hero).toHaveCSS("overflow", "hidden");
+    const pageOverflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(pageOverflow).toBeLessThanOrEqual(1);
+
+    if (viewport.width > 760) {
+      const [heroBox, outlineBox, locationBox, iconBox] = await Promise.all([
+        hero.boundingBox(), hero.locator(".country-hero-outline").boundingBox(),
+        hero.locator(".country-hero-location").boundingBox(),
+        hero.locator(".country-hero-location-icon").boundingBox()
+      ]);
+      expect(heroBox).not.toBeNull();
+      expect(outlineBox).not.toBeNull();
+      expect(locationBox).not.toBeNull();
+      expect(iconBox).not.toBeNull();
+      expect(outlineBox.x + outlineBox.width).toBeGreaterThan(heroBox.x + heroBox.width);
+      expect(locationBox.x).toBeGreaterThan(heroBox.x + heroBox.width * .5);
+      expect(iconBox.width).toBeLessThanOrEqual(33);
+      await expect(hero.locator(".country-hero-location small")).toHaveText("歐洲 · 南歐");
+    }
+
+    await hero.screenshot({ path:`artifacts/v2.166/country-hero-${viewport.width}x${viewport.height}.png` });
+  }
+});
+
+test("v2.166 FIFA 世界排名桌機與手機搜尋篩選體驗", async ({ page }) => {
+  mkdirSync("artifacts/v2.166", { recursive:true });
+  for (const viewport of [{ width:1366, height:768 }, { width:390, height:844 }]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.evaluate(() => document.getElementById("fifaLatestRankingBtn").click());
+
+    const modal = page.locator("#fifaLatestRankingModal");
+    const grid = modal.locator(".fifa-ranking-grid");
+    await expect(modal).toBeVisible();
+    await expect(modal.locator("#closeFifaLatestRankingBtn")).toHaveText("✕ 關閉");
+    await expect(modal.locator("#fifaRankingSearch")).toHaveAttribute("placeholder", "搜尋：西班牙、Spain、ESP、1");
+    await expect(modal.locator(".fifa-ranking-filter")).toHaveCount(8);
+    await expect(grid.locator(".fifa-ranking-row")).toHaveCount(211);
+
+    await modal.locator('[data-ranking-filter="歐洲"]').click();
+    const europeRows = grid.locator(".fifa-ranking-row");
+    expect(await europeRows.count()).toBeGreaterThan(0);
+    expect(await europeRows.count()).toBeLessThan(211);
+    await expect(modal.locator("#fifaRankingSearchCount")).toContainText("／211 隊");
+    if (viewport.width > 760) {
+      const confederations = await europeRows.locator(".fifa-ranking-row-confed").allTextContents();
+      expect(confederations.every(text => text.includes("歐洲"))).toBe(true);
+      await expect(grid.locator(".fifa-ranking-table-head")).toHaveCSS("position", "sticky");
+    }
+
+    await modal.locator('[data-ranking-filter="qualified"]').click();
+    await expect(grid.locator(".fifa-ranking-row")).toHaveCount(48);
+    await expect(modal.locator("#fifaRankingSearchCount")).toHaveText("顯示 48／211 隊");
+    await expect(grid.locator('.fifa-ranking-row[data-rank="1"] .fifa-ranking-rank')).toHaveText("#1");
+    await expect(grid.locator('[data-team-code="ESP"] small')).toHaveText("H 組");
+    if (viewport.width === 390) await expect(grid.locator('[data-team-code="ESP"] small')).toBeVisible();
+
+    const dialogBox = await modal.locator(".fifa-ranking-dialog").boundingBox();
+    const closeBox = await modal.locator("#closeFifaLatestRankingBtn").boundingBox();
+    expect(dialogBox).not.toBeNull();
+    expect(closeBox).not.toBeNull();
+    expect(closeBox.height).toBeLessThanOrEqual(38);
+    const horizontalOverflow = await modal.locator(".fifa-ranking-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(horizontalOverflow).toBeLessThanOrEqual(1);
+    await modal.locator('[data-ranking-filter="all"]').click();
+    await modal.locator("#fifaRankingFilters").evaluate(element => { element.scrollLeft = 0; });
+    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`artifacts/v2.166/fifa-ranking-${viewport.width}x${viewport.height}.png` });
+    await modal.locator("#closeFifaLatestRankingBtn").click();
   }
 });
