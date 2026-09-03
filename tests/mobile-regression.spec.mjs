@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.169");
+  await expect(page.locator(".version-badge")).toHaveText("v2.170");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.169");
+    await expect(page.locator(".version-badge")).toHaveText("v2.170");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -1004,6 +1004,59 @@ test("v2.169 FIFA 世界排名高密度桌機與手機介面", async ({ page }) 
     expect(horizontalOverflow).toBeLessThanOrEqual(1);
     await page.waitForTimeout(1200);
     await modal.locator(".fifa-ranking-dialog").screenshot({ path:`artifacts/v2.169/fifa-ranking-${viewport.width}x${viewport.height}.png` });
+    await modal.locator("#closeFifaLatestRankingBtn").click();
+  }
+});
+
+test("v2.170 FIFA 排名桌面欄距集中且手機資訊不擠壓", async ({ page }) => {
+  mkdirSync("artifacts/v2.170", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.evaluate(() => document.getElementById("fifaLatestRankingBtn").click());
+
+    const modal = page.locator("#fifaLatestRankingModal");
+    const firstRow = modal.locator('.fifa-ranking-row[data-rank="1"]');
+    const teamCell = firstRow.locator(".fifa-ranking-row-team");
+    const confederationCell = firstRow.locator(".fifa-ranking-row-confed");
+    const primaryName = firstRow.locator(".fifa-ranking-row-team-copy strong");
+    const secondaryName = firstRow.locator(".fifa-ranking-row-team-copy > small:not(.fifa-ranking-team-confed)");
+    const rowBox = await firstRow.boundingBox();
+    const dialogBox = await modal.locator(".fifa-ranking-dialog").boundingBox();
+    expect(rowBox).not.toBeNull();
+    expect(dialogBox).not.toBeNull();
+
+    if (viewport.width >= 900) {
+      const [teamBox, confederationBox, primaryBox, secondaryBox] = await Promise.all([
+        teamCell.boundingBox(), confederationCell.boundingBox(), primaryName.boundingBox(), secondaryName.boundingBox()
+      ]);
+      expect(teamBox).not.toBeNull();
+      expect(confederationBox).not.toBeNull();
+      expect(primaryBox).not.toBeNull();
+      expect(secondaryBox).not.toBeNull();
+      expect(dialogBox.width).toBeLessThanOrEqual(982);
+      expect(teamBox.width).toBeLessThanOrEqual(viewport.width <= 1040 ? 352 : 382);
+      expect(confederationBox.x - (teamBox.x + teamBox.width)).toBeLessThanOrEqual(15);
+      expect(Math.abs(primaryBox.y - secondaryBox.y)).toBeLessThanOrEqual(8);
+      expect(rowBox.height).toBeLessThanOrEqual(54);
+      await expect(firstRow.locator(".fifa-ranking-confed-copy")).toHaveCSS("flex-direction", "row");
+      await expect(modal.locator('.fifa-ranking-row[data-rank="10"] .fifa-ranking-row-confed')).toContainText("北中美洲");
+    } else {
+      const [primaryBox, secondaryBox] = await Promise.all([primaryName.boundingBox(), secondaryName.boundingBox()]);
+      expect(primaryBox).not.toBeNull();
+      expect(secondaryBox).not.toBeNull();
+      expect(secondaryBox.y).toBeGreaterThan(primaryBox.y);
+      await expect(confederationCell).toBeHidden();
+      await expect(firstRow.locator(".fifa-ranking-team-confed")).toBeVisible();
+    }
+
+    const horizontalOverflow = await modal.locator(".fifa-ranking-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(horizontalOverflow).toBeLessThanOrEqual(1);
+    await page.waitForTimeout(800);
+    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`artifacts/v2.170/fifa-ranking-columns-${viewport.width}x${viewport.height}.png` });
     await modal.locator("#closeFifaLatestRankingBtn").click();
   }
 });
