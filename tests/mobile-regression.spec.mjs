@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.173");
+  await expect(page.locator(".version-badge")).toHaveText("v2.174");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.173");
+    await expect(page.locator(".version-badge")).toHaveText("v2.174");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -1170,7 +1170,6 @@ test("v2.172 FIFA 排名資格改為桌機與手機無框行內狀態", async ({
 });
 
 test("v2.173 FIFA 主席名錄使用緊湊雙列卡片", async ({ page }) => {
-  mkdirSync("artifacts/v2.173", { recursive:true });
   for (const viewport of [
     { width:1920, height:1080 }, { width:1366, height:768 },
     { width:1024, height:768 }, { width:390, height:844 }
@@ -1210,7 +1209,58 @@ test("v2.173 FIFA 主席名錄使用緊湊雙列卡片", async ({ page }) => {
 
     const horizontalOverflow = await modal.locator(".fifa-presidents-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
     expect(horizontalOverflow).toBeLessThanOrEqual(1);
-    await modal.locator(".fifa-presidents-dialog").screenshot({ path:`artifacts/v2.173/fifa-presidents-density-${viewport.width}x${viewport.height}.png` });
+    await modal.locator(".fifa-presidents-dialog").screenshot({ path:`test-results/v2.173-fifa-presidents-density-${viewport.width}x${viewport.height}.png` });
+    await modal.locator("#closeFifaPresidentsBtn").click();
+    await expect(modal).not.toHaveClass(/open/);
+  }
+});
+
+test("v2.174 FIFA 主席英格蘭旗與說明對比", async ({ page }) => {
+  mkdirSync("artifacts/v2.174", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.evaluate(() => document.getElementById("fifaPresidentsBtn").click());
+
+    const modal = page.locator("#fifaPresidentsModal");
+    const cards = modal.locator(".fifa-president-card");
+    const intro = modal.locator(".fifa-presidents-intro");
+    const englandFlag = cards.filter({ hasText:"Sir Stanley Rous" }).locator(".fifa-president-flag-en");
+    await expect(modal).toHaveClass(/open/);
+    await expect(cards).toHaveCount(9);
+    await expect(intro.locator("strong")).toHaveText("FIFA 官方");
+    await expect(intro.locator("time")).toHaveText("1904 年");
+    await expect(englandFlag).toBeVisible();
+
+    const flagStyle = await englandFlag.evaluate(element => ({
+      backgroundImage:getComputedStyle(element).backgroundImage,
+      before:getComputedStyle(element, "::before").content,
+      after:getComputedStyle(element, "::after").content
+    }));
+    expect(flagStyle.backgroundImage.match(/linear-gradient/g)?.length).toBe(2);
+    expect(flagStyle.before).toBe("none");
+    expect(flagStyle.after).toBe("none");
+
+    const introStyle = await intro.evaluate(element => ({
+      color:getComputedStyle(element).color,
+      borderColor:getComputedStyle(element).borderLeftColor,
+      borderWidth:getComputedStyle(element).borderLeftWidth
+    }));
+    expect(introStyle.color).toBe("rgb(184, 200, 216)");
+    expect(introStyle.borderColor).toBe("rgb(215, 169, 0)");
+    expect(introStyle.borderWidth).toBe("3px");
+    await expect(intro.locator("strong")).toHaveCSS("color", "rgb(242, 201, 76)");
+
+    if (viewport.width <= 600) {
+      const cardBoxes = await cards.evaluateAll(elements => elements.map(element => element.getBoundingClientRect().height));
+      expect(Math.max(...cardBoxes)).toBeLessThanOrEqual(76);
+    }
+    const horizontalOverflow = await modal.locator(".fifa-presidents-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(horizontalOverflow).toBeLessThanOrEqual(1);
+    await modal.locator(".fifa-presidents-dialog").screenshot({ path:`artifacts/v2.174/fifa-presidents-flag-intro-${viewport.width}x${viewport.height}.png` });
     await modal.locator("#closeFifaPresidentsBtn").click();
     await expect(modal).not.toHaveClass(/open/);
   }
