@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.172");
+  await expect(page.locator(".version-badge")).toHaveText("v2.173");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.172");
+    await expect(page.locator(".version-badge")).toHaveText("v2.173");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -1115,7 +1115,6 @@ test("v2.171 手機 FIFA 排名整合洲別與分組資格", async ({ page }) =>
 });
 
 test("v2.172 FIFA 排名資格改為桌機與手機無框行內狀態", async ({ page }) => {
-  mkdirSync("artifacts/v2.172", { recursive:true });
   for (const viewport of [
     { width:1920, height:1080 }, { width:1366, height:768 },
     { width:1024, height:768 }, { width:390, height:844 }
@@ -1163,10 +1162,57 @@ test("v2.172 FIFA 排名資格改為桌機與手機無框行內狀態", async ({
     const horizontalOverflow = await modal.locator(".fifa-ranking-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
     expect(horizontalOverflow).toBeLessThanOrEqual(1);
     await page.waitForTimeout(800);
-    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`artifacts/v2.172/fifa-ranking-inline-status-${viewport.width}x${viewport.height}.png` });
+    await modal.locator(".fifa-ranking-dialog").screenshot({ path:`test-results/v2.172-fifa-ranking-inline-status-${viewport.width}x${viewport.height}.png` });
     await status.click();
     await expect(page.locator("body")).toHaveClass(/detail-mode/);
     await expect(page.locator(".country-summary-title h2")).toHaveText("西班牙");
+  }
+});
+
+test("v2.173 FIFA 主席名錄使用緊湊雙列卡片", async ({ page }) => {
+  mkdirSync("artifacts/v2.173", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.evaluate(() => document.getElementById("fifaPresidentsBtn").click());
+
+    const modal = page.locator("#fifaPresidentsModal");
+    const cards = modal.locator(".fifa-president-card");
+    const firstCard = cards.first();
+    await expect(modal).toHaveClass(/open/);
+    await expect(cards).toHaveCount(9);
+    await expect(firstCard.locator(".fifa-president-name-row strong")).toHaveText("英凡提諾");
+    await expect(firstCard.locator(".fifa-president-name-link")).toHaveText("Gianni Infantino");
+    await expect(firstCard.locator(".fifa-president-meta")).toContainText("瑞士");
+    await expect(firstCard.locator(".fifa-president-term")).toHaveText("2016–現任");
+
+    const cardBoxes = await cards.evaluateAll(elements => elements.map(element => element.getBoundingClientRect().height));
+    const orderBox = await firstCard.locator(".fifa-president-order").boundingBox();
+    expect(orderBox).not.toBeNull();
+    if (viewport.width <= 600) {
+      expect(Math.max(...cardBoxes)).toBeLessThanOrEqual(76);
+      expect(orderBox.width).toBeLessThanOrEqual(31);
+      const [metaBox, termBox, zhNameBox, enNameBox] = await Promise.all([
+        firstCard.locator(".fifa-president-meta").boundingBox(),
+        firstCard.locator(".fifa-president-term").boundingBox(),
+        firstCard.locator(".fifa-president-name-row strong").boundingBox(),
+        firstCard.locator(".fifa-president-name-link").boundingBox()
+      ]);
+      expect(Math.abs(metaBox.y - termBox.y)).toBeLessThanOrEqual(4);
+      expect(Math.abs(zhNameBox.y - enNameBox.y)).toBeLessThanOrEqual(4);
+    } else {
+      expect(Math.max(...cardBoxes)).toBeLessThanOrEqual(66);
+      expect(orderBox.width).toBeLessThanOrEqual(37);
+    }
+
+    const horizontalOverflow = await modal.locator(".fifa-presidents-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(horizontalOverflow).toBeLessThanOrEqual(1);
+    await modal.locator(".fifa-presidents-dialog").screenshot({ path:`artifacts/v2.173/fifa-presidents-density-${viewport.width}x${viewport.height}.png` });
+    await modal.locator("#closeFifaPresidentsBtn").click();
+    await expect(modal).not.toHaveClass(/open/);
   }
 });
 
