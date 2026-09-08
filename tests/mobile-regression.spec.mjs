@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.174");
+  await expect(page.locator(".version-badge")).toHaveText("v2.175");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.174");
+    await expect(page.locator(".version-badge")).toHaveText("v2.175");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -1262,6 +1262,68 @@ test("v2.174 FIFA 主席英格蘭旗與說明對比", async ({ page }) => {
     expect(horizontalOverflow).toBeLessThanOrEqual(1);
     await modal.locator(".fifa-presidents-dialog").screenshot({ path:`artifacts/v2.174/fifa-presidents-flag-intro-${viewport.width}x${viewport.height}.png` });
     await modal.locator("#closeFifaPresidentsBtn").click();
+    await expect(modal).not.toHaveClass(/open/);
+  }
+});
+
+test("v2.175 俱樂部隊徽四選一挑戰支援桌機與手機", async ({ page }) => {
+  mkdirSync("artifacts/v2.175", { recursive:true });
+  await page.route(/^https:\/\/(www\.google\.com|images\.mlssoccer\.com|www\.jleague\.jp)\//, route => route.abort());
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+
+    if (viewport.width === 1920) {
+      await page.locator("#desktopMegaMenuBtn").click();
+      await expect(page.locator('[data-desktop-nav-target="clubLogoQuizBtn"]')).toBeVisible();
+      await page.locator("#desktopMegaMenuCloseBtn").click();
+    }
+    if (viewport.width === 390) {
+      await page.locator("#mobileFeatureMenuBtn").click();
+      await expect(page.locator('[data-mobile-nav-target="clubLogoQuizBtn"]')).toBeVisible();
+      await page.locator("#mobileFeatureMenuCloseBtn").click();
+    }
+
+    await page.evaluate(() => window.openClubLogoQuiz("real-madrid"));
+    const modal = page.locator("#clubLogoQuizModal");
+    const dialog = modal.locator(".club-logo-quiz-dialog");
+    const options = modal.locator(".club-quiz-option");
+    await expect(modal).toHaveClass(/open/);
+    await expect(options).toHaveCount(4);
+    await expect(modal.locator("[data-quiz-round]")).toHaveText("1");
+    await expect(modal.locator(".club-quiz-logo-frame img")).toHaveAttribute("src", "assets/clubs/real-madrid.png");
+    await expect(modal.locator('[data-club-id="real-madrid"]')).toHaveCount(1);
+
+    const correctOption = modal.locator('[data-club-id="real-madrid"]');
+    if (viewport.width <= 700) await expectMinimumTouchTarget(correctOption, "隊徽挑戰選項");
+    await correctOption.click();
+    await expect(correctOption).toHaveClass(/is-correct/);
+    await expect(modal.locator(".club-quiz-feedback")).toContainText("答對了");
+    await expect(modal.locator(".club-quiz-feedback")).toContainText("西甲 · LaLiga｜皇家馬德里 Real Madrid");
+    await expect(modal.locator("[data-quiz-score]")).toHaveText("100");
+    await expect(modal.locator("[data-quiz-streak]")).toHaveText("1");
+    await expect(modal.locator(".club-quiz-next")).toBeVisible();
+
+    const overflow = await dialog.evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(1);
+    await dialog.screenshot({ path:`artifacts/v2.175/club-logo-quiz-${viewport.width}x${viewport.height}.png` });
+
+    await modal.locator(".club-quiz-next").click();
+    await expect(modal.locator("[data-quiz-round]")).toHaveText("2");
+    if (viewport.width === 390) {
+      for (let round = 2; round <= 10; round += 1) {
+        await modal.locator(".club-quiz-option").first().click();
+        await modal.locator(".club-quiz-next").click();
+      }
+      await expect(modal.locator(".club-quiz-summary")).toBeVisible();
+      await expect(modal.locator(".club-quiz-summary-score")).toContainText("／10 題");
+      await modal.locator(".club-quiz-restart").click();
+      await expect(modal.locator("[data-quiz-round]")).toHaveText("1");
+    }
+    await modal.locator("#closeClubLogoQuizBtn").click();
     await expect(modal).not.toHaveClass(/open/);
   }
 });
