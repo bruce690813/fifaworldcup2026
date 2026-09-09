@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.176");
+  await expect(page.locator(".version-badge")).toHaveText("v2.177");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.176");
+    await expect(page.locator(".version-badge")).toHaveText("v2.177");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -1422,5 +1422,70 @@ test("v2.168 國家摘要與後續內容使用一致寬度", async ({ page }) =>
     if (viewport.width === 1366) {
       await page.screenshot({ path:"artifacts/v2.168/content-rail-1366x-full.png", fullPage:true });
     }
+  }
+});
+
+test("v2.177 阿根廷球衣背號在桌機與手機維持背面條紋與置中比例", async ({ page }) => {
+  mkdirSync("artifacts/v2.177", { recursive:true });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.reload({ waitUntil:"domcontentloaded" });
+    await page.locator("#searchBox").fill("阿根廷");
+    await page.locator('.search-suggestion[data-type="team"][data-code="ARG"]').click();
+
+    const messiRow = page.locator(".roster-table tbody tr").filter({ hasText:"Lionel MESSI" });
+    const jersey = messiRow.locator(".roster-jersey-number");
+    const digit = jersey.locator(".roster-jersey-digit");
+    await expect(jersey).toBeVisible();
+    await jersey.scrollIntoViewIfNeeded();
+    await expect(jersey).toHaveClass(/jersey-argentina/);
+    await expect(digit).toHaveText("10");
+
+    if (viewport.width === 1366 || viewport.width === 390) {
+      const legacyStyle = await page.addStyleTag({ content:`
+        .roster-jersey-number.jersey-argentina {
+          width:38px !important; height:38px !important; padding-top:3px !important;
+          background:repeating-linear-gradient(90deg,#74acdf 0 9px,#fff 9px 18px) !important;
+          font:1000 14px/1 Arial,sans-serif !important; letter-spacing:normal !important;
+        }
+        .roster-jersey-number.jersey-argentina::before { content:none !important; }
+        .roster-jersey-number.jersey-argentina .roster-jersey-digit { transform:none !important; }
+        @media (max-width:760px) {
+          body.detail-mode .roster-section .roster-jersey-number.jersey-argentina { transform:scale(.84) !important; }
+        }
+      ` });
+      await page.screenshot({ path:`artifacts/v2.177/before-argentina-jersey-${viewport.width}x${viewport.height}.png`, fullPage:false });
+      await legacyStyle.evaluate(node => node.remove());
+    }
+
+    const styles = await jersey.evaluate(node => {
+      const style = getComputedStyle(node);
+      return {
+        display:style.display,
+        alignItems:style.alignItems,
+        justifyContent:style.justifyContent,
+        backgroundImage:style.backgroundImage,
+        color:style.color,
+        fontSize:parseFloat(style.fontSize)
+      };
+    });
+    expect(["flex", "inline-flex"]).toContain(styles.display);
+    expect(styles.alignItems).toBe("center");
+    expect(styles.justifyContent).toBe("center");
+    expect(styles.backgroundImage).toContain("linear-gradient");
+    expect(styles.backgroundImage).toContain("rgb(116, 172, 223)");
+    expect(styles.color).toBe("rgb(16, 24, 32)");
+    expect(styles.fontSize).toBeGreaterThanOrEqual(18);
+
+    const jerseyBox = await jersey.boundingBox();
+    const digitBox = await digit.boundingBox();
+    expect(Math.abs((jerseyBox.x + jerseyBox.width / 2) - (digitBox.x + digitBox.width / 2))).toBeLessThanOrEqual(1);
+    expect(jerseyBox.width).toBeGreaterThanOrEqual(39);
+    const pageOverflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(pageOverflow).toBeLessThanOrEqual(1);
+    await page.screenshot({ path:`artifacts/v2.177/argentina-jersey-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
 });
