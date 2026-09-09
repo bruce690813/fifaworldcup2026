@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.175");
+  await expect(page.locator(".version-badge")).toHaveText("v2.176");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.175");
+    await expect(page.locator(".version-badge")).toHaveText("v2.176");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -1266,8 +1266,8 @@ test("v2.174 FIFA 主席英格蘭旗與說明對比", async ({ page }) => {
   }
 });
 
-test("v2.175 俱樂部隊徽四選一挑戰支援桌機與手機", async ({ page }) => {
-  mkdirSync("artifacts/v2.175", { recursive:true });
+test("v2.176 隊徽放大、五大聯賽完整題庫與跨局不重複", async ({ page }) => {
+  mkdirSync("artifacts/v2.176", { recursive:true });
   await page.route(/^https:\/\/(www\.google\.com|images\.mlssoccer\.com|www\.jleague\.jp)\//, route => route.abort());
   for (const viewport of [
     { width:1920, height:1080 }, { width:1366, height:768 },
@@ -1275,6 +1275,7 @@ test("v2.175 俱樂部隊徽四選一挑戰支援桌機與手機", async ({ page
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
+    expect(await page.evaluate(() => window.clubLogoQuizStats)).toEqual({ total:103, topFive:96, topFiveHighResolution:96 });
 
     if (viewport.width === 1920) {
       await page.locator("#desktopMegaMenuBtn").click();
@@ -1294,7 +1295,7 @@ test("v2.175 俱樂部隊徽四選一挑戰支援桌機與手機", async ({ page
     await expect(modal).toHaveClass(/open/);
     await expect(options).toHaveCount(4);
     await expect(modal.locator("[data-quiz-round]")).toHaveText("1");
-    await expect(modal.locator(".club-quiz-logo-frame img")).toHaveAttribute("src", "assets/clubs/real-madrid.png");
+    await expect(modal.locator(".club-quiz-logo-frame img")).toHaveAttribute("data-primary-src", "https://a.espncdn.com/i/teamlogos/soccer/500/86.png");
     await expect(modal.locator('[data-club-id="real-madrid"]')).toHaveCount(1);
 
     const correctOption = modal.locator('[data-club-id="real-madrid"]');
@@ -1309,7 +1310,9 @@ test("v2.175 俱樂部隊徽四選一挑戰支援桌機與手機", async ({ page
 
     const overflow = await dialog.evaluate(element => element.scrollWidth - element.clientWidth);
     expect(overflow).toBeLessThanOrEqual(1);
-    await dialog.screenshot({ path:`artifacts/v2.175/club-logo-quiz-${viewport.width}x${viewport.height}.png` });
+    const logoBox = await modal.locator(".club-quiz-logo-frame img").boundingBox();
+    expect(logoBox?.width || 0).toBeGreaterThanOrEqual(viewport.width <= 700 ? 140 : 210);
+    await dialog.screenshot({ path:`artifacts/v2.176/club-logo-quiz-${viewport.width}x${viewport.height}.png` });
 
     await modal.locator(".club-quiz-next").click();
     await expect(modal.locator("[data-quiz-round]")).toHaveText("2");
@@ -1325,6 +1328,15 @@ test("v2.175 俱樂部隊徽四選一挑戰支援桌機與手機", async ({ page
     }
     await modal.locator("#closeClubLogoQuizBtn").click();
     await expect(modal).not.toHaveClass(/open/);
+    if (viewport.width === 1920) {
+      const previousDeck = await page.evaluate(() => JSON.parse(localStorage.getItem("fifa2026-club-logo-quiz-question-bag-v2") || "{}").recent || []);
+      await page.evaluate(() => window.openClubLogoQuiz());
+      const nextDeck = await page.evaluate(() => JSON.parse(localStorage.getItem("fifa2026-club-logo-quiz-question-bag-v2") || "{}").recent || []);
+      expect(previousDeck).toHaveLength(10);
+      expect(nextDeck).toHaveLength(10);
+      expect(nextDeck.filter(id => previousDeck.includes(id))).toEqual([]);
+      await modal.locator("#closeClubLogoQuizBtn").click();
+    }
   }
 });
 
