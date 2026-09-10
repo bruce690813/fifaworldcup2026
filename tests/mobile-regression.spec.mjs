@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.177");
+  await expect(page.locator(".version-badge")).toHaveText("v2.178");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.177");
+    await expect(page.locator(".version-badge")).toHaveText("v2.178");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -1266,8 +1266,8 @@ test("v2.174 FIFA 主席英格蘭旗與說明對比", async ({ page }) => {
   }
 });
 
-test("v2.176 隊徽放大、五大聯賽完整題庫與跨局不重複", async ({ page }) => {
-  mkdirSync("artifacts/v2.176", { recursive:true });
+test("v2.178 圓形隊徽、中文雙欄選項與完整題庫流程", async ({ page }) => {
+  mkdirSync("artifacts/v2.178", { recursive:true });
   await page.route(/^https:\/\/(www\.google\.com|images\.mlssoccer\.com|www\.jleague\.jp)\//, route => route.abort());
   for (const viewport of [
     { width:1920, height:1080 }, { width:1366, height:768 },
@@ -1299,6 +1299,13 @@ test("v2.176 隊徽放大、五大聯賽完整題庫與跨局不重複", async (
     await expect(modal.locator('[data-club-id="real-madrid"]')).toHaveCount(1);
 
     const correctOption = modal.locator('[data-club-id="real-madrid"]');
+    await expect(modal.locator('.club-quiz-logo-frame')).toHaveCSS('border-radius', '50%');
+    expect(await options.allTextContents()).toHaveLength(4);
+    for (const text of await options.allTextContents()) expect(text).not.toMatch(/[a-z]/i);
+    const boxes = await Promise.all([0,1,2,3].map(index => options.nth(index).boundingBox()));
+    expect(boxes[0].y).toBe(boxes[1].y);
+    expect(boxes[2].y).toBe(boxes[3].y);
+    expect(boxes[2].y).toBeGreaterThan(boxes[0].y);
     if (viewport.width <= 700) await expectMinimumTouchTarget(correctOption, "隊徽挑戰選項");
     await correctOption.click();
     await expect(correctOption).toHaveClass(/is-correct/);
@@ -1307,12 +1314,14 @@ test("v2.176 隊徽放大、五大聯賽完整題庫與跨局不重複", async (
     await expect(modal.locator("[data-quiz-score]")).toHaveText("100");
     await expect(modal.locator("[data-quiz-streak]")).toHaveText("1");
     await expect(modal.locator(".club-quiz-next")).toBeVisible();
+    const nextBox = await modal.locator('.club-quiz-next').boundingBox();
+    expect(nextBox.y + nextBox.height).toBeLessThanOrEqual(viewport.height);
 
     const overflow = await dialog.evaluate(element => element.scrollWidth - element.clientWidth);
     expect(overflow).toBeLessThanOrEqual(1);
     const logoBox = await modal.locator(".club-quiz-logo-frame img").boundingBox();
-    expect(logoBox?.width || 0).toBeGreaterThanOrEqual(viewport.width <= 700 ? 140 : 210);
-    await dialog.screenshot({ path:`artifacts/v2.176/club-logo-quiz-${viewport.width}x${viewport.height}.png` });
+    expect(logoBox?.width || 0).toBeGreaterThanOrEqual(viewport.width <= 700 ? 108 : 164);
+    await dialog.screenshot({ path:`artifacts/v2.178/club-logo-quiz-${viewport.width}x${viewport.height}.png` });
 
     await modal.locator(".club-quiz-next").click();
     await expect(modal.locator("[data-quiz-round]")).toHaveText("2");

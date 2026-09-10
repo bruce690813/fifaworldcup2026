@@ -1,0 +1,153 @@
+[
+  {
+    "width": 1920,
+    "height": 1080,
+    "radius": "20px",
+    "options": [
+      {
+        "text": "1\n西甲 · LaLiga\n皇家馬德里\nReal Madrid",
+        "x": 895.609375,
+        "y": 511.265625,
+        "height": 78
+      },
+      {
+        "text": "2\n德甲 · Bundesliga\n奧格斯堡\nFC Augsburg",
+        "x": 1153.296875,
+        "y": 511.265625,
+        "height": 78
+      },
+      {
+        "text": "3\n西甲 · LaLiga\n阿拉維斯\nDeportivo Alavés",
+        "x": 895.609375,
+        "y": 599.265625,
+        "height": 78
+      },
+      {
+        "text": "4\n英超 · Premier League\n水晶宮\nCrystal Palace",
+        "x": 1153.296875,
+        "y": 599.265625,
+        "height": 78
+      }
+    ],
+    "overflow": 0,
+    "horizontalOverflow": 0,
+    "errors": [
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    ]
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "radius": "20px",
+    "options": [
+      {
+        "text": "1\n西甲 · LaLiga\n桑坦德競技\nRacing Santander",
+        "x": 618.609375,
+        "y": 355.265625,
+        "height": 78
+      },
+      {
+        "text": "2\n西甲 · LaLiga\n皇家馬德里\nReal Madrid",
+        "x": 876.296875,
+        "y": 355.265625,
+        "height": 78
+      },
+      {
+        "text": "3\n西甲 · LaLiga\n皇家社會\nReal Sociedad",
+        "x": 618.609375,
+        "y": 443.265625,
+        "height": 78
+      },
+      {
+        "text": "4\n西甲 · LaLiga\n塞爾塔\nCelta Vigo",
+        "x": 876.296875,
+        "y": 443.265625,
+        "height": 78
+      }
+    ],
+    "overflow": 0,
+    "horizontalOverflow": 0,
+    "errors": [
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "radius": "20px",
+    "options": [
+      {
+        "text": "1\n法甲 · Ligue 1\n尼斯\nOGC Nice",
+        "x": 447.609375,
+        "y": 355.265625,
+        "height": 78
+      },
+      {
+        "text": "2\n西甲 · LaLiga\n皇家馬德里\nReal Madrid",
+        "x": 705.296875,
+        "y": 355.265625,
+        "height": 78
+      },
+      {
+        "text": "3\n西甲 · LaLiga\n奧薩蘇納\nCA Osasuna",
+        "x": 447.609375,
+        "y": 443.265625,
+        "height": 78
+      },
+      {
+        "text": "4\n義甲 · Serie A\n拉齊奧\nSS Lazio",
+        "x": 705.296875,
+        "y": 443.265625,
+        "height": 78
+      }
+    ],
+    "overflow": 0,
+    "horizontalOverflow": 0,
+    "errors": [
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "radius": "15px",
+    "options": [
+      {
+        "text": "1\n美職聯 · MLS\n洛杉磯FC\nLos Angeles FC",
+        "x": 32,
+        "y": 451.6875,
+        "height": 66.328125
+      },
+      {
+        "text": "2\n西甲 · LaLiga\n阿拉維斯\nDeportivo Alavés",
+        "x": 32,
+        "y": 525.015625,
+        "height": 66.328125
+      },
+      {
+        "text": "3\n西甲 · LaLiga\n皇家馬德里\nReal Madrid",
+        "x": 32,
+        "y": 598.34375,
+        "height": 66.328125
+      },
+      {
+        "text": "4\n西甲 · LaLiga\n瓦倫西亞\nValencia CF",
+        "x": 32,
+        "y": 671.671875,
+        "height": 66.328125
+      }
+    ],
+    "overflow": 0,
+    "horizontalOverflow": 0,
+    "errors": [
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    ]
+  }
+]
