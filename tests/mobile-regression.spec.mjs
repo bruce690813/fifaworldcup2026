@@ -85,7 +85,7 @@ test.beforeEach(async ({ page }) => {
     window.localStorage.clear();
   });
   await page.goto("/index.html", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".version-badge")).toHaveText("v2.178");
+  await expect(page.locator(".version-badge")).toHaveText("v2.179");
   await expect(page.locator(".version-badge")).toBeHidden();
 });
 
@@ -123,7 +123,7 @@ test("v2.161 四種指定視窗尺寸無主控台錯誤", async ({ page }) => {
   ]) {
     await page.setViewportSize(viewport);
     await page.reload({ waitUntil:"domcontentloaded" });
-    await expect(page.locator(".version-badge")).toHaveText("v2.178");
+    await expect(page.locator(".version-badge")).toHaveText("v2.179");
     await page.screenshot({ path:`test-results/v2.161-${viewport.width}x${viewport.height}.png`, fullPage:false });
   }
   expect(errors).toEqual([]);
@@ -1347,6 +1347,63 @@ test("v2.178 圓形隊徽、中文雙欄選項與完整題庫流程", async ({ p
       await modal.locator("#closeClubLogoQuizBtn").click();
     }
   }
+});
+
+test("v2.179 足球賽季時間軸四種尺寸與直接入口", async ({ page }) => {
+  test.setTimeout(90_000);
+  mkdirSync("artifacts/v2.179", { recursive:true });
+  const errors = [];
+  page.on("pageerror", error => errors.push(error.message));
+  page.on("console", message => {
+    if (message.type() === "error" && !message.text().includes("ERR_NETWORK_ACCESS_DENIED")) errors.push(message.text());
+  });
+  for (const viewport of [
+    { width:1920, height:1080 }, { width:1366, height:768 },
+    { width:1024, height:768 }, { width:390, height:844 }
+  ]) {
+    await page.setViewportSize(viewport);
+
+    if (viewport.width === 1920) {
+      await page.locator("#desktopMegaMenuBtn").click();
+      const entry = page.locator('[data-desktop-nav-target="competitionGuideBtn"][data-competition-tab-target="timeline"]');
+      await expect(entry).toBeVisible();
+      await entry.click();
+    } else if (viewport.width === 390) {
+      await page.locator("#mobileFeatureMenuBtn").click();
+      const entry = page.locator('[data-mobile-nav-target="competitionGuideBtn"][data-competition-tab-target="timeline"]');
+      await expect(entry).toBeVisible();
+      await entry.click();
+    } else {
+      await page.locator('[data-desktop-nav-target="competitionGuideBtn"]').first().click();
+      await page.locator('[data-competition-tab="timeline"]').click();
+    }
+
+    const modal = page.locator("#competitionGuideModal");
+    const panel = modal.locator('[data-competition-panel="timeline"]');
+    await expect(modal).toHaveClass(/open/);
+    await expect(panel).toBeVisible();
+    await expect(modal.locator('[data-competition-tab="timeline"]')).toHaveAttribute("aria-selected", "true");
+    const activeTabBox = await modal.locator('[data-competition-tab="timeline"]').boundingBox();
+    expect(activeTabBox.x).toBeGreaterThanOrEqual(0);
+    expect(activeTabBox.x + activeTabBox.width).toBeLessThanOrEqual(viewport.width);
+    await expect(panel.locator(".season-format-card")).toHaveCount(6);
+    await expect(panel.locator(".season-stop")).toHaveCount(7);
+    await expect(panel).toContainText("英超、西甲、義甲：20 隊");
+    await expect(panel).toContainText("德甲、法甲：18 隊");
+    await expect(panel).toContainText("小世界杯");
+    await expect(panel).toContainText("三冠王");
+    await expect(panel).toContainText("國內頂級聯賽");
+    await expect(panel).toContainText("主要國內盃賽");
+    await expect(panel).toContainText("歐洲冠軍聯賽");
+
+    const horizontalOverflow = await modal.locator(".competition-guide-dialog").evaluate(element => element.scrollWidth - element.clientWidth);
+    expect(horizontalOverflow).toBeLessThanOrEqual(1);
+    await modal.locator(".competition-guide-dialog").screenshot({ path:`artifacts/v2.179/season-timeline-${viewport.width}x${viewport.height}.png` });
+
+    await modal.locator("#closeCompetitionGuideBtn").click();
+    await expect(modal).not.toHaveClass(/open/);
+  }
+  expect(errors).toEqual([]);
 });
 
 test("v2.167 國家摘要 Dashboard 四種尺寸與歷史展開", async ({ page }) => {
