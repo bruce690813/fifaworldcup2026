@@ -18541,6 +18541,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         <button id="fifaMembersBtn" class="secondary" type="button">FIFA 會員</button>
         <button id="fifaPresidentsBtn" class="secondary" type="button">歷屆 FIFA 主席</button>
         <button id="competitionGuideBtn" class="secondary" type="button">賽事指南</button>
+        <button id="seasonTimelineBtn" class="secondary" type="button" hidden>足球賽季時間軸</button>
         <button id="footballKnowledgeChannelsBtn" class="secondary" type="button">足球知識頻道</button>
         <button id="footballClassroomBtn" class="secondary" type="button" onclick="window.openFootballClassroom && window.openFootballClassroom()">足球教室</button>
         <button id="clubLogoQuizBtn" class="secondary" type="button">俱樂部隊徽挑戰</button>
@@ -18670,7 +18671,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             <button type="button" class="desktop-mega-item" data-desktop-nav-target="formationToolbarBtn"><span class="desktop-mega-item-icon">🧩</span><span class="desktop-mega-item-copy"><strong>球隊陣型</strong><small>查看球員站位與戰術配置</small></span><span class="desktop-mega-chevron">›</span></button>
             <button type="button" class="desktop-mega-item" data-desktop-nav-target="footballKnowledgeChannelsBtn"><span class="desktop-mega-item-icon">📺</span><span class="desktop-mega-item-copy"><strong>足球知識頻道</strong><small>YouTube 足球知識頻道</small></span><span class="desktop-mega-chevron">›</span></button>
             <button type="button" class="desktop-mega-item" data-desktop-nav-target="competitionGuideBtn"><span class="desktop-mega-item-icon">🧭</span><span class="desktop-mega-item-copy"><strong>賽事指南</strong><small>聯賽、盃賽與洲際賽介紹</small></span><span class="desktop-mega-chevron">›</span></button>
-            <button type="button" class="desktop-mega-item" data-desktop-nav-target="competitionGuideBtn" data-competition-tab-target="timeline"><span class="desktop-mega-item-icon">🗓️</span><span class="desktop-mega-item-copy"><strong>足球賽季時間軸</strong><small>從開季到決賽看懂全年賽事</small></span><span class="desktop-mega-chevron">›</span></button>
+            <button type="button" class="desktop-mega-item" data-desktop-nav-target="seasonTimelineBtn" data-competition-tab-target="timeline"><span class="desktop-mega-item-icon">🗓️</span><span class="desktop-mega-item-copy"><strong>足球賽季時間軸</strong><small>從開季到決賽看懂全年賽事</small></span><span class="desktop-mega-chevron">›</span></button>
           </div>
         </section>
         <details class="about-site-entry desktop-about-site">
@@ -18749,7 +18750,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             <button type="button" class="mobile-feature-item" data-mobile-nav-target="formationToolbarBtn"><span class="mobile-feature-item-icon">🧩</span><span class="mobile-feature-item-copy"><strong>球隊陣型</strong><small>查看球員站位與戰術配置</small></span><span class="mobile-feature-chevron">›</span></button>
             <button type="button" class="mobile-feature-item" data-mobile-nav-target="footballKnowledgeChannelsBtn"><span class="mobile-feature-item-icon">📺</span><span class="mobile-feature-item-copy"><strong>足球知識頻道</strong><small>YouTube 足球知識頻道</small></span><span class="mobile-feature-chevron">›</span></button>
             <button type="button" class="mobile-feature-item" data-mobile-nav-target="competitionGuideBtn"><span class="mobile-feature-item-icon">🧭</span><span class="mobile-feature-item-copy"><strong>賽事指南</strong><small>聯賽、盃賽與洲際賽介紹</small></span><span class="mobile-feature-chevron">›</span></button>
-            <button type="button" class="mobile-feature-item" data-mobile-nav-target="competitionGuideBtn" data-competition-tab-target="timeline"><span class="mobile-feature-item-icon">🗓️</span><span class="mobile-feature-item-copy"><strong>足球賽季時間軸</strong><small>從開季到決賽看懂全年賽事</small></span><span class="mobile-feature-chevron">›</span></button>
+            <button type="button" class="mobile-feature-item" data-mobile-nav-target="seasonTimelineBtn" data-competition-tab-target="timeline"><span class="mobile-feature-item-icon">🗓️</span><span class="mobile-feature-item-copy"><strong>足球賽季時間軸</strong><small>從開季到決賽看懂全年賽事</small></span><span class="mobile-feature-chevron">›</span></button>
           </div>
         </section>
 
@@ -25909,6 +25910,7 @@ const FIFA_MEN_RANKING_20260720 = ["ESP","ARG","FRA","ENG","BRA","MAR","POR","BE
       document.getElementById("clubStatsBtn").addEventListener("click", openClubStatsModal);
       document.getElementById("bestGoalsBtn").addEventListener("click", openBestGoalsModal);
       document.getElementById("competitionGuideBtn").addEventListener("click", openCompetitionGuideModal);
+      document.getElementById("seasonTimelineBtn").addEventListener("click", openCompetitionGuideModal);
       document.getElementById("footballKnowledgeChannelsBtn").addEventListener("click", openFootballKnowledgeChannelsModal);
       document.getElementById("closePlayerDetailBtn")?.addEventListener("click", closePlayerDetail);
       document.getElementById("playerDetailModal")?.addEventListener("click", event => { if (event.target.id === "playerDetailModal") closePlayerDetail(); });

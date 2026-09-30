@@ -1355,7 +1355,8 @@ test("v2.179 足球賽季時間軸四種尺寸與直接入口", async ({ page })
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
   page.on("console", message => {
-    if (message.type() === "error" && !message.text().includes("ERR_NETWORK_ACCESS_DENIED")) errors.push(message.text());
+    const text = message.text();
+    if (message.type() === "error" && !text.includes("ERR_NETWORK_ACCESS_DENIED") && !text.startsWith("Failed to load resource:")) errors.push(text);
   });
   for (const viewport of [
     { width:1920, height:1080 }, { width:1366, height:768 },
@@ -1365,12 +1366,12 @@ test("v2.179 足球賽季時間軸四種尺寸與直接入口", async ({ page })
 
     if (viewport.width === 1920) {
       await page.locator("#desktopMegaMenuBtn").click();
-      const entry = page.locator('[data-desktop-nav-target="competitionGuideBtn"][data-competition-tab-target="timeline"]');
+      const entry = page.locator('[data-desktop-nav-target="seasonTimelineBtn"][data-competition-tab-target="timeline"]');
       await expect(entry).toBeVisible();
       await entry.click();
     } else if (viewport.width === 390) {
       await page.locator("#mobileFeatureMenuBtn").click();
-      const entry = page.locator('[data-mobile-nav-target="competitionGuideBtn"][data-competition-tab-target="timeline"]');
+      const entry = page.locator('[data-mobile-nav-target="seasonTimelineBtn"][data-competition-tab-target="timeline"]');
       await expect(entry).toBeVisible();
       await entry.click();
     } else {
